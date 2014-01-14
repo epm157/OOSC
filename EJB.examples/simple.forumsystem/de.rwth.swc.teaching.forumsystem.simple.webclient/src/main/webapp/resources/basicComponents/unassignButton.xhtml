@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:composite="http://java.sun.com/jsf/composite"
+	xmlns:prime="http://primefaces.org/ui"
+	xmlns:basicComponents="http://java.sun.com/jsf/composite/basicComponents">
+
+<body>
+	<composite:interface>
+		<composite:attribute name="propertyName" required="true" />
+		<composite:attribute name="unassignMethod" required="true"
+			method-signature="java.lang.String action()" />
+	</composite:interface>
+
+	<composite:implementation>
+		<prime:commandButton value="Unset #{cc.attrs.propertyName}"
+			action="#{cc.attrs.unassignMethod}" ajax="false" />
+	</composite:implementation>
+</body>
+</html>

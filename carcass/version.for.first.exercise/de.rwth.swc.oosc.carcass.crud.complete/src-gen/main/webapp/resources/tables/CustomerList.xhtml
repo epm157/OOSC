@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+  	  xmlns:composite="http://java.sun.com/jsf/composite"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:prime="http://primefaces.org/ui"
+      
+      xmlns:tables="http://java.sun.com/jsf/composite/tables"
+      xmlns:dialogs="http://java.sun.com/jsf/composite/dialogs"
+      xmlns:goatHelper="http://java.sun.com/jsf/composite/goatHelper"
+      xmlns:pigHelper="http://java.sun.com/jsf/composite/pigHelper"
+      xmlns:researchLaboratoryHelper="http://java.sun.com/jsf/composite/researchLaboratoryHelper"
+      xmlns:farmerHelper="http://java.sun.com/jsf/composite/farmerHelper"
+      xmlns:customerHelper="http://java.sun.com/jsf/composite/customerHelper"
+      xmlns:materialHelper="http://java.sun.com/jsf/composite/materialHelper"
+      xmlns:materialGatheringPointHelper="http://java.sun.com/jsf/composite/materialGatheringPointHelper"
+      xmlns:basicComponents="http://java.sun.com/jsf/composite/basicComponents"
+      >
+
+
+	
+<body>
+	<composite:interface>
+		<composite:attribute name="label" required="true" />
+		<composite:attribute name="onEmptyText" required="false" default="No Customer items" />
+		<composite:attribute name="list" required="true" />
+	</composite:interface>
+
+	<composite:implementation>
+		<ui:decorate  template="./templates/CustomerList.xhtml">
+			<ui:param name="label" value="#{cc.attrs.label}" />
+			<ui:param name="onEmptyText" value="#{cc.attrs.onEmptyText}" />
+			<ui:param name="list" value="#{cc.attrs.list}" />
+		</ui:decorate>
+	</composite:implementation>
+</body>  
+
+
+</html>

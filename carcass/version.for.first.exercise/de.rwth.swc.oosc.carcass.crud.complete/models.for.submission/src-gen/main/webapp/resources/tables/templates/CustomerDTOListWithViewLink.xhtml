@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+  	  xmlns:composite="http://java.sun.com/jsf/composite"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:prime="http://primefaces.org/ui"
+      
+      xmlns:tables="http://java.sun.com/jsf/composite/tables"
+      xmlns:dialogs="http://java.sun.com/jsf/composite/dialogs"
+      xmlns:materialGatheringPointDTOHelper="http://java.sun.com/jsf/composite/materialGatheringPointDTOHelper"
+      xmlns:routeDTOHelper="http://java.sun.com/jsf/composite/routeDTOHelper"
+      xmlns:customerDTOHelper="http://java.sun.com/jsf/composite/customerDTOHelper"
+      xmlns:materialDTOHelper="http://java.sun.com/jsf/composite/materialDTOHelper"
+      xmlns:basicComponents="http://java.sun.com/jsf/composite/basicComponents"
+      >
+
+<body>
+	<ui:composition
+		template="CustomerDTOList.xhtml">
+
+		<ui:param name="label" value="#{label}" />
+		<ui:param name="onEmptyText" value="#{onEmptyText}" />
+		<ui:param name="list" value="#{list}" />
+
+		<ui:define name="additionalColumns">
+			
+	<prime:column>
+		<f:facet name="header">
+			<h:outputText value="View" />
+		</f:facet>
+		<customerDTOHelper:customerDTOViewLink customerDTO="#{item}"  />		
+	</prime:column>
+
+
+			<ui:insert name="additionalColumns" />
+		</ui:define>
+
+	</ui:composition>
+</body>
+</html>

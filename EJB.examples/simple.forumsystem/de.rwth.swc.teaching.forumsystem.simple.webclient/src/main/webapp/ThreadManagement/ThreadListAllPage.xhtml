@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:composite="http://java.sun.com/jsf/composite"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:prime="http://primefaces.org/ui"
+	xmlns:tables="http://java.sun.com/jsf/composite/tables"
+	xmlns:dialogs="http://java.sun.com/jsf/composite/dialogs"
+	xmlns:threadHelper="http://java.sun.com/jsf/composite/threadHelper"
+	xmlns:postHelper="http://java.sun.com/jsf/composite/postHelper"
+	xmlns:basicComponents="http://java.sun.com/jsf/composite/basicComponents">
+
+
+<body>
+
+	<ui:composition template="../resources/main.template.xhtml">
+		<ui:define name="title">All Threads</ui:define>
+		<ui:define name="breadcrumb">
+			<ul class="breadcrumb">
+				<li>
+					<h:link outcome="pretty:home" value="Home" />
+					<span class="divider">/</span>
+				</li>
+				<li class="active">
+					<h:link outcome="pretty:ThreadListAllPage">
+						All Threads
+					</h:link>
+				</li>
+			</ul>
+		</ui:define>
+		<ui:define name="content">
+
+			<tables:ThreadListWithViewLink label="Thread"
+				list="#{root.allThread}" />
+
+			<dialogs:ThreadCreateDialog dialogTitle="Create new Thread"
+				dialogButtonLabel="Create new Thread" dialogId="Thread" />
+
+		</ui:define>
+	</ui:composition>
+</body>
+
+</html>

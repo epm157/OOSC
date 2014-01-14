@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="ASCII"?>
+<entitymodel:EntityModelRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:entitymodel="http:///entitymodel.ecore" mainPackageName="de.rwth.swc.oosc.carcass.crud.complete">
+  <packages subPackageName="domain">
+    <contents xsi:type="entitymodel:Entity" name="Customer">
+      <namedQuery_Entity name="getAllCustomer" query="SELECT customer FROM Customer customer"/>
+      <namedQuery_Entity name="getCustomerByCustomerNumber" query="SELECT customer FROM Customer customer WHERE customer.customerNumber = :customerNumber">
+        <param_Query name="customerNumber" attribute="//@packages.0/@contents.0/@attribute.1"/>
+      </namedQuery_Entity>
+      <attribute name="id" type="int">
+        <annotations xsi:type="entitymodel:PartOfID"/>
+      </attribute>
+      <attribute name="customerNumber" type="String" partOfPK="true"/>
+      <attribute name="customerName" type="String"/>
+      <attribute name="zip" type="String"/>
+      <attribute name="lat" type="double"/>
+      <attribute name="lng" type="double"/>
+      <attribute name="materialGatheringPoints" type="MaterialGatheringPoint" composition="true" ordered="true" inverseReferenceName="customer">
+        <annotations xsi:type="entitymodel:One2Many" mappedBy="//@packages.0/@contents.1/@attribute.3" mappedByAttributeName="[only required during model to model transformation]">
+          <cascade>
+            <cascadeTypes xsi:type="entitymodel:Merge"/>
+          </cascade>
+        </annotations>
+      </attribute>
+      <eAnnotations xsi:type="entitymodel:DiscriminatorValue" discriminatorValue="Customer"/>
+      <eAnnotations xsi:type="entitymodel:Inheritance" discriminatorColumn="name" discriminatorValue="//@packages.0/@contents.0/@eAnnotations.0"/>
+    </contents>
+    <contents xsi:type="entitymodel:Entity" name="MaterialGatheringPoint">
+      <namedQuery_Entity name="getMaterialGatheringPointByPointIdentifierAndCustomerNumber" query="SELECT materialGatheringPoint FROM Customer customer JOIN customer.materialGatheringPoints materialGatheringPoint WHERE materialGatheringPoint.pointIdentifier = :pointIdentifier and customer.customerNumber = :customerNumber">
+        <param_Query name="pointIdentifier" attribute="//@packages.0/@contents.1/@attribute.1"/>
+        <param_Query name="customerNumber" attribute="//@packages.0/@contents.1/@attribute.4"/>
+      </namedQuery_Entity>
+      <attribute name="id" type="int">
+        <annotations xsi:type="entitymodel:PartOfID"/>
+      </attribute>
+      <attribute name="pointIdentifier" type="String" partOfPK="true"/>
+      <attribute name="gatheredMaterial" type="Material" composition="true" inverseReferenceName="materialGatheringPoint">
+        <annotations xsi:type="entitymodel:One2Many" mappedBy="//@packages.0/@contents.2/@attribute.4" mappedByAttributeName="[only required during model to model transformation]">
+          <cascade>
+            <cascadeTypes xsi:type="entitymodel:Merge"/>
+          </cascade>
+        </annotations>
+      </attribute>
+      <attribute name="customer" type="Customer" inverseReferenceName="materialGatheringPoints">
+        <annotations xsi:type="entitymodel:Many2One">
+          <cascade>
+            <cascadeTypes xsi:type="entitymodel:Merge"/>
+          </cascade>
+        </annotations>
+      </attribute>
+      <attribute xsi:type="entitymodel:ForeignKey" name="customerNumber" type="String" partOfPK="true" origin="//@packages.0/@contents.0" compositionAttribute="//@packages.0/@contents.0/@attribute.6"/>
+    </contents>
+    <contents xsi:type="entitymodel:Entity" name="Material">
+      <namedQuery_Entity name="getMaterialByIdentificationAndPointIdentifierAndCustomerNumber" query="SELECT material FROM Customer customer JOIN customer.materialGatheringPoints materialGatheringPoint JOIN materialGatheringPoint.gatheredMaterial material WHERE material.identification = :identification and materialGatheringPoint.pointIdentifier = :pointIdentifier and customer.customerNumber = :customerNumber">
+        <param_Query name="identification" attribute="//@packages.0/@contents.2/@attribute.1"/>
+        <param_Query name="pointIdentifier" attribute="//@packages.0/@contents.2/@attribute.5"/>
+        <param_Query name="customerNumber" attribute="//@packages.0/@contents.2/@attribute.6"/>
+      </namedQuery_Entity>
+      <attribute name="id" type="int">
+        <annotations xsi:type="entitymodel:PartOfID"/>
+      </attribute>
+      <attribute name="identification" type="String" partOfPK="true"/>
+      <attribute name="weight" type="double"/>
+      <attribute name="deadType" type="DeadType"/>
+      <attribute name="materialGatheringPoint" type="MaterialGatheringPoint" inverseReferenceName="gatheredMaterial">
+        <annotations xsi:type="entitymodel:Many2One">
+          <cascade>
+            <cascadeTypes xsi:type="entitymodel:Merge"/>
+          </cascade>
+        </annotations>
+      </attribute>
+      <attribute xsi:type="entitymodel:ForeignKey" name="pointIdentifier" type="String" partOfPK="true" origin="//@packages.0/@contents.1" compositionAttribute="//@packages.0/@contents.1/@attribute.2"/>
+      <attribute xsi:type="entitymodel:ForeignKey" name="customerNumber" type="String" partOfPK="true" origin="//@packages.0/@contents.0" compositionAttribute="//@packages.0/@contents.0/@attribute.6"/>
+      <eAnnotations xsi:type="entitymodel:DiscriminatorValue" discriminatorValue="Material"/>
+      <eAnnotations xsi:type="entitymodel:Inheritance" discriminatorColumn="name" discriminatorValue="//@packages.0/@contents.2/@eAnnotations.0"/>
+    </contents>
+    <contents xsi:type="entitymodel:Entity" name="Farmer">
+      <namedQuery_Entity name="getAllFarmer" query="SELECT farmer FROM Farmer farmer"/>
+      <namedQuery_Entity name="getFarmerByCustomerNumber" query="SELECT farmer FROM Farmer farmer WHERE farmer.customerNumber = :customerNumber">
+        <param_Query name="customerNumber" attribute="//@packages.0/@contents.3/@attribute.1"/>
+      </namedQuery_Entity>
+      <attribute xsi:type="entitymodel:InheritedAttribute" name="id" type="int" attributeOrigin="//@packages.0/@contents.0/@attribute.0">
+        <annotations xsi:type="entitymodel:PartOfID"/>
+      </attribute>
+      <attribute xsi:type="entitymodel:InheritedAttribute" name="customerNumber" type="String" partOfPK="true" attributeOrigin="//@packages.0/@contents.0/@attribute.1"/>
+      <attribute xsi:type="entitymodel:InheritedAttribute" name="customerName" type="String" attributeOrigin="//@packages.0/@contents.0/@attribute.2"/>
+      <attribute xsi:type="entitymodel:InheritedAttribute" name="zip" type="String" attributeOrigin="//@packages.0/@contents.0/@attribute.3"/>
+      <attribute xsi:type="entitymodel:InheritedAttribute" name="lat" type="double" attributeOrigin="//@packages.0/@contents.0/@attribute.4"/>
+      <attribute xsi:type="entitymodel:InheritedAttribute" name="lng" type="double" attributeOrigin="//@packages.0/@contents.0/@attribute.5"/>
+      <attribute xsi:type="entitymodel:InheritedAttribute" name="materialGatheringPoints" type="MaterialGatheringPoint" composition="true" ordered="true" inverseReferenceName="customer" attributeOrigin="//@packages.0/@contents.0/@attribute.6">
+        <annotations xsi:type="entitymodel:One2Many" mappedBy="//@packages.0/@contents.1/@attribute.3" mappedByAttributeName="[only required during model to model transformation]"/>
+      </attribute>
+      <eAnnotations xsi:type="entitymodel:DiscriminatorValue" discriminatorValue="Farmer" superClass="//@packages.0/@contents.0"/>
+    </contents>
+    <contents xsi:type="entitymodel:Entity" name="ResearchLaboratory">
+      <namedQuery_Entity name="getAllResearchLaboratory" query="SELECT researchLaboratory FROM ResearchLaboratory researchLaboratory"/>
+      <namedQuery_Entity name="getResearchLaboratoryByCustomerNumber" query="SELECT researchLaboratory FROM ResearchLaboratory researchLaboratory WHERE researchLaboratory.customerNumber = :customerNumber">
+        <param_Query name="customerNumber" attribute="//@packages.0/@contents.4/@attribute.1"/>
+      </namedQuery_Entity>
+      <attribute xsi:type="entitymodel:InheritedAttribute" name="id" type="int" attributeOrigin="//@packages.0/@contents.0/@attribute.0">
+        <annotations xsi:type="entitymodel:PartOfID"/>
+      </attribute>
+      <attribute xsi:type="entitymodel:InheritedAttribute" name="customerNumber" type="String" partOfPK="true" attributeOrigin="//@packages.0/@contents.0/@attribute.1"/>
+      <attribute xsi:type="entitymodel:InheritedAttribute" name="customerName" type="String" attributeOrigin="//@packages.0/@contents.0/@attribute.2"/>
+      <attribute xsi:type="entitymodel:InheritedAttribute" name="zip" type="String" attributeOrigin="//@packages.0/@contents.0/@attribute.3"/>
+      <attribute xsi:type="entitymodel:InheritedAttribute" name="lat" type="double" attributeOrigin="//@packages.0/@contents.0/@attribute.4"/>
+      <attribute xsi:type="entitymodel:InheritedAttribute" name="lng" type="double" attributeOrigin="//@packages.0/@contents.0/@attribute.5"/>
+      <attribute xsi:type="entitymodel:InheritedAttribute" name="materialGatheringPoints" type="MaterialGatheringPoint" composition="true" ordered="true" inverseReferenceName="customer" attributeOrigin="//@packages.0/@contents.0/@attribute.6">
+        <annotations xsi:type="entitymodel:One2Many" mappedBy="//@packages.0/@contents.1/@attribute.3" mappedByAttributeName="[only required during model to model transformation]"/>
+      </attribute>
+      <eAnnotations xsi:type="entitymodel:DiscriminatorValue" discriminatorValue="ResearchLaboratory" superClass="//@packages.0/@contents.0"/>
+    </contents>
+    <contents xsi:type="entitymodel:Entity" name="Pig">
+      <namedQuery_Entity name="getAllPig" query="SELECT pig FROM Pig pig"/>
+      <namedQuery_Entity name="getPigByIdentificationAndPointIdentifierAndCustomerNumber" query="SELECT pig FROM Customer customer JOIN customer.materialGatheringPoints materialGatheringPoint JOIN materialGatheringPoint.gatheredMaterial material WHERE pig.identification = :identification and materialGatheringPoint.pointIdentifier = :pointIdentifier and customer.customerNumber = :customerNumber">
+        <param_Query name="identification" attribute="//@packages.0/@contents.5/@attribute.1"/>
+        <param_Query name="pointIdentifier" attribute="//@packages.0/@contents.5/@attribute.5"/>
+        <param_Query name="customerNumber" attribute="//@packages.0/@contents.5/@attribute.6"/>
+      </namedQuery_Entity>
+      <attribute xsi:type="entitymodel:InheritedAttribute" name="id" type="int" attributeOrigin="//@packages.0/@contents.2/@attribute.0">
+        <annotations xsi:type="entitymodel:PartOfID"/>
+      </attribute>
+      <attribute xsi:type="entitymodel:InheritedAttribute" name="identification" type="String" partOfPK="true" attributeOrigin="//@packages.0/@contents.2/@attribute.1"/>
+      <attribute xsi:type="entitymodel:InheritedAttribute" name="weight" type="double" attributeOrigin="//@packages.0/@contents.2/@attribute.2"/>
+      <attribute xsi:type="entitymodel:InheritedAttribute" name="deadType" type="DeadType" attributeOrigin="//@packages.0/@contents.2/@attribute.3"/>
+      <attribute xsi:type="entitymodel:InheritedAttribute" name="materialGatheringPoint" type="MaterialGatheringPoint" inverseReferenceName="gatheredMaterial" attributeOrigin="//@packages.0/@contents.2/@attribute.4">
+        <annotations xsi:type="entitymodel:Many2One"/>
+      </attribute>
+      <attribute xsi:type="entitymodel:ForeignKey" name="pointIdentifier" type="String" partOfPK="true" origin="//@packages.0/@contents.1" compositionAttribute="//@packages.0/@contents.1/@attribute.2"/>
+      <attribute xsi:type="entitymodel:ForeignKey" name="customerNumber" type="String" partOfPK="true" origin="//@packages.0/@contents.0" compositionAttribute="//@packages.0/@contents.0/@attribute.6"/>
+      <eAnnotations xsi:type="entitymodel:DiscriminatorValue" discriminatorValue="Pig" superClass="//@packages.0/@contents.2"/>
+    </contents>
+    <contents xsi:type="entitymodel:Entity" name="Goat">
+      <namedQuery_Entity name="getAllGoat" query="SELECT goat FROM Goat goat"/>
+      <namedQuery_Entity name="getGoatByIdentificationAndPointIdentifierAndCustomerNumber" query="SELECT goat FROM Customer customer JOIN customer.materialGatheringPoints materialGatheringPoint JOIN materialGatheringPoint.gatheredMaterial material WHERE goat.identification = :identification and materialGatheringPoint.pointIdentifier = :pointIdentifier and customer.customerNumber = :customerNumber">
+        <param_Query name="identification" attribute="//@packages.0/@contents.6/@attribute.1"/>
+        <param_Query name="pointIdentifier" attribute="//@packages.0/@contents.6/@attribute.5"/>
+        <param_Query name="customerNumber" attribute="//@packages.0/@contents.6/@attribute.6"/>
+      </namedQuery_Entity>
+      <attribute xsi:type="entitymodel:InheritedAttribute" name="id" type="int" attributeOrigin="//@packages.0/@contents.2/@attribute.0">
+        <annotations xsi:type="entitymodel:PartOfID"/>
+      </attribute>
+      <attribute xsi:type="entitymodel:InheritedAttribute" name="identification" type="String" partOfPK="true" attributeOrigin="//@packages.0/@contents.2/@attribute.1"/>
+      <attribute xsi:type="entitymodel:InheritedAttribute" name="weight" type="double" attributeOrigin="//@packages.0/@contents.2/@attribute.2"/>
+      <attribute xsi:type="entitymodel:InheritedAttribute" name="deadType" type="DeadType" attributeOrigin="//@packages.0/@contents.2/@attribute.3"/>
+      <attribute xsi:type="entitymodel:InheritedAttribute" name="materialGatheringPoint" type="MaterialGatheringPoint" inverseReferenceName="gatheredMaterial" attributeOrigin="//@packages.0/@contents.2/@attribute.4">
+        <annotations xsi:type="entitymodel:Many2One"/>
+      </attribute>
+      <attribute xsi:type="entitymodel:ForeignKey" name="pointIdentifier" type="String" partOfPK="true" origin="//@packages.0/@contents.1" compositionAttribute="//@packages.0/@contents.1/@attribute.2"/>
+      <attribute xsi:type="entitymodel:ForeignKey" name="customerNumber" type="String" partOfPK="true" origin="//@packages.0/@contents.0" compositionAttribute="//@packages.0/@contents.0/@attribute.6"/>
+      <eAnnotations xsi:type="entitymodel:DiscriminatorValue" discriminatorValue="Goat" superClass="//@packages.0/@contents.2"/>
+    </contents>
+    <contents xsi:type="entitymodel:EntityFactory" name="EntityFactory">
+      <createMethods name="createCustomer" entity="//@packages.0/@contents.0">
+        <parameters setsAttribute="//@packages.0/@contents.0/@attribute.1" name="customerNumber"/>
+      </createMethods>
+      <createMethods name="createMaterialGatheringPoint" entity="//@packages.0/@contents.1">
+        <parameters setsAttribute="//@packages.0/@contents.1/@attribute.1" name="pointIdentifier"/>
+      </createMethods>
+      <createMethods name="createMaterial" entity="//@packages.0/@contents.2">
+        <parameters setsAttribute="//@packages.0/@contents.2/@attribute.1" name="identification"/>
+      </createMethods>
+      <createMethods name="createFarmer" entity="//@packages.0/@contents.3">
+        <parameters setsAttribute="//@packages.0/@contents.3/@attribute.1" name="customerNumber"/>
+      </createMethods>
+      <createMethods name="createResearchLaboratory" entity="//@packages.0/@contents.4">
+        <parameters setsAttribute="//@packages.0/@contents.4/@attribute.1" name="customerNumber"/>
+      </createMethods>
+      <createMethods name="createPig" entity="//@packages.0/@contents.5">
+        <parameters setsAttribute="//@packages.0/@contents.5/@attribute.1" name="identification"/>
+      </createMethods>
+      <createMethods name="createGoat" entity="//@packages.0/@contents.6">
+        <parameters setsAttribute="//@packages.0/@contents.6/@attribute.1" name="identification"/>
+      </createMethods>
+    </contents>
+  </packages>
+</entitymodel:EntityModelRoot>

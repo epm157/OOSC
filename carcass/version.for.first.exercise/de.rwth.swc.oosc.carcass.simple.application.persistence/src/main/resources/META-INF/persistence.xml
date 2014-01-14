@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+    http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+    version="2.0">
+	<persistence-unit name="carcass">
+		<jta-data-source>jdbc/carcass</jta-data-source> <!-- to deploy to JBOSS: Add java: before jdbc -->
+		<jar-file>../de.rwth.swc.oosc.customer.core-${customer.version}.jar</jar-file>
+		<jar-file>../de.rwth.swc.oosc.carcass.materialGathering.core-${material.gathering.version}.jar</jar-file>
+		<!--
+			No database setup - we do this via script! 
+		 -->
+		<properties>
+			<property name="eclipselink.ddl-generation" value="create-tables"/> 
+			<property name="eclipselink.ddl-generation.output-mode" value="database"/>		
+		</properties>
+	</persistence-unit>
+</persistence>

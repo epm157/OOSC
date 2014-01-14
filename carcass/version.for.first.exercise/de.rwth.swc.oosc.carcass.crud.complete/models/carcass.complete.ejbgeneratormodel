@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ejbgeneratormodel:EJBGeneratorModelRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ejbgeneratormodel="http:///ejbgeneratormodel.ecore">
+  <beans genCRUDMethodLevel="generateStoreAndUpdateAndDelete">
+    <existsMethod fetchMethod="//@beans.0/@fetchMethods.0"/>
+    <fetchMethods name="getCustomerByCustomerNumber" existsMethod="//@beans.0/@existsMethod">
+      <namedQuery href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.0/@namedQuery_Entity.1"/>
+    </fetchMethods>
+    <references composition="true" toMany="true" inverseAssociation="//@beans.1/@references.1" targetEntityBean="//@beans.1">
+      <fromAttribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.6"/>
+      <toEntity href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.1"/>
+    </references>
+    <navFromModelRoot>
+      <namedQuery href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.0/@namedQuery_Entity.0"/>
+    </navFromModelRoot>
+    <attributParams>
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.2"/>
+    </attributParams>
+    <attributParams>
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.3"/>
+    </attributParams>
+    <attributParams>
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.4"/>
+    </attributParams>
+    <attributParams>
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.5"/>
+    </attributParams>
+    <entity href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.0"/>
+  </beans>
+  <beans genCRUDMethodLevel="generateStoreAndUpdateAndDelete">
+    <existsMethod fetchMethod="//@beans.1/@fetchMethods.0"/>
+    <fetchMethods name="getMaterialGatheringPointByPointIdentifierAndCustomerNumber" existsMethod="//@beans.1/@existsMethod">
+      <namedQuery href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.1/@namedQuery_Entity.0"/>
+    </fetchMethods>
+    <references composition="true" toMany="true" inverseAssociation="//@beans.2/@references.0" targetEntityBean="//@beans.2">
+      <fromAttribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.2"/>
+      <toEntity href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.2"/>
+    </references>
+    <references inverseAssociation="//@beans.0/@references.0" targetEntityBean="//@beans.0">
+      <fromAttribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.3"/>
+      <toEntity href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.0"/>
+    </references>
+    <entity href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.1"/>
+  </beans>
+  <beans genCRUDMethodLevel="generateStoreAndUpdateAndDelete">
+    <existsMethod fetchMethod="//@beans.2/@fetchMethods.0"/>
+    <fetchMethods name="getMaterialByIdentificationAndPointIdentifierAndCustomerNumber" existsMethod="//@beans.2/@existsMethod">
+      <namedQuery href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.2/@namedQuery_Entity.0"/>
+    </fetchMethods>
+    <references inverseAssociation="//@beans.1/@references.0" targetEntityBean="//@beans.1">
+      <fromAttribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.2/@attribute.4"/>
+      <toEntity href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.1"/>
+    </references>
+    <attributParams>
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.2/@attribute.2"/>
+    </attributParams>
+    <attributParams>
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.2/@attribute.3"/>
+    </attributParams>
+    <entity href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.2"/>
+  </beans>
+  <beans genCRUDMethodLevel="generateStoreAndUpdateAndDelete">
+    <existsMethod fetchMethod="//@beans.3/@fetchMethods.0"/>
+    <fetchMethods name="getFarmerByCustomerNumber" existsMethod="//@beans.3/@existsMethod">
+      <namedQuery href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.3/@namedQuery_Entity.1"/>
+    </fetchMethods>
+    <references composition="true" toMany="true" inverseAssociation="//@beans.1/@references.1" targetEntityBean="//@beans.1">
+      <fromAttribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.6"/>
+      <toEntity href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.1"/>
+    </references>
+    <navFromModelRoot>
+      <namedQuery href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.3/@namedQuery_Entity.0"/>
+    </navFromModelRoot>
+    <attributParams>
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.2"/>
+    </attributParams>
+    <attributParams>
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.3"/>
+    </attributParams>
+    <attributParams>
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.4"/>
+    </attributParams>
+    <attributParams>
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.5"/>
+    </attributParams>
+    <entity href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.3"/>
+  </beans>
+  <beans genCRUDMethodLevel="generateStoreAndUpdateAndDelete">
+    <existsMethod fetchMethod="//@beans.4/@fetchMethods.0"/>
+    <fetchMethods name="getResearchLaboratoryByCustomerNumber" existsMethod="//@beans.4/@existsMethod">
+      <namedQuery href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.4/@namedQuery_Entity.1"/>
+    </fetchMethods>
+    <references composition="true" toMany="true" inverseAssociation="//@beans.1/@references.1" targetEntityBean="//@beans.1">
+      <fromAttribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.4/@attribute.6"/>
+      <toEntity href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.1"/>
+    </references>
+    <navFromModelRoot>
+      <namedQuery href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.4/@namedQuery_Entity.0"/>
+    </navFromModelRoot>
+    <attributParams>
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.4/@attribute.2"/>
+    </attributParams>
+    <attributParams>
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.4/@attribute.3"/>
+    </attributParams>
+    <attributParams>
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.4/@attribute.4"/>
+    </attributParams>
+    <attributParams>
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.4/@attribute.5"/>
+    </attributParams>
+    <entity href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.4"/>
+  </beans>
+  <beans genCRUDMethodLevel="generateStoreAndUpdateAndDelete">
+    <existsMethod fetchMethod="//@beans.5/@fetchMethods.0"/>
+    <fetchMethods name="getPigByIdentificationAndPointIdentifierAndCustomerNumber" existsMethod="//@beans.5/@existsMethod">
+      <namedQuery href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.5/@namedQuery_Entity.1"/>
+    </fetchMethods>
+    <references inverseAssociation="//@beans.1/@references.0" targetEntityBean="//@beans.1">
+      <fromAttribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.5/@attribute.4"/>
+      <toEntity href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.1"/>
+    </references>
+    <navFromModelRoot>
+      <namedQuery href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.5/@namedQuery_Entity.0"/>
+    </navFromModelRoot>
+    <attributParams>
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.5/@attribute.2"/>
+    </attributParams>
+    <attributParams>
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.5/@attribute.3"/>
+    </attributParams>
+    <entity href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.5"/>
+  </beans>
+  <beans genCRUDMethodLevel="generateStoreAndUpdateAndDelete">
+    <existsMethod fetchMethod="//@beans.6/@fetchMethods.0"/>
+    <fetchMethods name="getGoatByIdentificationAndPointIdentifierAndCustomerNumber" existsMethod="//@beans.6/@existsMethod">
+      <namedQuery href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.6/@namedQuery_Entity.1"/>
+    </fetchMethods>
+    <references inverseAssociation="//@beans.1/@references.0" targetEntityBean="//@beans.1">
+      <fromAttribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.6/@attribute.4"/>
+      <toEntity href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.1"/>
+    </references>
+    <navFromModelRoot>
+      <namedQuery href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.6/@namedQuery_Entity.0"/>
+    </navFromModelRoot>
+    <attributParams>
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.6/@attribute.2"/>
+    </attributParams>
+    <attributParams>
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.6/@attribute.3"/>
+    </attributParams>
+    <entity href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.6"/>
+  </beans>
+</ejbgeneratormodel:EJBGeneratorModelRoot>

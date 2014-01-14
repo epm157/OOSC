@@ -1,0 +1,1462 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ejbmodel:EJBModelRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ejbmodel="http:///ejbmodel.ecore" xmlns:ejbmodel.ApplicationFacade="http:///ejbmodel/ApplicationFacade.ecore" xmlns:ejbmodel.Controller="http:///ejbmodel/Controller.ecore" xmlns:ejbmodel.Management="http:///ejbmodel/Management.ecore" exceptionsPackage="exceptions">
+  <entityModelRoot href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#/"/>
+  <packages packageName="dao">
+    <beans name="CustomerDTODAO">
+      <persistanceContext context="carcass"/>
+      <methods xsi:type="ejbmodel.Management:ManagementStore" name="storeCustomerDTO" invokedBy="//@packages.1/@beans.0/@methods.1/@commands.3">
+        <parameter name="CustomerDTO">
+          <type xsi:type="ejbmodel:TypeForEntity">
+            <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:PrimitiveType" primitiveName="void"/>
+        <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0"/>
+      </methods>
+      <methods xsi:type="ejbmodel.Management:ManagementUpdate" name="updateCustomerDTO" invokedBy="//@packages.1/@beans.0/@methods.2/@commands.5">
+        <parameter name="CustomerDTO">
+          <type xsi:type="ejbmodel:TypeForEntity">
+            <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:PrimitiveType" primitiveName="void"/>
+        <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0"/>
+      </methods>
+      <methods xsi:type="ejbmodel.Management:ManagementDelete" name="deleteCustomerDTO" invokedBy="//@packages.1/@beans.0/@methods.3/@commands.1">
+        <parameter name="CustomerDTO">
+          <type xsi:type="ejbmodel:TypeForEntity">
+            <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:PrimitiveType" primitiveName="void"/>
+        <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0"/>
+      </methods>
+      <methods xsi:type="ejbmodel.Management:ManagementGetSingleEntity" name="getCustomerDTOByCustomerNumber" invokedBy="//@packages.0/@beans.0/@methods.4/@invokeMethod //@packages.1/@beans.0/@methods.0/@commands.0">
+        <parameter xsi:type="ejbmodel:ParameterWithNamedQueryParameterMapping" name="customerNumber">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.1"/>
+          </type>
+          <queryParameterMapping href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@namedQuery_Entity.1/@param_Query.0"/>
+        </parameter>
+        <returnType xsi:type="ejbmodel:TypeForEntity">
+          <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0"/>
+        </returnType>
+        <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0"/>
+        <namedQuery href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@namedQuery_Entity.1"/>
+      </methods>
+      <methods xsi:type="ejbmodel.Management:Exists" name="existsCustomerDTO" invokedBy="//@packages.1/@beans.0/@methods.1/@commands.1 //@packages.1/@beans.0/@methods.2/@commands.4">
+        <parameter name="customerNumber">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.1"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:PrimitiveType" primitiveName="boolean"/>
+        <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0"/>
+        <invokeMethod method="//@packages.0/@beans.0/@methods.3">
+          <parameterMapping to="//@packages.0/@beans.0/@methods.3/@parameter.0" from="//@packages.0/@beans.0/@methods.4/@parameter.0"/>
+        </invokeMethod>
+      </methods>
+    </beans>
+    <beans name="MaterialDTODAO">
+      <persistanceContext context="carcass"/>
+      <methods xsi:type="ejbmodel.Management:ManagementStore" name="storeMaterialDTO" invokedBy="//@packages.1/@beans.1/@methods.1/@commands.5">
+        <parameter name="MaterialDTO">
+          <type xsi:type="ejbmodel:TypeForEntity">
+            <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:PrimitiveType" primitiveName="void"/>
+        <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1"/>
+      </methods>
+      <methods xsi:type="ejbmodel.Management:ManagementUpdate" name="updateMaterialDTO" invokedBy="//@packages.1/@beans.1/@methods.2/@commands.7">
+        <parameter name="MaterialDTO">
+          <type xsi:type="ejbmodel:TypeForEntity">
+            <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:PrimitiveType" primitiveName="void"/>
+        <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1"/>
+      </methods>
+      <methods xsi:type="ejbmodel.Management:ManagementDelete" name="deleteMaterialDTO" invokedBy="//@packages.1/@beans.1/@methods.3/@commands.1">
+        <parameter name="MaterialDTO">
+          <type xsi:type="ejbmodel:TypeForEntity">
+            <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:PrimitiveType" primitiveName="void"/>
+        <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1"/>
+      </methods>
+      <methods xsi:type="ejbmodel.Management:ManagementGetSingleEntity" name="getMaterialDTOByIdentificationAndPointIdentifierAndCustomerNumber" invokedBy="//@packages.0/@beans.1/@methods.4/@invokeMethod //@packages.1/@beans.1/@methods.0/@commands.0">
+        <parameter xsi:type="ejbmodel:ParameterWithNamedQueryParameterMapping" name="identification">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.1"/>
+          </type>
+          <queryParameterMapping href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@namedQuery_Entity.0/@param_Query.0"/>
+        </parameter>
+        <parameter xsi:type="ejbmodel:ParameterWithNamedQueryParameterMapping" name="pointIdentifier">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.7"/>
+          </type>
+          <queryParameterMapping href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@namedQuery_Entity.0/@param_Query.1"/>
+        </parameter>
+        <parameter xsi:type="ejbmodel:ParameterWithNamedQueryParameterMapping" name="customerNumber">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.8"/>
+          </type>
+          <queryParameterMapping href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@namedQuery_Entity.0/@param_Query.2"/>
+        </parameter>
+        <returnType xsi:type="ejbmodel:TypeForEntity">
+          <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1"/>
+        </returnType>
+        <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1"/>
+        <namedQuery href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@namedQuery_Entity.0"/>
+      </methods>
+      <methods xsi:type="ejbmodel.Management:Exists" name="existsMaterialDTO" invokedBy="//@packages.1/@beans.1/@methods.1/@commands.3 //@packages.1/@beans.1/@methods.2/@commands.6">
+        <parameter name="identification">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.1"/>
+          </type>
+        </parameter>
+        <parameter name="pointIdentifier">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.7"/>
+          </type>
+        </parameter>
+        <parameter name="customerNumber">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.8"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:PrimitiveType" primitiveName="boolean"/>
+        <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1"/>
+        <invokeMethod method="//@packages.0/@beans.1/@methods.3">
+          <parameterMapping to="//@packages.0/@beans.1/@methods.3/@parameter.0" from="//@packages.0/@beans.1/@methods.4/@parameter.0"/>
+          <parameterMapping to="//@packages.0/@beans.1/@methods.3/@parameter.1" from="//@packages.0/@beans.1/@methods.4/@parameter.1"/>
+          <parameterMapping to="//@packages.0/@beans.1/@methods.3/@parameter.2" from="//@packages.0/@beans.1/@methods.4/@parameter.2"/>
+        </invokeMethod>
+      </methods>
+    </beans>
+    <beans name="RouteDTODAO">
+      <persistanceContext context="carcass"/>
+      <methods xsi:type="ejbmodel.Management:ManagementStore" name="storeRouteDTO" invokedBy="//@packages.1/@beans.2/@methods.1/@commands.3">
+        <parameter name="RouteDTO">
+          <type xsi:type="ejbmodel:TypeForEntity">
+            <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:PrimitiveType" primitiveName="void"/>
+        <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2"/>
+      </methods>
+      <methods xsi:type="ejbmodel.Management:ManagementUpdate" name="updateRouteDTO" invokedBy="//@packages.1/@beans.2/@methods.2/@commands.5 //@packages.1/@beans.2/@methods.4/@commands.5 //@packages.1/@beans.2/@methods.5/@commands.5">
+        <parameter name="RouteDTO">
+          <type xsi:type="ejbmodel:TypeForEntity">
+            <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:PrimitiveType" primitiveName="void"/>
+        <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2"/>
+      </methods>
+      <methods xsi:type="ejbmodel.Management:ManagementDelete" name="deleteRouteDTO" invokedBy="//@packages.1/@beans.2/@methods.3/@commands.1">
+        <parameter name="RouteDTO">
+          <type xsi:type="ejbmodel:TypeForEntity">
+            <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:PrimitiveType" primitiveName="void"/>
+        <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2"/>
+      </methods>
+      <methods xsi:type="ejbmodel.Management:ManagementGetSingleEntity" name="getRouteDTOByRouteName" invokedBy="//@packages.0/@beans.2/@methods.4/@invokeMethod //@packages.1/@beans.2/@methods.0/@commands.0">
+        <parameter xsi:type="ejbmodel:ParameterWithNamedQueryParameterMapping" name="routeName">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2/@attribute.1"/>
+          </type>
+          <queryParameterMapping href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2/@namedQuery_Entity.1/@param_Query.0"/>
+        </parameter>
+        <returnType xsi:type="ejbmodel:TypeForEntity">
+          <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2"/>
+        </returnType>
+        <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2"/>
+        <namedQuery href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2/@namedQuery_Entity.1"/>
+      </methods>
+      <methods xsi:type="ejbmodel.Management:Exists" name="existsRouteDTO" invokedBy="//@packages.1/@beans.2/@methods.1/@commands.1 //@packages.1/@beans.2/@methods.2/@commands.4">
+        <parameter name="routeName">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2/@attribute.1"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:PrimitiveType" primitiveName="boolean"/>
+        <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2"/>
+        <invokeMethod method="//@packages.0/@beans.2/@methods.3">
+          <parameterMapping to="//@packages.0/@beans.2/@methods.3/@parameter.0" from="//@packages.0/@beans.2/@methods.4/@parameter.0"/>
+        </invokeMethod>
+      </methods>
+    </beans>
+    <beans name="MaterialGatheringPointDTODAO">
+      <persistanceContext context="carcass"/>
+      <methods xsi:type="ejbmodel.Management:ManagementStore" name="storeMaterialGatheringPointDTO" invokedBy="//@packages.1/@beans.3/@methods.1/@commands.4">
+        <parameter name="MaterialGatheringPointDTO">
+          <type xsi:type="ejbmodel:TypeForEntity">
+            <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:PrimitiveType" primitiveName="void"/>
+        <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3"/>
+      </methods>
+      <methods xsi:type="ejbmodel.Management:ManagementUpdate" name="updateMaterialGatheringPointDTO" invokedBy="//@packages.1/@beans.3/@methods.2/@commands.8 //@packages.1/@beans.1/@methods.4/@commands.5 //@packages.1/@beans.1/@methods.1/@commands.11 //@packages.1/@beans.1/@methods.3/@commands.3">
+        <parameter name="MaterialGatheringPointDTO">
+          <type xsi:type="ejbmodel:TypeForEntity">
+            <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:PrimitiveType" primitiveName="void"/>
+        <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3"/>
+      </methods>
+      <methods xsi:type="ejbmodel.Management:ManagementDelete" name="deleteMaterialGatheringPointDTO" invokedBy="//@packages.1/@beans.3/@methods.3/@commands.1">
+        <parameter name="MaterialGatheringPointDTO">
+          <type xsi:type="ejbmodel:TypeForEntity">
+            <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:PrimitiveType" primitiveName="void"/>
+        <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3"/>
+      </methods>
+      <methods xsi:type="ejbmodel.Management:ManagementGetSingleEntity" name="getMaterialGatheringPointDTOByPointIdentifierAndCustomerNumber" invokedBy="//@packages.0/@beans.3/@methods.4/@invokeMethod //@packages.1/@beans.3/@methods.0/@commands.0">
+        <parameter xsi:type="ejbmodel:ParameterWithNamedQueryParameterMapping" name="pointIdentifier">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.1"/>
+          </type>
+          <queryParameterMapping href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3/@namedQuery_Entity.1/@param_Query.0"/>
+        </parameter>
+        <parameter xsi:type="ejbmodel:ParameterWithNamedQueryParameterMapping" name="customerNumber">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.2"/>
+          </type>
+          <queryParameterMapping href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3/@namedQuery_Entity.1/@param_Query.1"/>
+        </parameter>
+        <returnType xsi:type="ejbmodel:TypeForEntity">
+          <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3"/>
+        </returnType>
+        <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3"/>
+        <namedQuery href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3/@namedQuery_Entity.1"/>
+      </methods>
+      <methods xsi:type="ejbmodel.Management:Exists" name="existsMaterialGatheringPointDTO" invokedBy="//@packages.1/@beans.3/@methods.1/@commands.2 //@packages.1/@beans.3/@methods.2/@commands.7">
+        <parameter name="pointIdentifier">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.1"/>
+          </type>
+        </parameter>
+        <parameter name="customerNumber">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.2"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:PrimitiveType" primitiveName="boolean"/>
+        <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3"/>
+        <invokeMethod method="//@packages.0/@beans.3/@methods.3">
+          <parameterMapping to="//@packages.0/@beans.3/@methods.3/@parameter.0" from="//@packages.0/@beans.3/@methods.4/@parameter.0"/>
+          <parameterMapping to="//@packages.0/@beans.3/@methods.3/@parameter.1" from="//@packages.0/@beans.3/@methods.4/@parameter.1"/>
+        </invokeMethod>
+      </methods>
+    </beans>
+    <beans name="ModelRootDAO">
+      <persistanceContext context="carcass"/>
+      <methods xsi:type="ejbmodel.Management:ManagementGetManyEntities" name="getAllCustomerDTO" invokedBy="//@packages.1/@beans.4/@methods.0/@commands.0">
+        <returnType xsi:type="ejbmodel:TypeForEntity" asList="true">
+          <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0"/>
+        </returnType>
+        <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0"/>
+        <namedQuery href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@namedQuery_Entity.0"/>
+      </methods>
+      <methods xsi:type="ejbmodel.Management:ManagementGetManyEntities" name="getAllRouteDTO" invokedBy="//@packages.1/@beans.4/@methods.1/@commands.0">
+        <returnType xsi:type="ejbmodel:TypeForEntity" asList="true">
+          <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2"/>
+        </returnType>
+        <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2"/>
+        <namedQuery href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2/@namedQuery_Entity.0"/>
+      </methods>
+      <methods xsi:type="ejbmodel.Management:ManagementGetManyEntities" name="getAllMaterialGatheringPointDTO" invokedBy="//@packages.1/@beans.4/@methods.2/@commands.0">
+        <returnType xsi:type="ejbmodel:TypeForEntity" asList="true">
+          <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3"/>
+        </returnType>
+        <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3"/>
+        <namedQuery href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3/@namedQuery_Entity.0"/>
+      </methods>
+    </beans>
+  </packages>
+  <packages packageName="controller">
+    <beans name="CustomerDTOController">
+      <methods xsi:type="ejbmodel.Controller:ControllerMethod" name="getCustomerDTOByCustomerNumber" invokedBy="//@packages.1/@beans.0/@methods.2/@commands.3 //@packages.1/@beans.0/@methods.3/@commands.0">
+        <parameter xsi:type="ejbmodel:ParameterWithNamedQueryParameterMapping" name="customerNumber">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.1"/>
+          </type>
+          <queryParameterMapping href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@namedQuery_Entity.1/@param_Query.0"/>
+        </parameter>
+        <returnType xsi:type="ejbmodel:TypeForEntity">
+          <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0"/>
+        </returnType>
+        <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0"/>
+        <commands xsi:type="ejbmodel.Controller:InvokeMethod" method="//@packages.0/@beans.0/@methods.3">
+          <parameterMapping to="//@packages.0/@beans.0/@methods.3/@parameter.0" from="//@packages.1/@beans.0/@methods.0/@parameter.0"/>
+        </commands>
+      </methods>
+      <methods xsi:type="ejbmodel.Controller:ControllerMethod" name="createCustomerDTO">
+        <parameter name="customerNumber">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.1"/>
+          </type>
+        </parameter>
+        <parameter name="customerType">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.2"/>
+          </type>
+        </parameter>
+        <parameter name="customerName">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.3"/>
+          </type>
+        </parameter>
+        <parameter name="zip">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.4"/>
+          </type>
+        </parameter>
+        <parameter name="lat">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.5"/>
+          </type>
+        </parameter>
+        <parameter name="lng">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.6"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:PrimitiveType" primitiveName="void"/>
+        <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0"/>
+        <commands xsi:type="ejbmodel.Controller:PerformNotNullCheck" parameter="//@packages.1/@beans.0/@methods.1/@parameter.0"/>
+        <commands xsi:type="ejbmodel.Controller:InvokeMethod" method="//@packages.0/@beans.0/@methods.4">
+          <parameterMapping to="//@packages.0/@beans.0/@methods.4/@parameter.0" from="//@packages.1/@beans.0/@methods.1/@parameter.0"/>
+        </commands>
+        <commands xsi:type="ejbmodel.Controller:InvokeCreateMethod">
+          <createEntityMethod href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.4/@createMethods.0"/>
+          <parameterMapping fromParameter="//@packages.1/@beans.0/@methods.1/@parameter.0">
+            <toEMParam href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.4/@createMethods.0/@parameters.0"/>
+          </parameterMapping>
+        </commands>
+        <commands xsi:type="ejbmodel.Controller:InvokeMethod" method="//@packages.0/@beans.0/@methods.0"/>
+        <commands xsi:type="ejbmodel.Controller:SetAttributeFromParameter" parameter="//@packages.1/@beans.0/@methods.1/@parameter.1">
+          <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.2"/>
+        </commands>
+        <commands xsi:type="ejbmodel.Controller:SetAttributeFromParameter" parameter="//@packages.1/@beans.0/@methods.1/@parameter.2">
+          <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.3"/>
+        </commands>
+        <commands xsi:type="ejbmodel.Controller:SetAttributeFromParameter" parameter="//@packages.1/@beans.0/@methods.1/@parameter.3">
+          <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.4"/>
+        </commands>
+        <commands xsi:type="ejbmodel.Controller:SetAttributeFromParameter" parameter="//@packages.1/@beans.0/@methods.1/@parameter.4">
+          <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.5"/>
+        </commands>
+        <commands xsi:type="ejbmodel.Controller:SetAttributeFromParameter" parameter="//@packages.1/@beans.0/@methods.1/@parameter.5">
+          <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.6"/>
+        </commands>
+      </methods>
+      <methods xsi:type="ejbmodel.Controller:ControllerMethod" name="updateCustomerDTO">
+        <parameter name="newCustomerNumber">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.1"/>
+          </type>
+        </parameter>
+        <parameter name="oldCustomerNumber">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.1"/>
+          </type>
+        </parameter>
+        <parameter name="customerType">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.2"/>
+          </type>
+        </parameter>
+        <parameter name="customerName">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.3"/>
+          </type>
+        </parameter>
+        <parameter name="zip">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.4"/>
+          </type>
+        </parameter>
+        <parameter name="lat">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.5"/>
+          </type>
+        </parameter>
+        <parameter name="lng">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.6"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:PrimitiveType" primitiveName="void"/>
+        <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0"/>
+        <commands xsi:type="ejbmodel.Controller:PerformNotNullCheck" parameter="//@packages.1/@beans.0/@methods.2/@parameter.0"/>
+        <commands xsi:type="ejbmodel.Controller:PerformNotNullCheck" parameter="//@packages.1/@beans.0/@methods.2/@parameter.1"/>
+        <commands xsi:type="ejbmodel.Controller:SetAttributeFromParameter" parameter="//@packages.1/@beans.0/@methods.2/@parameter.0">
+          <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.1"/>
+        </commands>
+        <commands xsi:type="ejbmodel.Controller:InvokeMethod" method="//@packages.1/@beans.0/@methods.0">
+          <parameterMapping to="//@packages.1/@beans.0/@methods.0/@parameter.0" from="//@packages.1/@beans.0/@methods.2/@parameter.1"/>
+        </commands>
+        <commands xsi:type="ejbmodel.Controller:InvokeMethod" method="//@packages.0/@beans.0/@methods.4">
+          <parameterMapping to="//@packages.0/@beans.0/@methods.4/@parameter.0" from="//@packages.1/@beans.0/@methods.2/@parameter.0"/>
+        </commands>
+        <commands xsi:type="ejbmodel.Controller:InvokeMethod" method="//@packages.0/@beans.0/@methods.1"/>
+        <commands xsi:type="ejbmodel.Controller:SetAttributeFromParameter" parameter="//@packages.1/@beans.0/@methods.2/@parameter.2">
+          <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.2"/>
+        </commands>
+        <commands xsi:type="ejbmodel.Controller:SetAttributeFromParameter" parameter="//@packages.1/@beans.0/@methods.2/@parameter.3">
+          <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.3"/>
+        </commands>
+        <commands xsi:type="ejbmodel.Controller:SetAttributeFromParameter" parameter="//@packages.1/@beans.0/@methods.2/@parameter.4">
+          <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.4"/>
+        </commands>
+        <commands xsi:type="ejbmodel.Controller:SetAttributeFromParameter" parameter="//@packages.1/@beans.0/@methods.2/@parameter.5">
+          <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.5"/>
+        </commands>
+        <commands xsi:type="ejbmodel.Controller:SetAttributeFromParameter" parameter="//@packages.1/@beans.0/@methods.2/@parameter.6">
+          <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.6"/>
+        </commands>
+      </methods>
+      <methods xsi:type="ejbmodel.Controller:ControllerMethod" name="deleteCustomerDTO">
+        <parameter name="customerNumber">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.1"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:PrimitiveType" primitiveName="void"/>
+        <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0"/>
+        <commands xsi:type="ejbmodel.Controller:InvokeMethod" method="//@packages.1/@beans.0/@methods.0">
+          <parameterMapping to="//@packages.1/@beans.0/@methods.0/@parameter.0" from="//@packages.1/@beans.0/@methods.3/@parameter.0"/>
+        </commands>
+        <commands xsi:type="ejbmodel.Controller:InvokeMethod" method="//@packages.0/@beans.0/@methods.2"/>
+      </methods>
+    </beans>
+    <beans name="MaterialDTOController">
+      <methods xsi:type="ejbmodel.Controller:ControllerMethod" name="getMaterialDTOByIdentificationAndPointIdentifierAndCustomerNumber" invokedBy="//@packages.1/@beans.1/@methods.2/@commands.5 //@packages.1/@beans.1/@methods.3/@commands.0">
+        <parameter xsi:type="ejbmodel:ParameterWithNamedQueryParameterMapping" name="identification">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.1"/>
+          </type>
+          <queryParameterMapping href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@namedQuery_Entity.0/@param_Query.0"/>
+        </parameter>
+        <parameter xsi:type="ejbmodel:ParameterWithNamedQueryParameterMapping" name="pointIdentifier">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.7"/>
+          </type>
+          <queryParameterMapping href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@namedQuery_Entity.0/@param_Query.1"/>
+        </parameter>
+        <parameter xsi:type="ejbmodel:ParameterWithNamedQueryParameterMapping" name="customerNumber">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.8"/>
+          </type>
+          <queryParameterMapping href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@namedQuery_Entity.0/@param_Query.2"/>
+        </parameter>
+        <returnType xsi:type="ejbmodel:TypeForEntity">
+          <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1"/>
+        </returnType>
+        <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1"/>
+        <commands xsi:type="ejbmodel.Controller:InvokeMethod" method="//@packages.0/@beans.1/@methods.3">
+          <parameterMapping to="//@packages.0/@beans.1/@methods.3/@parameter.0" from="//@packages.1/@beans.1/@methods.0/@parameter.0"/>
+          <parameterMapping to="//@packages.0/@beans.1/@methods.3/@parameter.1" from="//@packages.1/@beans.1/@methods.0/@parameter.1"/>
+          <parameterMapping to="//@packages.0/@beans.1/@methods.3/@parameter.2" from="//@packages.1/@beans.1/@methods.0/@parameter.2"/>
+        </commands>
+      </methods>
+      <methods xsi:type="ejbmodel.Controller:ControllerMethod" name="createMaterialDTO">
+        <parameter name="identification">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.1"/>
+          </type>
+        </parameter>
+        <parameter name="pointIdentifier">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.7"/>
+          </type>
+        </parameter>
+        <parameter name="customerNumber">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.8"/>
+          </type>
+        </parameter>
+        <parameter name="materialType">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.2"/>
+          </type>
+        </parameter>
+        <parameter name="weight">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.3"/>
+          </type>
+        </parameter>
+        <parameter name="deadType">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.4"/>
+          </type>
+        </parameter>
+        <parameter name="cowEarNumber">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.5"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:PrimitiveType" primitiveName="void"/>
+        <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1"/>
+        <commands xsi:type="ejbmodel.Controller:PerformNotNullCheck" parameter="//@packages.1/@beans.1/@methods.1/@parameter.0"/>
+        <commands xsi:type="ejbmodel.Controller:PerformNotNullCheck" parameter="//@packages.1/@beans.1/@methods.1/@parameter.1"/>
+        <commands xsi:type="ejbmodel.Controller:PerformNotNullCheck" parameter="//@packages.1/@beans.1/@methods.1/@parameter.2"/>
+        <commands xsi:type="ejbmodel.Controller:InvokeMethod" method="//@packages.0/@beans.1/@methods.4">
+          <parameterMapping to="//@packages.0/@beans.1/@methods.4/@parameter.0" from="//@packages.1/@beans.1/@methods.1/@parameter.0"/>
+          <parameterMapping to="//@packages.0/@beans.1/@methods.4/@parameter.1" from="//@packages.1/@beans.1/@methods.1/@parameter.1"/>
+          <parameterMapping to="//@packages.0/@beans.1/@methods.4/@parameter.2" from="//@packages.1/@beans.1/@methods.1/@parameter.2"/>
+        </commands>
+        <commands xsi:type="ejbmodel.Controller:InvokeCreateMethod">
+          <createEntityMethod href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.4/@createMethods.1"/>
+          <parameterMapping fromParameter="//@packages.1/@beans.1/@methods.1/@parameter.0">
+            <toEMParam href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.4/@createMethods.1/@parameters.0"/>
+          </parameterMapping>
+          <parameterMapping fromParameter="//@packages.1/@beans.1/@methods.1/@parameter.1"/>
+          <parameterMapping fromParameter="//@packages.1/@beans.1/@methods.1/@parameter.2"/>
+        </commands>
+        <commands xsi:type="ejbmodel.Controller:InvokeMethod" method="//@packages.0/@beans.1/@methods.0"/>
+        <commands xsi:type="ejbmodel.Controller:SetAttributeFromParameter" parameter="//@packages.1/@beans.1/@methods.1/@parameter.3">
+          <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.2"/>
+        </commands>
+        <commands xsi:type="ejbmodel.Controller:SetAttributeFromParameter" parameter="//@packages.1/@beans.1/@methods.1/@parameter.4">
+          <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.3"/>
+        </commands>
+        <commands xsi:type="ejbmodel.Controller:SetAttributeFromParameter" parameter="//@packages.1/@beans.1/@methods.1/@parameter.5">
+          <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.4"/>
+        </commands>
+        <commands xsi:type="ejbmodel.Controller:SetAttributeFromParameter" parameter="//@packages.1/@beans.1/@methods.1/@parameter.6">
+          <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.5"/>
+        </commands>
+        <commands xsi:type="ejbmodel.Controller:InvokeMethod" method="//@packages.2/@beans.0/@methods.6">
+          <parameterMapping to="//@packages.2/@beans.0/@methods.6/@parameter.0" from="//@packages.1/@beans.1/@methods.1/@parameter.1"/>
+          <parameterMapping to="//@packages.2/@beans.0/@methods.6/@parameter.1" from="//@packages.1/@beans.1/@methods.1/@parameter.2"/>
+        </commands>
+        <commands xsi:type="ejbmodel.Controller:InvokeMethod" method="//@packages.0/@beans.3/@methods.1"/>
+      </methods>
+      <methods xsi:type="ejbmodel.Controller:ControllerMethod" name="updateMaterialDTO">
+        <parameter name="newIdentification">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.1"/>
+          </type>
+        </parameter>
+        <parameter name="oldIdentification">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.1"/>
+          </type>
+        </parameter>
+        <parameter name="pointIdentifier">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.7"/>
+          </type>
+        </parameter>
+        <parameter name="customerNumber">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.8"/>
+          </type>
+        </parameter>
+        <parameter name="materialType">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.2"/>
+          </type>
+        </parameter>
+        <parameter name="weight">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.3"/>
+          </type>
+        </parameter>
+        <parameter name="deadType">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.4"/>
+          </type>
+        </parameter>
+        <parameter name="cowEarNumber">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.5"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:PrimitiveType" primitiveName="void"/>
+        <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1"/>
+        <commands xsi:type="ejbmodel.Controller:PerformNotNullCheck" parameter="//@packages.1/@beans.1/@methods.2/@parameter.0"/>
+        <commands xsi:type="ejbmodel.Controller:PerformNotNullCheck" parameter="//@packages.1/@beans.1/@methods.2/@parameter.1"/>
+        <commands xsi:type="ejbmodel.Controller:PerformNotNullCheck" parameter="//@packages.1/@beans.1/@methods.2/@parameter.2"/>
+        <commands xsi:type="ejbmodel.Controller:PerformNotNullCheck" parameter="//@packages.1/@beans.1/@methods.2/@parameter.3"/>
+        <commands xsi:type="ejbmodel.Controller:SetAttributeFromParameter" parameter="//@packages.1/@beans.1/@methods.2/@parameter.0">
+          <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.1"/>
+        </commands>
+        <commands xsi:type="ejbmodel.Controller:InvokeMethod" method="//@packages.1/@beans.1/@methods.0">
+          <parameterMapping to="//@packages.1/@beans.1/@methods.0/@parameter.0" from="//@packages.1/@beans.1/@methods.2/@parameter.1"/>
+          <parameterMapping to="//@packages.1/@beans.1/@methods.0/@parameter.1" from="//@packages.1/@beans.1/@methods.2/@parameter.2"/>
+          <parameterMapping to="//@packages.1/@beans.1/@methods.0/@parameter.2" from="//@packages.1/@beans.1/@methods.2/@parameter.3"/>
+        </commands>
+        <commands xsi:type="ejbmodel.Controller:InvokeMethod" method="//@packages.0/@beans.1/@methods.4">
+          <parameterMapping to="//@packages.0/@beans.1/@methods.4/@parameter.0" from="//@packages.1/@beans.1/@methods.2/@parameter.0"/>
+          <parameterMapping to="//@packages.0/@beans.1/@methods.4/@parameter.1" from="//@packages.1/@beans.1/@methods.2/@parameter.2"/>
+          <parameterMapping to="//@packages.0/@beans.1/@methods.4/@parameter.2" from="//@packages.1/@beans.1/@methods.2/@parameter.3"/>
+        </commands>
+        <commands xsi:type="ejbmodel.Controller:InvokeMethod" method="//@packages.0/@beans.1/@methods.1"/>
+        <commands xsi:type="ejbmodel.Controller:SetAttributeFromParameter" parameter="//@packages.1/@beans.1/@methods.2/@parameter.4">
+          <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.2"/>
+        </commands>
+        <commands xsi:type="ejbmodel.Controller:SetAttributeFromParameter" parameter="//@packages.1/@beans.1/@methods.2/@parameter.5">
+          <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.3"/>
+        </commands>
+        <commands xsi:type="ejbmodel.Controller:SetAttributeFromParameter" parameter="//@packages.1/@beans.1/@methods.2/@parameter.6">
+          <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.4"/>
+        </commands>
+        <commands xsi:type="ejbmodel.Controller:SetAttributeFromParameter" parameter="//@packages.1/@beans.1/@methods.2/@parameter.7">
+          <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.5"/>
+        </commands>
+      </methods>
+      <methods xsi:type="ejbmodel.Controller:ControllerMethod" name="deleteMaterialDTO">
+        <parameter name="identification">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.1"/>
+          </type>
+        </parameter>
+        <parameter name="pointIdentifier">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.7"/>
+          </type>
+        </parameter>
+        <parameter name="customerNumber">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.8"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:PrimitiveType" primitiveName="void"/>
+        <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1"/>
+        <commands xsi:type="ejbmodel.Controller:InvokeMethod" method="//@packages.1/@beans.1/@methods.0">
+          <parameterMapping to="//@packages.1/@beans.1/@methods.0/@parameter.0" from="//@packages.1/@beans.1/@methods.3/@parameter.0"/>
+          <parameterMapping to="//@packages.1/@beans.1/@methods.0/@parameter.1" from="//@packages.1/@beans.1/@methods.3/@parameter.1"/>
+          <parameterMapping to="//@packages.1/@beans.1/@methods.0/@parameter.2" from="//@packages.1/@beans.1/@methods.3/@parameter.2"/>
+        </commands>
+        <commands xsi:type="ejbmodel.Controller:InvokeMethod" method="//@packages.0/@beans.1/@methods.2"/>
+        <commands xsi:type="ejbmodel.Controller:InvokeMethod" method="//@packages.2/@beans.0/@methods.6">
+          <parameterMapping to="//@packages.2/@beans.0/@methods.6/@parameter.0" from="//@packages.1/@beans.1/@methods.3/@parameter.1"/>
+          <parameterMapping to="//@packages.2/@beans.0/@methods.6/@parameter.1" from="//@packages.1/@beans.1/@methods.3/@parameter.2"/>
+        </commands>
+        <commands xsi:type="ejbmodel.Controller:InvokeMethod" method="//@packages.0/@beans.3/@methods.1"/>
+      </methods>
+      <methods xsi:type="ejbmodel.Controller:AssociationMethod" name="unassignMaterialGatheringPointDTOFromMaterialDTOMaterialGatheringPoint">
+        <parameter name="identification">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.1"/>
+          </type>
+        </parameter>
+        <parameter name="pointIdentifier">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.7"/>
+          </type>
+        </parameter>
+        <parameter name="customerNumber">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.8"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:PrimitiveType" primitiveName="void"/>
+        <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1"/>
+        <commands xsi:type="ejbmodel.Controller:PerformNotNullCheck" parameter="//@packages.1/@beans.1/@methods.4/@parameter.0"/>
+        <commands xsi:type="ejbmodel.Controller:PerformNotNullCheck" parameter="//@packages.1/@beans.1/@methods.4/@parameter.1"/>
+        <commands xsi:type="ejbmodel.Controller:PerformNotNullCheck" parameter="//@packages.1/@beans.1/@methods.4/@parameter.2"/>
+        <commands xsi:type="ejbmodel.Controller:InvokeMethod" method="//@packages.2/@beans.0/@methods.14">
+          <parameterMapping to="//@packages.2/@beans.0/@methods.14/@parameter.0" from="//@packages.1/@beans.1/@methods.4/@parameter.0"/>
+          <parameterMapping to="//@packages.2/@beans.0/@methods.14/@parameter.1" from="//@packages.1/@beans.1/@methods.4/@parameter.1"/>
+          <parameterMapping to="//@packages.2/@beans.0/@methods.14/@parameter.2" from="//@packages.1/@beans.1/@methods.4/@parameter.2"/>
+        </commands>
+        <commands xsi:type="ejbmodel.Controller:InvokeMethod" method="//@packages.2/@beans.0/@methods.6">
+          <parameterMapping to="//@packages.2/@beans.0/@methods.6/@parameter.0" from="//@packages.1/@beans.1/@methods.4/@parameter.1"/>
+          <parameterMapping to="//@packages.2/@beans.0/@methods.6/@parameter.1" from="//@packages.1/@beans.1/@methods.4/@parameter.2"/>
+        </commands>
+        <commands xsi:type="ejbmodel.Controller:InvokeMethod" method="//@packages.0/@beans.3/@methods.1"/>
+        <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.6"/>
+      </methods>
+    </beans>
+    <beans name="RouteDTOController">
+      <methods xsi:type="ejbmodel.Controller:ControllerMethod" name="getRouteDTOByRouteName" invokedBy="//@packages.1/@beans.2/@methods.2/@commands.3 //@packages.1/@beans.2/@methods.3/@commands.0">
+        <parameter xsi:type="ejbmodel:ParameterWithNamedQueryParameterMapping" name="routeName">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2/@attribute.1"/>
+          </type>
+          <queryParameterMapping href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2/@namedQuery_Entity.1/@param_Query.0"/>
+        </parameter>
+        <returnType xsi:type="ejbmodel:TypeForEntity">
+          <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2"/>
+        </returnType>
+        <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2"/>
+        <commands xsi:type="ejbmodel.Controller:InvokeMethod" method="//@packages.0/@beans.2/@methods.3">
+          <parameterMapping to="//@packages.0/@beans.2/@methods.3/@parameter.0" from="//@packages.1/@beans.2/@methods.0/@parameter.0"/>
+        </commands>
+      </methods>
+      <methods xsi:type="ejbmodel.Controller:ControllerMethod" name="createRouteDTO">
+        <parameter name="routeName">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2/@attribute.1"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:PrimitiveType" primitiveName="void"/>
+        <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2"/>
+        <commands xsi:type="ejbmodel.Controller:PerformNotNullCheck" parameter="//@packages.1/@beans.2/@methods.1/@parameter.0"/>
+        <commands xsi:type="ejbmodel.Controller:InvokeMethod" method="//@packages.0/@beans.2/@methods.4">
+          <parameterMapping to="//@packages.0/@beans.2/@methods.4/@parameter.0" from="//@packages.1/@beans.2/@methods.1/@parameter.0"/>
+        </commands>
+        <commands xsi:type="ejbmodel.Controller:InvokeCreateMethod">
+          <createEntityMethod href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.4/@createMethods.2"/>
+          <parameterMapping fromParameter="//@packages.1/@beans.2/@methods.1/@parameter.0">
+            <toEMParam href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.4/@createMethods.2/@parameters.0"/>
+          </parameterMapping>
+        </commands>
+        <commands xsi:type="ejbmodel.Controller:InvokeMethod" method="//@packages.0/@beans.2/@methods.0"/>
+      </methods>
+      <methods xsi:type="ejbmodel.Controller:ControllerMethod" name="updateRouteDTO">
+        <parameter name="newRouteName">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2/@attribute.1"/>
+          </type>
+        </parameter>
+        <parameter name="oldRouteName">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2/@attribute.1"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:PrimitiveType" primitiveName="void"/>
+        <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2"/>
+        <commands xsi:type="ejbmodel.Controller:PerformNotNullCheck" parameter="//@packages.1/@beans.2/@methods.2/@parameter.0"/>
+        <commands xsi:type="ejbmodel.Controller:PerformNotNullCheck" parameter="//@packages.1/@beans.2/@methods.2/@parameter.1"/>
+        <commands xsi:type="ejbmodel.Controller:SetAttributeFromParameter" parameter="//@packages.1/@beans.2/@methods.2/@parameter.0">
+          <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2/@attribute.1"/>
+        </commands>
+        <commands xsi:type="ejbmodel.Controller:InvokeMethod" method="//@packages.1/@beans.2/@methods.0">
+          <parameterMapping to="//@packages.1/@beans.2/@methods.0/@parameter.0" from="//@packages.1/@beans.2/@methods.2/@parameter.1"/>
+        </commands>
+        <commands xsi:type="ejbmodel.Controller:InvokeMethod" method="//@packages.0/@beans.2/@methods.4">
+          <parameterMapping to="//@packages.0/@beans.2/@methods.4/@parameter.0" from="//@packages.1/@beans.2/@methods.2/@parameter.0"/>
+        </commands>
+        <commands xsi:type="ejbmodel.Controller:InvokeMethod" method="//@packages.0/@beans.2/@methods.1"/>
+      </methods>
+      <methods xsi:type="ejbmodel.Controller:ControllerMethod" name="deleteRouteDTO">
+        <parameter name="routeName">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2/@attribute.1"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:PrimitiveType" primitiveName="void"/>
+        <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2"/>
+        <commands xsi:type="ejbmodel.Controller:InvokeMethod" method="//@packages.1/@beans.2/@methods.0">
+          <parameterMapping to="//@packages.1/@beans.2/@methods.0/@parameter.0" from="//@packages.1/@beans.2/@methods.3/@parameter.0"/>
+        </commands>
+        <commands xsi:type="ejbmodel.Controller:InvokeMethod" method="//@packages.0/@beans.2/@methods.2"/>
+        <commands xsi:type="ejbmodel.Controller:InvokeMethod" method="//@packages.2/@beans.0/@methods.21">
+          <parameterMapping to="//@packages.2/@beans.0/@methods.21/@parameter.0" from="//@packages.1/@beans.2/@methods.3/@parameter.0"/>
+        </commands>
+      </methods>
+      <methods xsi:type="ejbmodel.Controller:AssociationMethod" name="assignMaterialGatheringPointDTOToRouteDTOMaterialGatheringPoints">
+        <parameter name="routeName">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2/@attribute.1"/>
+          </type>
+        </parameter>
+        <parameter name="targetPointIdentifier">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.1"/>
+          </type>
+        </parameter>
+        <parameter name="targetCustomerNumber">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.2"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:PrimitiveType" primitiveName="void"/>
+        <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2"/>
+        <commands xsi:type="ejbmodel.Controller:PerformNotNullCheck" parameter="//@packages.1/@beans.2/@methods.4/@parameter.0"/>
+        <commands xsi:type="ejbmodel.Controller:PerformNotNullCheck" parameter="//@packages.1/@beans.2/@methods.4/@parameter.1"/>
+        <commands xsi:type="ejbmodel.Controller:PerformNotNullCheck" parameter="//@packages.1/@beans.2/@methods.4/@parameter.2"/>
+        <commands xsi:type="ejbmodel.Controller:InvokeMethod" method="//@packages.2/@beans.0/@methods.10">
+          <parameterMapping to="//@packages.2/@beans.0/@methods.10/@parameter.0" from="//@packages.1/@beans.2/@methods.4/@parameter.0"/>
+        </commands>
+        <commands xsi:type="ejbmodel.Controller:InvokeMethod" method="//@packages.2/@beans.0/@methods.6">
+          <parameterMapping to="//@packages.2/@beans.0/@methods.6/@parameter.0" from="//@packages.1/@beans.2/@methods.4/@parameter.1"/>
+          <parameterMapping to="//@packages.2/@beans.0/@methods.6/@parameter.1" from="//@packages.1/@beans.2/@methods.4/@parameter.2"/>
+        </commands>
+        <commands xsi:type="ejbmodel.Controller:InvokeMethod" method="//@packages.0/@beans.2/@methods.1"/>
+        <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2/@attribute.2"/>
+      </methods>
+      <methods xsi:type="ejbmodel.Controller:AssociationMethod" name="unassignMaterialGatheringPointDTOFromRouteDTOMaterialGatheringPoints">
+        <parameter name="routeName">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2/@attribute.1"/>
+          </type>
+        </parameter>
+        <parameter name="targetPointIdentifier">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.1"/>
+          </type>
+        </parameter>
+        <parameter name="targetCustomerNumber">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.2"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:PrimitiveType" primitiveName="void"/>
+        <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2"/>
+        <commands xsi:type="ejbmodel.Controller:PerformNotNullCheck" parameter="//@packages.1/@beans.2/@methods.5/@parameter.0"/>
+        <commands xsi:type="ejbmodel.Controller:PerformNotNullCheck" parameter="//@packages.1/@beans.2/@methods.5/@parameter.1"/>
+        <commands xsi:type="ejbmodel.Controller:PerformNotNullCheck" parameter="//@packages.1/@beans.2/@methods.5/@parameter.2"/>
+        <commands xsi:type="ejbmodel.Controller:InvokeMethod" method="//@packages.2/@beans.0/@methods.10">
+          <parameterMapping to="//@packages.2/@beans.0/@methods.10/@parameter.0" from="//@packages.1/@beans.2/@methods.5/@parameter.0"/>
+        </commands>
+        <commands xsi:type="ejbmodel.Controller:InvokeMethod" method="//@packages.2/@beans.0/@methods.6">
+          <parameterMapping to="//@packages.2/@beans.0/@methods.6/@parameter.0" from="//@packages.1/@beans.2/@methods.5/@parameter.1"/>
+          <parameterMapping to="//@packages.2/@beans.0/@methods.6/@parameter.1" from="//@packages.1/@beans.2/@methods.5/@parameter.2"/>
+        </commands>
+        <commands xsi:type="ejbmodel.Controller:InvokeMethod" method="//@packages.0/@beans.2/@methods.1"/>
+        <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2/@attribute.2"/>
+      </methods>
+    </beans>
+    <beans name="MaterialGatheringPointDTOController">
+      <methods xsi:type="ejbmodel.Controller:ControllerMethod" name="getMaterialGatheringPointDTOByPointIdentifierAndCustomerNumber" invokedBy="//@packages.1/@beans.3/@methods.2/@commands.6 //@packages.1/@beans.3/@methods.3/@commands.0">
+        <parameter xsi:type="ejbmodel:ParameterWithNamedQueryParameterMapping" name="pointIdentifier">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.1"/>
+          </type>
+          <queryParameterMapping href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3/@namedQuery_Entity.1/@param_Query.0"/>
+        </parameter>
+        <parameter xsi:type="ejbmodel:ParameterWithNamedQueryParameterMapping" name="customerNumber">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.2"/>
+          </type>
+          <queryParameterMapping href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3/@namedQuery_Entity.1/@param_Query.1"/>
+        </parameter>
+        <returnType xsi:type="ejbmodel:TypeForEntity">
+          <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3"/>
+        </returnType>
+        <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3"/>
+        <commands xsi:type="ejbmodel.Controller:InvokeMethod" method="//@packages.0/@beans.3/@methods.3">
+          <parameterMapping to="//@packages.0/@beans.3/@methods.3/@parameter.0" from="//@packages.1/@beans.3/@methods.0/@parameter.0"/>
+          <parameterMapping to="//@packages.0/@beans.3/@methods.3/@parameter.1" from="//@packages.1/@beans.3/@methods.0/@parameter.1"/>
+        </commands>
+      </methods>
+      <methods xsi:type="ejbmodel.Controller:ControllerMethod" name="createMaterialGatheringPointDTO">
+        <parameter name="pointIdentifier">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.1"/>
+          </type>
+        </parameter>
+        <parameter name="customerNumber">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.2"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:PrimitiveType" primitiveName="void"/>
+        <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3"/>
+        <commands xsi:type="ejbmodel.Controller:PerformNotNullCheck" parameter="//@packages.1/@beans.3/@methods.1/@parameter.0"/>
+        <commands xsi:type="ejbmodel.Controller:PerformNotNullCheck" parameter="//@packages.1/@beans.3/@methods.1/@parameter.1"/>
+        <commands xsi:type="ejbmodel.Controller:InvokeMethod" method="//@packages.0/@beans.3/@methods.4">
+          <parameterMapping to="//@packages.0/@beans.3/@methods.4/@parameter.0" from="//@packages.1/@beans.3/@methods.1/@parameter.0"/>
+          <parameterMapping to="//@packages.0/@beans.3/@methods.4/@parameter.1" from="//@packages.1/@beans.3/@methods.1/@parameter.1"/>
+        </commands>
+        <commands xsi:type="ejbmodel.Controller:InvokeCreateMethod">
+          <createEntityMethod href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.4/@createMethods.3"/>
+          <parameterMapping fromParameter="//@packages.1/@beans.3/@methods.1/@parameter.0">
+            <toEMParam href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.4/@createMethods.3/@parameters.0"/>
+          </parameterMapping>
+          <parameterMapping fromParameter="//@packages.1/@beans.3/@methods.1/@parameter.1">
+            <toEMParam href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.4/@createMethods.3/@parameters.1"/>
+          </parameterMapping>
+        </commands>
+        <commands xsi:type="ejbmodel.Controller:InvokeMethod" method="//@packages.0/@beans.3/@methods.0"/>
+      </methods>
+      <methods xsi:type="ejbmodel.Controller:ControllerMethod" name="updateMaterialGatheringPointDTO">
+        <parameter name="newPointIdentifier">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.1"/>
+          </type>
+        </parameter>
+        <parameter name="oldPointIdentifier">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.1"/>
+          </type>
+        </parameter>
+        <parameter name="newCustomerNumber">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.2"/>
+          </type>
+        </parameter>
+        <parameter name="oldCustomerNumber">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.2"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:PrimitiveType" primitiveName="void"/>
+        <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3"/>
+        <commands xsi:type="ejbmodel.Controller:PerformNotNullCheck" parameter="//@packages.1/@beans.3/@methods.2/@parameter.0"/>
+        <commands xsi:type="ejbmodel.Controller:PerformNotNullCheck" parameter="//@packages.1/@beans.3/@methods.2/@parameter.1"/>
+        <commands xsi:type="ejbmodel.Controller:PerformNotNullCheck" parameter="//@packages.1/@beans.3/@methods.2/@parameter.2"/>
+        <commands xsi:type="ejbmodel.Controller:PerformNotNullCheck" parameter="//@packages.1/@beans.3/@methods.2/@parameter.3"/>
+        <commands xsi:type="ejbmodel.Controller:SetAttributeFromParameter" parameter="//@packages.1/@beans.3/@methods.2/@parameter.0">
+          <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.1"/>
+        </commands>
+        <commands xsi:type="ejbmodel.Controller:SetAttributeFromParameter" parameter="//@packages.1/@beans.3/@methods.2/@parameter.2">
+          <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.2"/>
+        </commands>
+        <commands xsi:type="ejbmodel.Controller:InvokeMethod" method="//@packages.1/@beans.3/@methods.0">
+          <parameterMapping to="//@packages.1/@beans.3/@methods.0/@parameter.0" from="//@packages.1/@beans.3/@methods.2/@parameter.1"/>
+          <parameterMapping to="//@packages.1/@beans.3/@methods.0/@parameter.1" from="//@packages.1/@beans.3/@methods.2/@parameter.3"/>
+        </commands>
+        <commands xsi:type="ejbmodel.Controller:InvokeMethod" method="//@packages.0/@beans.3/@methods.4">
+          <parameterMapping to="//@packages.0/@beans.3/@methods.4/@parameter.0" from="//@packages.1/@beans.3/@methods.2/@parameter.0"/>
+          <parameterMapping to="//@packages.0/@beans.3/@methods.4/@parameter.1" from="//@packages.1/@beans.3/@methods.2/@parameter.2"/>
+        </commands>
+        <commands xsi:type="ejbmodel.Controller:InvokeMethod" method="//@packages.0/@beans.3/@methods.1"/>
+      </methods>
+      <methods xsi:type="ejbmodel.Controller:ControllerMethod" name="deleteMaterialGatheringPointDTO">
+        <parameter name="pointIdentifier">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.1"/>
+          </type>
+        </parameter>
+        <parameter name="customerNumber">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.2"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:PrimitiveType" primitiveName="void"/>
+        <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3"/>
+        <commands xsi:type="ejbmodel.Controller:InvokeMethod" method="//@packages.1/@beans.3/@methods.0">
+          <parameterMapping to="//@packages.1/@beans.3/@methods.0/@parameter.0" from="//@packages.1/@beans.3/@methods.3/@parameter.0"/>
+          <parameterMapping to="//@packages.1/@beans.3/@methods.0/@parameter.1" from="//@packages.1/@beans.3/@methods.3/@parameter.1"/>
+        </commands>
+        <commands xsi:type="ejbmodel.Controller:InvokeMethod" method="//@packages.0/@beans.3/@methods.2"/>
+        <commands xsi:type="ejbmodel.Controller:InvokeMethod" method="//@packages.2/@beans.0/@methods.22">
+          <parameterMapping to="//@packages.2/@beans.0/@methods.22/@parameter.0" from="//@packages.1/@beans.3/@methods.3/@parameter.0"/>
+          <parameterMapping to="//@packages.2/@beans.0/@methods.22/@parameter.1" from="//@packages.1/@beans.3/@methods.3/@parameter.1"/>
+        </commands>
+      </methods>
+      <methods xsi:type="ejbmodel.Controller:AssociationMethod" name="unassignMaterialDTOFromMaterialGatheringPointDTOGatheredMaterial">
+        <parameter name="pointIdentifier">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.1"/>
+          </type>
+        </parameter>
+        <parameter name="customerNumber">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.2"/>
+          </type>
+        </parameter>
+        <parameter name="identification">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.1"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:PrimitiveType" primitiveName="void"/>
+        <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3"/>
+        <commands xsi:type="ejbmodel.Controller:PerformNotNullCheck" parameter="//@packages.1/@beans.3/@methods.4/@parameter.0"/>
+        <commands xsi:type="ejbmodel.Controller:PerformNotNullCheck" parameter="//@packages.1/@beans.3/@methods.4/@parameter.1"/>
+        <commands xsi:type="ejbmodel.Controller:PerformNotNullCheck" parameter="//@packages.1/@beans.3/@methods.4/@parameter.2"/>
+        <commands xsi:type="ejbmodel.Controller:InvokeMethod" method="//@packages.2/@beans.0/@methods.11">
+          <parameterMapping to="//@packages.2/@beans.0/@methods.11/@parameter.1" from="//@packages.1/@beans.3/@methods.4/@parameter.0"/>
+          <parameterMapping to="//@packages.2/@beans.0/@methods.11/@parameter.2" from="//@packages.1/@beans.3/@methods.4/@parameter.1"/>
+          <parameterMapping to="//@packages.2/@beans.0/@methods.11/@parameter.0" from="//@packages.1/@beans.3/@methods.4/@parameter.2"/>
+        </commands>
+        <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.3"/>
+      </methods>
+    </beans>
+    <beans name="ModelRootController">
+      <methods xsi:type="ejbmodel.Controller:ControllerMethod" name="getAllCustomerDTO">
+        <returnType xsi:type="ejbmodel:TypeForEntity" asList="true">
+          <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0"/>
+        </returnType>
+        <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0"/>
+        <commands xsi:type="ejbmodel.Controller:InvokeMethod" method="//@packages.0/@beans.4/@methods.0"/>
+      </methods>
+      <methods xsi:type="ejbmodel.Controller:ControllerMethod" name="getAllRouteDTO">
+        <returnType xsi:type="ejbmodel:TypeForEntity" asList="true">
+          <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2"/>
+        </returnType>
+        <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2"/>
+        <commands xsi:type="ejbmodel.Controller:InvokeMethod" method="//@packages.0/@beans.4/@methods.1"/>
+      </methods>
+      <methods xsi:type="ejbmodel.Controller:ControllerMethod" name="getAllMaterialGatheringPointDTO">
+        <returnType xsi:type="ejbmodel:TypeForEntity" asList="true">
+          <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3"/>
+        </returnType>
+        <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3"/>
+        <commands xsi:type="ejbmodel.Controller:InvokeMethod" method="//@packages.0/@beans.4/@methods.2"/>
+      </methods>
+    </beans>
+  </packages>
+  <packages packageName="facade">
+    <beans name="CarcassFacade">
+      <methods xsi:type="ejbmodel.ApplicationFacade:FacadeMethod" name="getAllMaterialGatheringPointDTO" controllerMethod="//@packages.1/@beans.4/@methods.2">
+        <returnType xsi:type="ejbmodel:TypeForEntity" asList="true">
+          <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3"/>
+        </returnType>
+      </methods>
+      <methods xsi:type="ejbmodel.ApplicationFacade:FacadeMethod" name="getAllRouteDTO" controllerMethod="//@packages.1/@beans.4/@methods.1">
+        <returnType xsi:type="ejbmodel:TypeForEntity" asList="true">
+          <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2"/>
+        </returnType>
+      </methods>
+      <methods xsi:type="ejbmodel.ApplicationFacade:FacadeMethod" name="getAllCustomerDTO" controllerMethod="//@packages.1/@beans.4/@methods.0">
+        <returnType xsi:type="ejbmodel:TypeForEntity" asList="true">
+          <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0"/>
+        </returnType>
+      </methods>
+      <methods xsi:type="ejbmodel.ApplicationFacade:FacadeMethod" name="deleteMaterialGatheringPointDTO" controllerMethod="//@packages.1/@beans.3/@methods.3">
+        <parameter name="pointIdentifier">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.1"/>
+          </type>
+        </parameter>
+        <parameter name="customerNumber">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.2"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:PrimitiveType" primitiveName="void"/>
+        <parameterMappings to="//@packages.1/@beans.3/@methods.3/@parameter.0" from="//@packages.2/@beans.0/@methods.3/@parameter.0"/>
+        <parameterMappings to="//@packages.1/@beans.3/@methods.3/@parameter.1" from="//@packages.2/@beans.0/@methods.3/@parameter.1"/>
+      </methods>
+      <methods xsi:type="ejbmodel.ApplicationFacade:FacadeMethod" name="updateMaterialGatheringPointDTO" controllerMethod="//@packages.1/@beans.3/@methods.2">
+        <parameter name="newPointIdentifier">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.1"/>
+          </type>
+        </parameter>
+        <parameter name="oldPointIdentifier">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.1"/>
+          </type>
+        </parameter>
+        <parameter name="newCustomerNumber">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.2"/>
+          </type>
+        </parameter>
+        <parameter name="oldCustomerNumber">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.2"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:PrimitiveType" primitiveName="void"/>
+        <parameterMappings to="//@packages.1/@beans.3/@methods.2/@parameter.0" from="//@packages.2/@beans.0/@methods.4/@parameter.0"/>
+        <parameterMappings to="//@packages.1/@beans.3/@methods.2/@parameter.1" from="//@packages.2/@beans.0/@methods.4/@parameter.1"/>
+        <parameterMappings to="//@packages.1/@beans.3/@methods.2/@parameter.2" from="//@packages.2/@beans.0/@methods.4/@parameter.2"/>
+        <parameterMappings to="//@packages.1/@beans.3/@methods.2/@parameter.3" from="//@packages.2/@beans.0/@methods.4/@parameter.3"/>
+      </methods>
+      <methods xsi:type="ejbmodel.ApplicationFacade:FacadeMethod" name="createMaterialGatheringPointDTO" controllerMethod="//@packages.1/@beans.3/@methods.1">
+        <parameter name="pointIdentifier">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.1"/>
+          </type>
+        </parameter>
+        <parameter name="customerNumber">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.2"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:PrimitiveType" primitiveName="void"/>
+        <parameterMappings to="//@packages.1/@beans.3/@methods.1/@parameter.0" from="//@packages.2/@beans.0/@methods.5/@parameter.0"/>
+        <parameterMappings to="//@packages.1/@beans.3/@methods.1/@parameter.1" from="//@packages.2/@beans.0/@methods.5/@parameter.1"/>
+      </methods>
+      <methods xsi:type="ejbmodel.ApplicationFacade:FacadeMethod" name="getMaterialGatheringPointDTOByPointIdentifierAndCustomerNumber" invokedBy="//@packages.1/@beans.1/@methods.4/@commands.4 //@packages.1/@beans.2/@methods.4/@commands.4 //@packages.1/@beans.2/@methods.5/@commands.4 //@packages.1/@beans.1/@methods.1/@commands.10 //@packages.1/@beans.1/@methods.3/@commands.2" controllerMethod="//@packages.1/@beans.3/@methods.0">
+        <parameter name="pointIdentifier">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.1"/>
+          </type>
+        </parameter>
+        <parameter name="customerNumber">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.2"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:TypeForEntity">
+          <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3"/>
+        </returnType>
+        <parameterMappings to="//@packages.1/@beans.3/@methods.0/@parameter.0" from="//@packages.2/@beans.0/@methods.6/@parameter.0"/>
+        <parameterMappings to="//@packages.1/@beans.3/@methods.0/@parameter.1" from="//@packages.2/@beans.0/@methods.6/@parameter.1"/>
+      </methods>
+      <methods xsi:type="ejbmodel.ApplicationFacade:FacadeMethod" name="deleteRouteDTO" controllerMethod="//@packages.1/@beans.2/@methods.3">
+        <parameter name="routeName">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2/@attribute.1"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:PrimitiveType" primitiveName="void"/>
+        <parameterMappings to="//@packages.1/@beans.2/@methods.3/@parameter.0" from="//@packages.2/@beans.0/@methods.7/@parameter.0"/>
+      </methods>
+      <methods xsi:type="ejbmodel.ApplicationFacade:FacadeMethod" name="updateRouteDTO" controllerMethod="//@packages.1/@beans.2/@methods.2">
+        <parameter name="newRouteName">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2/@attribute.1"/>
+          </type>
+        </parameter>
+        <parameter name="oldRouteName">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2/@attribute.1"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:PrimitiveType" primitiveName="void"/>
+        <parameterMappings to="//@packages.1/@beans.2/@methods.2/@parameter.0" from="//@packages.2/@beans.0/@methods.8/@parameter.0"/>
+        <parameterMappings to="//@packages.1/@beans.2/@methods.2/@parameter.1" from="//@packages.2/@beans.0/@methods.8/@parameter.1"/>
+      </methods>
+      <methods xsi:type="ejbmodel.ApplicationFacade:FacadeMethod" name="createRouteDTO" controllerMethod="//@packages.1/@beans.2/@methods.1">
+        <parameter name="routeName">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2/@attribute.1"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:PrimitiveType" primitiveName="void"/>
+        <parameterMappings to="//@packages.1/@beans.2/@methods.1/@parameter.0" from="//@packages.2/@beans.0/@methods.9/@parameter.0"/>
+      </methods>
+      <methods xsi:type="ejbmodel.ApplicationFacade:FacadeMethod" name="getRouteDTOByRouteName" invokedBy="//@packages.1/@beans.2/@methods.4/@commands.3 //@packages.1/@beans.2/@methods.5/@commands.3" controllerMethod="//@packages.1/@beans.2/@methods.0">
+        <parameter name="routeName">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2/@attribute.1"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:TypeForEntity">
+          <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2"/>
+        </returnType>
+        <parameterMappings to="//@packages.1/@beans.2/@methods.0/@parameter.0" from="//@packages.2/@beans.0/@methods.10/@parameter.0"/>
+      </methods>
+      <methods xsi:type="ejbmodel.ApplicationFacade:FacadeMethod" name="deleteMaterialDTO" invokedBy="//@packages.1/@beans.3/@methods.4/@commands.3" controllerMethod="//@packages.1/@beans.1/@methods.3">
+        <parameter name="identification">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.1"/>
+          </type>
+        </parameter>
+        <parameter name="pointIdentifier">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.7"/>
+          </type>
+        </parameter>
+        <parameter name="customerNumber">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.8"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:PrimitiveType" primitiveName="void"/>
+        <parameterMappings to="//@packages.1/@beans.1/@methods.3/@parameter.0" from="//@packages.2/@beans.0/@methods.11/@parameter.0"/>
+        <parameterMappings to="//@packages.1/@beans.1/@methods.3/@parameter.1" from="//@packages.2/@beans.0/@methods.11/@parameter.1"/>
+        <parameterMappings to="//@packages.1/@beans.1/@methods.3/@parameter.2" from="//@packages.2/@beans.0/@methods.11/@parameter.2"/>
+      </methods>
+      <methods xsi:type="ejbmodel.ApplicationFacade:FacadeMethod" name="updateMaterialDTO" controllerMethod="//@packages.1/@beans.1/@methods.2">
+        <parameter name="newIdentification">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.1"/>
+          </type>
+        </parameter>
+        <parameter name="oldIdentification">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.1"/>
+          </type>
+        </parameter>
+        <parameter name="pointIdentifier">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.7"/>
+          </type>
+        </parameter>
+        <parameter name="customerNumber">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.8"/>
+          </type>
+        </parameter>
+        <parameter name="materialType">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.2"/>
+          </type>
+        </parameter>
+        <parameter name="weight">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.3"/>
+          </type>
+        </parameter>
+        <parameter name="deadType">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.4"/>
+          </type>
+        </parameter>
+        <parameter name="cowEarNumber">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.5"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:PrimitiveType" primitiveName="void"/>
+        <parameterMappings to="//@packages.1/@beans.1/@methods.2/@parameter.0" from="//@packages.2/@beans.0/@methods.12/@parameter.0"/>
+        <parameterMappings to="//@packages.1/@beans.1/@methods.2/@parameter.1" from="//@packages.2/@beans.0/@methods.12/@parameter.1"/>
+        <parameterMappings to="//@packages.1/@beans.1/@methods.2/@parameter.2" from="//@packages.2/@beans.0/@methods.12/@parameter.2"/>
+        <parameterMappings to="//@packages.1/@beans.1/@methods.2/@parameter.3" from="//@packages.2/@beans.0/@methods.12/@parameter.3"/>
+        <parameterMappings to="//@packages.1/@beans.1/@methods.2/@parameter.4" from="//@packages.2/@beans.0/@methods.12/@parameter.4"/>
+        <parameterMappings to="//@packages.1/@beans.1/@methods.2/@parameter.5" from="//@packages.2/@beans.0/@methods.12/@parameter.5"/>
+        <parameterMappings to="//@packages.1/@beans.1/@methods.2/@parameter.6" from="//@packages.2/@beans.0/@methods.12/@parameter.6"/>
+        <parameterMappings to="//@packages.1/@beans.1/@methods.2/@parameter.7" from="//@packages.2/@beans.0/@methods.12/@parameter.7"/>
+      </methods>
+      <methods xsi:type="ejbmodel.ApplicationFacade:FacadeMethod" name="createMaterialDTO" controllerMethod="//@packages.1/@beans.1/@methods.1">
+        <parameter name="identification">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.1"/>
+          </type>
+        </parameter>
+        <parameter name="pointIdentifier">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.7"/>
+          </type>
+        </parameter>
+        <parameter name="customerNumber">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.8"/>
+          </type>
+        </parameter>
+        <parameter name="materialType">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.2"/>
+          </type>
+        </parameter>
+        <parameter name="weight">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.3"/>
+          </type>
+        </parameter>
+        <parameter name="deadType">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.4"/>
+          </type>
+        </parameter>
+        <parameter name="cowEarNumber">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.5"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:PrimitiveType" primitiveName="void"/>
+        <parameterMappings to="//@packages.1/@beans.1/@methods.1/@parameter.0" from="//@packages.2/@beans.0/@methods.13/@parameter.0"/>
+        <parameterMappings to="//@packages.1/@beans.1/@methods.1/@parameter.1" from="//@packages.2/@beans.0/@methods.13/@parameter.1"/>
+        <parameterMappings to="//@packages.1/@beans.1/@methods.1/@parameter.2" from="//@packages.2/@beans.0/@methods.13/@parameter.2"/>
+        <parameterMappings to="//@packages.1/@beans.1/@methods.1/@parameter.3" from="//@packages.2/@beans.0/@methods.13/@parameter.3"/>
+        <parameterMappings to="//@packages.1/@beans.1/@methods.1/@parameter.4" from="//@packages.2/@beans.0/@methods.13/@parameter.4"/>
+        <parameterMappings to="//@packages.1/@beans.1/@methods.1/@parameter.5" from="//@packages.2/@beans.0/@methods.13/@parameter.5"/>
+        <parameterMappings to="//@packages.1/@beans.1/@methods.1/@parameter.6" from="//@packages.2/@beans.0/@methods.13/@parameter.6"/>
+      </methods>
+      <methods xsi:type="ejbmodel.ApplicationFacade:FacadeMethod" name="getMaterialDTOByIdentificationAndPointIdentifierAndCustomerNumber" invokedBy="//@packages.1/@beans.1/@methods.4/@commands.3" controllerMethod="//@packages.1/@beans.1/@methods.0">
+        <parameter name="identification">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.1"/>
+          </type>
+        </parameter>
+        <parameter name="pointIdentifier">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.7"/>
+          </type>
+        </parameter>
+        <parameter name="customerNumber">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.8"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:TypeForEntity">
+          <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1"/>
+        </returnType>
+        <parameterMappings to="//@packages.1/@beans.1/@methods.0/@parameter.0" from="//@packages.2/@beans.0/@methods.14/@parameter.0"/>
+        <parameterMappings to="//@packages.1/@beans.1/@methods.0/@parameter.1" from="//@packages.2/@beans.0/@methods.14/@parameter.1"/>
+        <parameterMappings to="//@packages.1/@beans.1/@methods.0/@parameter.2" from="//@packages.2/@beans.0/@methods.14/@parameter.2"/>
+      </methods>
+      <methods xsi:type="ejbmodel.ApplicationFacade:FacadeMethod" name="deleteCustomerDTO" controllerMethod="//@packages.1/@beans.0/@methods.3">
+        <parameter name="customerNumber">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.1"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:PrimitiveType" primitiveName="void"/>
+        <parameterMappings to="//@packages.1/@beans.0/@methods.3/@parameter.0" from="//@packages.2/@beans.0/@methods.15/@parameter.0"/>
+      </methods>
+      <methods xsi:type="ejbmodel.ApplicationFacade:FacadeMethod" name="updateCustomerDTO" controllerMethod="//@packages.1/@beans.0/@methods.2">
+        <parameter name="newCustomerNumber">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.1"/>
+          </type>
+        </parameter>
+        <parameter name="oldCustomerNumber">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.1"/>
+          </type>
+        </parameter>
+        <parameter name="customerType">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.2"/>
+          </type>
+        </parameter>
+        <parameter name="customerName">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.3"/>
+          </type>
+        </parameter>
+        <parameter name="zip">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.4"/>
+          </type>
+        </parameter>
+        <parameter name="lat">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.5"/>
+          </type>
+        </parameter>
+        <parameter name="lng">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.6"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:PrimitiveType" primitiveName="void"/>
+        <parameterMappings to="//@packages.1/@beans.0/@methods.2/@parameter.0" from="//@packages.2/@beans.0/@methods.16/@parameter.0"/>
+        <parameterMappings to="//@packages.1/@beans.0/@methods.2/@parameter.1" from="//@packages.2/@beans.0/@methods.16/@parameter.1"/>
+        <parameterMappings to="//@packages.1/@beans.0/@methods.2/@parameter.2" from="//@packages.2/@beans.0/@methods.16/@parameter.2"/>
+        <parameterMappings to="//@packages.1/@beans.0/@methods.2/@parameter.3" from="//@packages.2/@beans.0/@methods.16/@parameter.3"/>
+        <parameterMappings to="//@packages.1/@beans.0/@methods.2/@parameter.4" from="//@packages.2/@beans.0/@methods.16/@parameter.4"/>
+        <parameterMappings to="//@packages.1/@beans.0/@methods.2/@parameter.5" from="//@packages.2/@beans.0/@methods.16/@parameter.5"/>
+        <parameterMappings to="//@packages.1/@beans.0/@methods.2/@parameter.6" from="//@packages.2/@beans.0/@methods.16/@parameter.6"/>
+      </methods>
+      <methods xsi:type="ejbmodel.ApplicationFacade:FacadeMethod" name="createCustomerDTO" controllerMethod="//@packages.1/@beans.0/@methods.1">
+        <parameter name="customerNumber">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.1"/>
+          </type>
+        </parameter>
+        <parameter name="customerType">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.2"/>
+          </type>
+        </parameter>
+        <parameter name="customerName">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.3"/>
+          </type>
+        </parameter>
+        <parameter name="zip">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.4"/>
+          </type>
+        </parameter>
+        <parameter name="lat">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.5"/>
+          </type>
+        </parameter>
+        <parameter name="lng">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.6"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:PrimitiveType" primitiveName="void"/>
+        <parameterMappings to="//@packages.1/@beans.0/@methods.1/@parameter.0" from="//@packages.2/@beans.0/@methods.17/@parameter.0"/>
+        <parameterMappings to="//@packages.1/@beans.0/@methods.1/@parameter.1" from="//@packages.2/@beans.0/@methods.17/@parameter.1"/>
+        <parameterMappings to="//@packages.1/@beans.0/@methods.1/@parameter.2" from="//@packages.2/@beans.0/@methods.17/@parameter.2"/>
+        <parameterMappings to="//@packages.1/@beans.0/@methods.1/@parameter.3" from="//@packages.2/@beans.0/@methods.17/@parameter.3"/>
+        <parameterMappings to="//@packages.1/@beans.0/@methods.1/@parameter.4" from="//@packages.2/@beans.0/@methods.17/@parameter.4"/>
+        <parameterMappings to="//@packages.1/@beans.0/@methods.1/@parameter.5" from="//@packages.2/@beans.0/@methods.17/@parameter.5"/>
+      </methods>
+      <methods xsi:type="ejbmodel.ApplicationFacade:FacadeMethod" name="getCustomerDTOByCustomerNumber" controllerMethod="//@packages.1/@beans.0/@methods.0">
+        <parameter name="customerNumber">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.1"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:TypeForEntity">
+          <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0"/>
+        </returnType>
+        <parameterMappings to="//@packages.1/@beans.0/@methods.0/@parameter.0" from="//@packages.2/@beans.0/@methods.18/@parameter.0"/>
+      </methods>
+      <methods xsi:type="ejbmodel.ApplicationFacade:FacadeMethod" name="unassignMaterialGatheringPointDTOFromMaterialDTOMaterialGatheringPoint" controllerMethod="//@packages.1/@beans.1/@methods.4">
+        <parameter name="identification">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.1"/>
+          </type>
+        </parameter>
+        <parameter name="pointIdentifier">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.7"/>
+          </type>
+        </parameter>
+        <parameter name="customerNumber">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.8"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:PrimitiveType" primitiveName="void"/>
+        <parameterMappings to="//@packages.1/@beans.1/@methods.4/@parameter.0" from="//@packages.2/@beans.0/@methods.19/@parameter.0"/>
+        <parameterMappings to="//@packages.1/@beans.1/@methods.4/@parameter.1" from="//@packages.2/@beans.0/@methods.19/@parameter.1"/>
+        <parameterMappings to="//@packages.1/@beans.1/@methods.4/@parameter.2" from="//@packages.2/@beans.0/@methods.19/@parameter.2"/>
+      </methods>
+      <methods xsi:type="ejbmodel.ApplicationFacade:FacadeMethod" name="assignMaterialGatheringPointDTOToRouteDTOMaterialGatheringPoints" controllerMethod="//@packages.1/@beans.2/@methods.4">
+        <parameter name="routeName">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2/@attribute.1"/>
+          </type>
+        </parameter>
+        <parameter name="targetPointIdentifier">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.1"/>
+          </type>
+        </parameter>
+        <parameter name="targetCustomerNumber">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.2"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:PrimitiveType" primitiveName="void"/>
+        <parameterMappings to="//@packages.1/@beans.2/@methods.4/@parameter.0" from="//@packages.2/@beans.0/@methods.20/@parameter.0"/>
+        <parameterMappings to="//@packages.1/@beans.2/@methods.4/@parameter.1" from="//@packages.2/@beans.0/@methods.20/@parameter.1"/>
+        <parameterMappings to="//@packages.1/@beans.2/@methods.4/@parameter.2" from="//@packages.2/@beans.0/@methods.20/@parameter.2"/>
+      </methods>
+      <methods xsi:type="ejbmodel.ApplicationFacade:FacadeMethod" name="unassignMaterialGatheringPointDTOFromRouteDTOMaterialGatheringPoints" invokedBy="//@packages.1/@beans.2/@methods.3/@commands.2" controllerMethod="//@packages.1/@beans.2/@methods.5">
+        <parameter name="routeName">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2/@attribute.1"/>
+          </type>
+        </parameter>
+        <parameter name="targetPointIdentifier">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.1"/>
+          </type>
+        </parameter>
+        <parameter name="targetCustomerNumber">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.2"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:PrimitiveType" primitiveName="void"/>
+        <parameterMappings to="//@packages.1/@beans.2/@methods.5/@parameter.0" from="//@packages.2/@beans.0/@methods.21/@parameter.0"/>
+        <parameterMappings to="//@packages.1/@beans.2/@methods.5/@parameter.1" from="//@packages.2/@beans.0/@methods.21/@parameter.1"/>
+        <parameterMappings to="//@packages.1/@beans.2/@methods.5/@parameter.2" from="//@packages.2/@beans.0/@methods.21/@parameter.2"/>
+      </methods>
+      <methods xsi:type="ejbmodel.ApplicationFacade:FacadeMethod" name="unassignMaterialDTOFromMaterialGatheringPointDTOGatheredMaterial" invokedBy="//@packages.1/@beans.3/@methods.3/@commands.2" controllerMethod="//@packages.1/@beans.3/@methods.4">
+        <parameter name="pointIdentifier">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.1"/>
+          </type>
+        </parameter>
+        <parameter name="customerNumber">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.2"/>
+          </type>
+        </parameter>
+        <parameter name="identification">
+          <type xsi:type="ejbmodel:SameTypeAsAttribute">
+            <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.1"/>
+          </type>
+        </parameter>
+        <returnType xsi:type="ejbmodel:PrimitiveType" primitiveName="void"/>
+        <parameterMappings to="//@packages.1/@beans.3/@methods.4/@parameter.0" from="//@packages.2/@beans.0/@methods.22/@parameter.0"/>
+        <parameterMappings to="//@packages.1/@beans.3/@methods.4/@parameter.1" from="//@packages.2/@beans.0/@methods.22/@parameter.1"/>
+        <parameterMappings to="//@packages.1/@beans.3/@methods.4/@parameter.2" from="//@packages.2/@beans.0/@methods.22/@parameter.2"/>
+      </methods>
+    </beans>
+  </packages>
+</ejbmodel:EJBModelRoot>

@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:composite="http://java.sun.com/jsf/composite"
+	xmlns:prime="http://primefaces.org/ui"
+	xmlns:basicComponents="http://java.sun.com/jsf/composite/basicComponents">
+
+<body>
+	<composite:interface>
+		<composite:attribute name="dialogTitle" required="true" />
+		<composite:attribute name="dialogId" required="true" />
+	</composite:interface>
+
+	<composite:implementation>
+		<ui:decorate template="../../resources/commonHelpers/simpleDialog.xhtml">
+
+			<ui:param name="dialogTitle" value="#{cc.attrs.dialogTitle}" />
+			<ui:param name="dialogId" value="#{cc.attrs.dialogId}" />
+
+			<ui:define name="additionalDialogDetails">
+				<composite:insertChildren />
+			</ui:define>
+		</ui:decorate>
+	</composite:implementation>
+
+</body>
+</html>

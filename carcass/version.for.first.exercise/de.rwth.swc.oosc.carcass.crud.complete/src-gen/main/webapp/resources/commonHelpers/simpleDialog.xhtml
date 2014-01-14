@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!-- 
+Copyright (C) 2011 Matthias Vianden et al.,
+                   Research Group Software Construction,
+                   RWTH Aachen University, Germany.
+All rights reserved. 
+-->
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:prime="http://primefaces.org/ui">
+<body>
+	<h:form>
+		<ui:decorate template="simpleDialogButton.xhtml">
+			<ui:param name="dialogButtonLabel" value="#{dialogButtonLabel}" />
+			<ui:param name="dialogId" value="#{dialogId}" />
+		</ui:decorate>
+	</h:form>
+
+	<h:form>
+		<ui:decorate template="simpleDialogDialog.xhtml">
+			<ui:param name="dialogTitle" value="#{dialogTitle}" />
+			<ui:param name="dialogId" value="#{dialogId}" />
+
+			<ui:define name="additionalDialogDetails">
+				<ui:insert name="additionalDialogDetails" />
+			</ui:define>
+		</ui:decorate>
+	</h:form>
+</body>
+</html>

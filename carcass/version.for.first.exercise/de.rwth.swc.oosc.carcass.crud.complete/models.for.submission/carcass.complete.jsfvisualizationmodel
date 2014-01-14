@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="ASCII"?>
+<jsfvisualizationmodel:JSFVisualizationModelRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ejbmodel="http:///ejbmodel.ecore" xmlns:jsfvisualizationmodel="http:///jsfvisualizationmodel.ecore">
+  <managedBeanPackages package="de.rwth.swc.oosc.carcass.core.backingBeans">
+    <managedBeans name="MaterialGatheringPointDTOBean">
+      <operations xsi:type="jsfvisualizationmodel:Fetch" name="fetchMaterialGatheringPointDTO" property="//@managedBeanPackages.0/@managedBeans.0/@propertys.3">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.6"/>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.0/@propertys.0">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.6/@parameter.0"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.0/@propertys.1">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.6/@parameter.1"/>
+          </property2ParameterMapping>
+        </facadeMethod>
+      </operations>
+      <operations xsi:type="jsfvisualizationmodel:Action" name="createMaterialGatheringPointDTO" successInfoMessage="MaterialGatheringPointDTO created successfully.">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.5"/>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.0/@propertys.0">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.5/@parameter.0"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.0/@propertys.1">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.5/@parameter.1"/>
+          </property2ParameterMapping>
+        </facadeMethod>
+      </operations>
+      <operations xsi:type="jsfvisualizationmodel:Action" name="updateMaterialGatheringPointDTO" successInfoMessage="MaterialGatheringPointDTO was updated.">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.4"/>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.0/@propertys.0">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.4/@parameter.0"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.0/@propertys.0">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.4/@parameter.1"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.0/@propertys.1">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.4/@parameter.2"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.0/@propertys.1">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.4/@parameter.3"/>
+          </property2ParameterMapping>
+        </facadeMethod>
+      </operations>
+      <operations xsi:type="jsfvisualizationmodel:Action" name="deleteMaterialGatheringPointDTO" successInfoMessage="MaterialGatheringPointDTO deleted successfully.">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.3"/>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.0/@propertys.0">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.3/@parameter.0"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.0/@propertys.1">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.3/@parameter.1"/>
+          </property2ParameterMapping>
+        </facadeMethod>
+      </operations>
+      <propertys name="pointIdentifier">
+        <typeApplication xsi:type="ejbmodel:SameTypeAsAttribute">
+          <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.1"/>
+        </typeApplication>
+      </propertys>
+      <propertys name="customerNumber">
+        <typeApplication xsi:type="ejbmodel:SameTypeAsAttribute">
+          <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.2"/>
+        </typeApplication>
+      </propertys>
+      <propertys name="gatheredMaterial">
+        <typeApplication xsi:type="ejbmodel:SameTypeAsAttribute" asList="true">
+          <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.3"/>
+        </typeApplication>
+      </propertys>
+      <propertys name="materialGatheringPointDTO" fetch="//@managedBeanPackages.0/@managedBeans.0/@operations.0">
+        <typeApplication xsi:type="ejbmodel:TypeForEntity">
+          <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3"/>
+        </typeApplication>
+      </propertys>
+    </managedBeans>
+    <managedBeans name="RouteDTOBean">
+      <operations xsi:type="jsfvisualizationmodel:Fetch" name="fetchRouteDTO" property="//@managedBeanPackages.0/@managedBeans.1/@propertys.2">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.10"/>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.1/@propertys.0">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.10/@parameter.0"/>
+          </property2ParameterMapping>
+        </facadeMethod>
+      </operations>
+      <operations xsi:type="jsfvisualizationmodel:Action" name="createRouteDTO" successInfoMessage="RouteDTO created successfully.">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.9"/>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.1/@propertys.0">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.9/@parameter.0"/>
+          </property2ParameterMapping>
+        </facadeMethod>
+      </operations>
+      <operations xsi:type="jsfvisualizationmodel:Action" name="updateRouteDTO" successInfoMessage="RouteDTO was updated.">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.8"/>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.1/@propertys.0">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.8/@parameter.0"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.1/@propertys.0">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.8/@parameter.1"/>
+          </property2ParameterMapping>
+        </facadeMethod>
+      </operations>
+      <operations xsi:type="jsfvisualizationmodel:Action" name="deleteRouteDTO" successInfoMessage="RouteDTO deleted successfully.">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.7"/>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.1/@propertys.0">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.7/@parameter.0"/>
+          </property2ParameterMapping>
+        </facadeMethod>
+      </operations>
+      <operations xsi:type="jsfvisualizationmodel:Action" name="assignMaterialGatheringPointDTOToRouteDTOMaterialGatheringPoints" successInfoMessage="Successfully assigned.">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.20"/>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.1/@propertys.0">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.20/@parameter.0"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.0/@propertys.0">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.20/@parameter.1"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.0/@propertys.1">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.20/@parameter.2"/>
+          </property2ParameterMapping>
+        </facadeMethod>
+      </operations>
+      <operations xsi:type="jsfvisualizationmodel:Action" name="unassignMaterialGatheringPointDTOFromRouteDTOMaterialGatheringPoints" successInfoMessage="Successfully unassigned.">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.21"/>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.1/@propertys.0">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.21/@parameter.0"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.0/@propertys.0">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.21/@parameter.1"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.0/@propertys.1">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.21/@parameter.2"/>
+          </property2ParameterMapping>
+        </facadeMethod>
+      </operations>
+      <propertys name="routeName">
+        <typeApplication xsi:type="ejbmodel:SameTypeAsAttribute">
+          <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2/@attribute.1"/>
+        </typeApplication>
+      </propertys>
+      <propertys name="materialGatheringPoints">
+        <typeApplication xsi:type="ejbmodel:SameTypeAsAttribute" asList="true">
+          <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2/@attribute.2"/>
+        </typeApplication>
+      </propertys>
+      <propertys name="routeDTO" fetch="//@managedBeanPackages.0/@managedBeans.1/@operations.0">
+        <typeApplication xsi:type="ejbmodel:TypeForEntity">
+          <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2"/>
+        </typeApplication>
+      </propertys>
+    </managedBeans>
+    <managedBeans name="CustomerDTOBean">
+      <operations xsi:type="jsfvisualizationmodel:Fetch" name="fetchCustomerDTO" property="//@managedBeanPackages.0/@managedBeans.2/@propertys.6">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.18"/>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.0/@propertys.1">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.18/@parameter.0"/>
+          </property2ParameterMapping>
+        </facadeMethod>
+      </operations>
+      <operations xsi:type="jsfvisualizationmodel:Action" name="createCustomerDTO" successInfoMessage="CustomerDTO created successfully.">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.17"/>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.0/@propertys.1">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.17/@parameter.0"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.2/@propertys.1">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.17/@parameter.1"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.2/@propertys.2">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.17/@parameter.2"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.2/@propertys.3">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.17/@parameter.3"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.2/@propertys.4">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.17/@parameter.4"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.2/@propertys.5">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.17/@parameter.5"/>
+          </property2ParameterMapping>
+        </facadeMethod>
+      </operations>
+      <operations xsi:type="jsfvisualizationmodel:Action" name="updateCustomerDTO" successInfoMessage="CustomerDTO was updated.">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.16"/>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.0/@propertys.1">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.16/@parameter.0"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.0/@propertys.1">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.16/@parameter.1"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.2/@propertys.1">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.16/@parameter.2"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.2/@propertys.2">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.16/@parameter.3"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.2/@propertys.3">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.16/@parameter.4"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.2/@propertys.4">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.16/@parameter.5"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.2/@propertys.5">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.16/@parameter.6"/>
+          </property2ParameterMapping>
+        </facadeMethod>
+      </operations>
+      <operations xsi:type="jsfvisualizationmodel:Action" name="deleteCustomerDTO" successInfoMessage="CustomerDTO deleted successfully.">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.15"/>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.0/@propertys.1">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.15/@parameter.0"/>
+          </property2ParameterMapping>
+        </facadeMethod>
+      </operations>
+      <propertys name="customerNumber">
+        <typeApplication xsi:type="ejbmodel:SameTypeAsAttribute">
+          <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.1"/>
+        </typeApplication>
+      </propertys>
+      <propertys name="customerType">
+        <typeApplication xsi:type="ejbmodel:SameTypeAsAttribute">
+          <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.2"/>
+        </typeApplication>
+      </propertys>
+      <propertys name="customerName">
+        <typeApplication xsi:type="ejbmodel:SameTypeAsAttribute">
+          <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.3"/>
+        </typeApplication>
+      </propertys>
+      <propertys name="zip">
+        <typeApplication xsi:type="ejbmodel:SameTypeAsAttribute">
+          <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.4"/>
+        </typeApplication>
+      </propertys>
+      <propertys name="lat">
+        <typeApplication xsi:type="ejbmodel:SameTypeAsAttribute">
+          <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.5"/>
+        </typeApplication>
+      </propertys>
+      <propertys name="lng">
+        <typeApplication xsi:type="ejbmodel:SameTypeAsAttribute">
+          <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.6"/>
+        </typeApplication>
+      </propertys>
+      <propertys name="customerDTO" fetch="//@managedBeanPackages.0/@managedBeans.2/@operations.0">
+        <typeApplication xsi:type="ejbmodel:TypeForEntity">
+          <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0"/>
+        </typeApplication>
+      </propertys>
+    </managedBeans>
+    <managedBeans name="MaterialDTOBean">
+      <operations xsi:type="jsfvisualizationmodel:Fetch" name="fetchMaterialDTO" property="//@managedBeanPackages.0/@managedBeans.3/@propertys.6">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.14"/>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.3/@propertys.0">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.14/@parameter.0"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.0/@propertys.0">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.14/@parameter.1"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.0/@propertys.1">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.14/@parameter.2"/>
+          </property2ParameterMapping>
+        </facadeMethod>
+      </operations>
+      <operations xsi:type="jsfvisualizationmodel:Action" name="createMaterialDTO" successInfoMessage="MaterialDTO created successfully.">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.13"/>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.3/@propertys.0">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.13/@parameter.0"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.0/@propertys.0">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.13/@parameter.1"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.0/@propertys.1">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.13/@parameter.2"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.3/@propertys.1">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.13/@parameter.3"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.3/@propertys.2">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.13/@parameter.4"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.3/@propertys.3">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.13/@parameter.5"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.3/@propertys.4">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.13/@parameter.6"/>
+          </property2ParameterMapping>
+        </facadeMethod>
+      </operations>
+      <operations xsi:type="jsfvisualizationmodel:Action" name="updateMaterialDTO" successInfoMessage="MaterialDTO was updated.">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.12"/>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.3/@propertys.0">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.12/@parameter.0"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.3/@propertys.0">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.12/@parameter.1"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.0/@propertys.0">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.12/@parameter.2"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.0/@propertys.1">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.12/@parameter.3"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.3/@propertys.1">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.12/@parameter.4"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.3/@propertys.2">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.12/@parameter.5"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.3/@propertys.3">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.12/@parameter.6"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.3/@propertys.4">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.12/@parameter.7"/>
+          </property2ParameterMapping>
+        </facadeMethod>
+      </operations>
+      <operations xsi:type="jsfvisualizationmodel:Action" name="deleteMaterialDTO" successInfoMessage="MaterialDTO deleted successfully.">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.11"/>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.3/@propertys.0">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.11/@parameter.0"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.0/@propertys.0">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.11/@parameter.1"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.0/@propertys.1">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.11/@parameter.2"/>
+          </property2ParameterMapping>
+        </facadeMethod>
+      </operations>
+      <operations xsi:type="jsfvisualizationmodel:Action" name="unassignMaterialGatheringPointDTOFromMaterialDTOMaterialGatheringPoint" successInfoMessage="Child entity was successfully deleted.">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.19"/>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.3/@propertys.0">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.19/@parameter.0"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.0/@propertys.0">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.19/@parameter.1"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.0/@propertys.1">
+            <parameter href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.19/@parameter.2"/>
+          </property2ParameterMapping>
+        </facadeMethod>
+      </operations>
+      <propertys name="identification">
+        <typeApplication xsi:type="ejbmodel:SameTypeAsAttribute">
+          <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.1"/>
+        </typeApplication>
+      </propertys>
+      <propertys name="materialType">
+        <typeApplication xsi:type="ejbmodel:SameTypeAsAttribute">
+          <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.2"/>
+        </typeApplication>
+      </propertys>
+      <propertys name="weight">
+        <typeApplication xsi:type="ejbmodel:SameTypeAsAttribute">
+          <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.3"/>
+        </typeApplication>
+      </propertys>
+      <propertys name="deadType">
+        <typeApplication xsi:type="ejbmodel:SameTypeAsAttribute">
+          <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.4"/>
+        </typeApplication>
+      </propertys>
+      <propertys name="cowEarNumber">
+        <typeApplication xsi:type="ejbmodel:SameTypeAsAttribute">
+          <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.5"/>
+        </typeApplication>
+      </propertys>
+      <propertys name="materialGatheringPoint">
+        <typeApplication xsi:type="ejbmodel:SameTypeAsAttribute">
+          <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.6"/>
+        </typeApplication>
+      </propertys>
+      <propertys name="materialDTO" fetch="//@managedBeanPackages.0/@managedBeans.3/@operations.0">
+        <typeApplication xsi:type="ejbmodel:TypeForEntity">
+          <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1"/>
+        </typeApplication>
+      </propertys>
+    </managedBeans>
+    <managedBeans name="Root">
+      <operations xsi:type="jsfvisualizationmodel:Fetch" name="fetchAllMaterialGatheringPointDTO" property="//@managedBeanPackages.0/@managedBeans.4/@propertys.0">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.0"/>
+        </facadeMethod>
+      </operations>
+      <operations xsi:type="jsfvisualizationmodel:Fetch" name="fetchAllRouteDTO" property="//@managedBeanPackages.0/@managedBeans.4/@propertys.1">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.1"/>
+        </facadeMethod>
+      </operations>
+      <operations xsi:type="jsfvisualizationmodel:Fetch" name="fetchAllCustomerDTO" property="//@managedBeanPackages.0/@managedBeans.4/@propertys.2">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.2"/>
+        </facadeMethod>
+      </operations>
+      <propertys name="allMaterialGatheringPointDTO" fetch="//@managedBeanPackages.0/@managedBeans.4/@operations.0">
+        <typeApplication xsi:type="ejbmodel:TypeForEntity" asList="true">
+          <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3"/>
+        </typeApplication>
+      </propertys>
+      <propertys name="allRouteDTO" fetch="//@managedBeanPackages.0/@managedBeans.4/@operations.1">
+        <typeApplication xsi:type="ejbmodel:TypeForEntity" asList="true">
+          <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2"/>
+        </typeApplication>
+      </propertys>
+      <propertys name="allCustomerDTO" fetch="//@managedBeanPackages.0/@managedBeans.4/@operations.2">
+        <typeApplication xsi:type="ejbmodel:TypeForEntity" asList="true">
+          <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0"/>
+        </typeApplication>
+      </propertys>
+    </managedBeans>
+  </managedBeanPackages>
+  <webRoot name="">
+    <subPackages name="resources">
+      <subPackages name="tables">
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:BaseTable" name="MaterialGatheringPointDTOList" onEmptyList="No MaterialGatheringPointDTO items">
+          <columns header="pointIdentifier">
+            <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{item.pointIdentifier}"/>
+          </columns>
+          <columns header="customerNumber">
+            <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{item.customerNumber}"/>
+          </columns>
+        </xHTMLFiles>
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:BaseTable" name="RouteDTOList" onEmptyList="No RouteDTO items">
+          <columns header="routeName">
+            <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{item.routeName}"/>
+          </columns>
+        </xHTMLFiles>
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:BaseTable" name="CustomerDTOList" onEmptyList="No CustomerDTO items">
+          <columns header="customerNumber">
+            <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{item.customerNumber}"/>
+          </columns>
+          <columns header="customerType">
+            <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{item.customerType}"/>
+          </columns>
+          <columns header="customerName">
+            <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{item.customerName}"/>
+          </columns>
+          <columns header="zip">
+            <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{item.zip}"/>
+          </columns>
+          <columns header="lat">
+            <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{item.lat}"/>
+          </columns>
+          <columns header="lng">
+            <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{item.lng}"/>
+          </columns>
+        </xHTMLFiles>
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:BaseTable" name="MaterialDTOList" onEmptyList="No MaterialDTO items">
+          <columns header="identification">
+            <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{item.identification}"/>
+          </columns>
+          <columns header="materialType">
+            <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{item.materialType}"/>
+          </columns>
+          <columns header="weight">
+            <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{item.weight}"/>
+          </columns>
+          <columns header="deadType">
+            <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{item.deadType}"/>
+          </columns>
+          <columns header="cowEarNumber">
+            <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{item.cowEarNumber}"/>
+          </columns>
+          <columns header="pointIdentifier">
+            <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{item.pointIdentifier}"/>
+          </columns>
+          <columns header="customerNumber">
+            <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{item.customerNumber}"/>
+          </columns>
+        </xHTMLFiles>
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:TableExtension" name="MaterialGatheringPointDTOListWithViewLink" baseTable="//@webRoot/@subPackages.0/@subPackages.0/@xHTMLFiles.0">
+          <columns header="View">
+            <body xsi:type="jsfvisualizationmodel:CCUsage" compositeComponent="//@webRoot/@subPackages.0/@subPackages.2/@xHTMLFiles.1">
+              <parameterValues parameter="//@webRoot/@subPackages.0/@subPackages.2/@xHTMLFiles.1/@parameters.0" value="#{item}"/>
+            </body>
+          </columns>
+        </xHTMLFiles>
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:TableExtension" name="RouteDTOListWithViewLink" baseTable="//@webRoot/@subPackages.0/@subPackages.0/@xHTMLFiles.1">
+          <columns header="View">
+            <body xsi:type="jsfvisualizationmodel:CCUsage" compositeComponent="//@webRoot/@subPackages.0/@subPackages.3/@xHTMLFiles.1">
+              <parameterValues parameter="//@webRoot/@subPackages.0/@subPackages.3/@xHTMLFiles.1/@parameters.0" value="#{item}"/>
+            </body>
+          </columns>
+        </xHTMLFiles>
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:TableExtension" name="CustomerDTOListWithViewLink" baseTable="//@webRoot/@subPackages.0/@subPackages.0/@xHTMLFiles.2">
+          <columns header="View">
+            <body xsi:type="jsfvisualizationmodel:CCUsage" compositeComponent="//@webRoot/@subPackages.0/@subPackages.4/@xHTMLFiles.1">
+              <parameterValues parameter="//@webRoot/@subPackages.0/@subPackages.4/@xHTMLFiles.1/@parameters.0" value="#{item}"/>
+            </body>
+          </columns>
+        </xHTMLFiles>
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:TableExtension" name="MaterialDTOListWithViewLink" baseTable="//@webRoot/@subPackages.0/@subPackages.0/@xHTMLFiles.3">
+          <columns header="View">
+            <body xsi:type="jsfvisualizationmodel:CCUsage" compositeComponent="//@webRoot/@subPackages.0/@subPackages.5/@xHTMLFiles.1">
+              <parameterValues parameter="//@webRoot/@subPackages.0/@subPackages.5/@xHTMLFiles.1/@parameters.0" value="#{item}"/>
+            </body>
+          </columns>
+        </xHTMLFiles>
+      </subPackages>
+      <subPackages name="dialogs">
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:BasePopUp" name="MaterialGatheringPointDTOCreateDialog">
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="pointIdentifier" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.0/@propertys.0"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="customerNumber" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.0/@propertys.1"/>
+          <body xsi:type="jsfvisualizationmodel:TriggerActionButton" label="Create new MaterialGatheringPointDTO" action="//@managedBeanPackages.0/@managedBeans.0/@operations.1"/>
+        </xHTMLFiles>
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:BasePopUp" name="RouteDTOCreateDialog">
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="routeName" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.1/@propertys.0"/>
+          <body xsi:type="jsfvisualizationmodel:TriggerActionButton" label="Create new RouteDTO" action="//@managedBeanPackages.0/@managedBeans.1/@operations.1"/>
+        </xHTMLFiles>
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:BasePopUp" name="CustomerDTOCreateDialog">
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="customerNumber" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.0/@propertys.1"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="customerType" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.2/@propertys.1"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="customerName" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.2/@propertys.2"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="zip" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.2/@propertys.3"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="lat" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.2/@propertys.4"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="lng" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.2/@propertys.5"/>
+          <body xsi:type="jsfvisualizationmodel:TriggerActionButton" label="Create new CustomerDTO" action="//@managedBeanPackages.0/@managedBeans.2/@operations.1"/>
+        </xHTMLFiles>
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:BasePopUp" name="MaterialDTOCreateDialog">
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="identification" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.3/@propertys.0"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="materialType" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.3/@propertys.1"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="weight" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.3/@propertys.2"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="deadType" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.3/@propertys.3"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="cowEarNumber" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.3/@propertys.4"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="pointIdentifier" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.0/@propertys.0"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="customerNumber" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.0/@propertys.1"/>
+          <body xsi:type="jsfvisualizationmodel:TriggerActionButton" label="Create new MaterialDTO" action="//@managedBeanPackages.0/@managedBeans.3/@operations.1"/>
+        </xHTMLFiles>
+      </subPackages>
+      <subPackages name="materialGatheringPointDTOHelper">
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:CompositeComponent" name="materialGatheringPointDTOName.xhtml">
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="PointIdentifier: #{cc.attrs.materialGatheringPointDTO.pointIdentifier}, CustomerNumber: #{cc.attrs.materialGatheringPointDTO.customerNumber}"/>
+          <parameters name="materialGatheringPointDTO"/>
+        </xHTMLFiles>
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:CompositeComponent" name="materialGatheringPointDTOViewLink.xhtml">
+          <body xsi:type="jsfvisualizationmodel:Link" jSFPage="//@webRoot/@subPackages.1/@xHTMLFiles.1" label="PointIdentifier: #{cc.attrs.materialGatheringPointDTO.pointIdentifier}, CustomerNumber: #{cc.attrs.materialGatheringPointDTO.customerNumber}"/>
+          <parameters name="materialGatheringPointDTO"/>
+        </xHTMLFiles>
+      </subPackages>
+      <subPackages name="routeDTOHelper">
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:CompositeComponent" name="routeDTOName.xhtml">
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="RouteName: #{cc.attrs.routeDTO.routeName}"/>
+          <parameters name="routeDTO"/>
+        </xHTMLFiles>
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:CompositeComponent" name="routeDTOViewLink.xhtml">
+          <body xsi:type="jsfvisualizationmodel:Link" jSFPage="//@webRoot/@subPackages.2/@xHTMLFiles.1" label="RouteName: #{cc.attrs.routeDTO.routeName}"/>
+          <parameters name="routeDTO"/>
+        </xHTMLFiles>
+      </subPackages>
+      <subPackages name="customerDTOHelper">
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:CompositeComponent" name="customerDTOName.xhtml">
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="CustomerNumber: #{cc.attrs.customerDTO.customerNumber}"/>
+          <parameters name="customerDTO"/>
+        </xHTMLFiles>
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:CompositeComponent" name="customerDTOViewLink.xhtml">
+          <body xsi:type="jsfvisualizationmodel:Link" jSFPage="//@webRoot/@subPackages.3/@xHTMLFiles.1" label="CustomerNumber: #{cc.attrs.customerDTO.customerNumber}"/>
+          <parameters name="customerDTO"/>
+        </xHTMLFiles>
+      </subPackages>
+      <subPackages name="materialDTOHelper">
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:CompositeComponent" name="materialDTOName.xhtml">
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="Identification: #{cc.attrs.materialDTO.identification}, PointIdentifier: #{cc.attrs.materialDTO.pointIdentifier}, CustomerNumber: #{cc.attrs.materialDTO.customerNumber}"/>
+          <parameters name="materialDTO"/>
+        </xHTMLFiles>
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:CompositeComponent" name="materialDTOViewLink.xhtml">
+          <body xsi:type="jsfvisualizationmodel:Link" jSFPage="//@webRoot/@subPackages.4/@xHTMLFiles.1" label="Identification: #{cc.attrs.materialDTO.identification}, PointIdentifier: #{cc.attrs.materialDTO.pointIdentifier}, CustomerNumber: #{cc.attrs.materialDTO.customerNumber}"/>
+          <parameters name="materialDTO"/>
+        </xHTMLFiles>
+      </subPackages>
+      <xHTMLFiles xsi:type="jsfvisualizationmodel:SiteTemplate" name="main.template.xhtml" stylesheetName="" siteName="Your Application Name goes Here"/>
+    </subPackages>
+    <subPackages name="MaterialGatheringPointDTOManagement">
+      <xHTMLFiles xsi:type="jsfvisualizationmodel:TemplateBasedXHTMLSite" name="MaterialGatheringPointDTOEditPage.xhtml" prettyNavigationPattern="/edit" fetchOnInit="//@managedBeanPackages.0/@managedBeans.0/@operations.0" siteTemplate="//@webRoot/@subPackages.0/@xHTMLFiles.0" title="Edit MaterialGatheringPointDTO">
+        <parameter name="pointIdentifier" property="//@managedBeanPackages.0/@managedBeans.0/@propertys.0"/>
+        <parameter name="customerNumber" property="//@managedBeanPackages.0/@managedBeans.0/@propertys.1"/>
+        <body xsi:type="jsfvisualizationmodel:Form">
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="pointIdentifier" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.0/@propertys.0"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="customerNumber" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.0/@propertys.1"/>
+          <body xsi:type="jsfvisualizationmodel:TriggerActionButton" label="Update MaterialGatheringPointDTO" action="//@managedBeanPackages.0/@managedBeans.0/@operations.2"/>
+          <body xsi:type="jsfvisualizationmodel:TriggerActionButton" label="Delete this MaterialGatheringPointDTO" action="//@managedBeanPackages.0/@managedBeans.0/@operations.3"/>
+        </body>
+        <body xsi:type="jsfvisualizationmodel:TableUsage" table="//@webRoot/@subPackages.0/@subPackages.0/@xHTMLFiles.3" label="GatheredMaterial" property="//@managedBeanPackages.0/@managedBeans.0/@propertys.2"/>
+      </xHTMLFiles>
+      <xHTMLFiles xsi:type="jsfvisualizationmodel:TemplateBasedXHTMLSite" name="MaterialGatheringPointDTOViewPage.xhtml" fetchOnInit="//@managedBeanPackages.0/@managedBeans.0/@operations.0" siteTemplate="//@webRoot/@subPackages.0/@xHTMLFiles.0" title="Details of MaterialGatheringPointDTO">
+        <parameter name="pointIdentifier" property="//@managedBeanPackages.0/@managedBeans.0/@propertys.0"/>
+        <parameter name="customerNumber" property="//@managedBeanPackages.0/@managedBeans.0/@propertys.1"/>
+        <body xsi:type="jsfvisualizationmodel:GridLayout" columns="2">
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="PointIdentifier:"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{materialGatheringPointDTOBean.pointIdentifier}"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="CustomerNumber:"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{materialGatheringPointDTOBean.customerNumber}"/>
+        </body>
+        <body xsi:type="jsfvisualizationmodel:TableUsage" table="//@webRoot/@subPackages.0/@subPackages.0/@xHTMLFiles.3" label="GatheredMaterial" property="//@managedBeanPackages.0/@managedBeans.0/@propertys.2"/>
+      </xHTMLFiles>
+      <xHTMLFiles xsi:type="jsfvisualizationmodel:TemplateBasedXHTMLSite" name="MaterialGatheringPointDTOListAllPage.xhtml" prettyNavigationPattern="/materialGatheringPointDTO/all/" siteTemplate="//@webRoot/@subPackages.0/@xHTMLFiles.0" title="All MaterialGatheringPointDTOs">
+        <body xsi:type="jsfvisualizationmodel:TableUsage" table="//@webRoot/@subPackages.0/@subPackages.0/@xHTMLFiles.4" label="MaterialGatheringPointDTO" property="//@managedBeanPackages.0/@managedBeans.4/@propertys.0"/>
+        <body xsi:type="jsfvisualizationmodel:DialogUsage" dialogTitle="Create new MaterialGatheringPointDTO" dialogButtonLabel="Create new MaterialGatheringPointDTO" popUpDialog="//@webRoot/@subPackages.0/@subPackages.1/@xHTMLFiles.0" dialogId="MaterialGatheringPointDTO"/>
+      </xHTMLFiles>
+    </subPackages>
+    <subPackages name="RouteDTOManagement">
+      <xHTMLFiles xsi:type="jsfvisualizationmodel:TemplateBasedXHTMLSite" name="RouteDTOEditPage.xhtml" prettyNavigationPattern="/edit" fetchOnInit="//@managedBeanPackages.0/@managedBeans.1/@operations.0" siteTemplate="//@webRoot/@subPackages.0/@xHTMLFiles.0" title="Edit RouteDTO">
+        <parameter name="routeName" property="//@managedBeanPackages.0/@managedBeans.1/@propertys.0"/>
+        <body xsi:type="jsfvisualizationmodel:Form">
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="routeName" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.1/@propertys.0"/>
+          <body xsi:type="jsfvisualizationmodel:TriggerActionButton" label="Update RouteDTO" action="//@managedBeanPackages.0/@managedBeans.1/@operations.2"/>
+          <body xsi:type="jsfvisualizationmodel:TriggerActionButton" label="Delete this RouteDTO" action="//@managedBeanPackages.0/@managedBeans.1/@operations.3"/>
+        </body>
+        <body xsi:type="jsfvisualizationmodel:TableUsage" table="//@webRoot/@subPackages.0/@subPackages.0/@xHTMLFiles.0" label="MaterialGatheringPoints" property="//@managedBeanPackages.0/@managedBeans.1/@propertys.1"/>
+      </xHTMLFiles>
+      <xHTMLFiles xsi:type="jsfvisualizationmodel:TemplateBasedXHTMLSite" name="RouteDTOViewPage.xhtml" fetchOnInit="//@managedBeanPackages.0/@managedBeans.1/@operations.0" siteTemplate="//@webRoot/@subPackages.0/@xHTMLFiles.0" title="Details of RouteDTO">
+        <parameter name="routeName" property="//@managedBeanPackages.0/@managedBeans.1/@propertys.0"/>
+        <body xsi:type="jsfvisualizationmodel:GridLayout" columns="2">
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="RouteName:"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{routeDTOBean.routeName}"/>
+        </body>
+        <body xsi:type="jsfvisualizationmodel:TableUsage" table="//@webRoot/@subPackages.0/@subPackages.0/@xHTMLFiles.0" label="MaterialGatheringPoints" property="//@managedBeanPackages.0/@managedBeans.1/@propertys.1"/>
+      </xHTMLFiles>
+      <xHTMLFiles xsi:type="jsfvisualizationmodel:TemplateBasedXHTMLSite" name="RouteDTOListAllPage.xhtml" prettyNavigationPattern="/routeDTO/all/" siteTemplate="//@webRoot/@subPackages.0/@xHTMLFiles.0" title="All RouteDTOs">
+        <body xsi:type="jsfvisualizationmodel:TableUsage" table="//@webRoot/@subPackages.0/@subPackages.0/@xHTMLFiles.5" label="RouteDTO" property="//@managedBeanPackages.0/@managedBeans.4/@propertys.1"/>
+        <body xsi:type="jsfvisualizationmodel:DialogUsage" dialogTitle="Create new RouteDTO" dialogButtonLabel="Create new RouteDTO" popUpDialog="//@webRoot/@subPackages.0/@subPackages.1/@xHTMLFiles.1" dialogId="RouteDTO"/>
+      </xHTMLFiles>
+    </subPackages>
+    <subPackages name="CustomerDTOManagement">
+      <xHTMLFiles xsi:type="jsfvisualizationmodel:TemplateBasedXHTMLSite" name="CustomerDTOEditPage.xhtml" prettyNavigationPattern="/edit" fetchOnInit="//@managedBeanPackages.0/@managedBeans.2/@operations.0" siteTemplate="//@webRoot/@subPackages.0/@xHTMLFiles.0" title="Edit CustomerDTO">
+        <parameter name="customerNumber" property="//@managedBeanPackages.0/@managedBeans.0/@propertys.1"/>
+        <body xsi:type="jsfvisualizationmodel:Form">
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="customerNumber" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.0/@propertys.1"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="customerType" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.2/@propertys.1"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="customerName" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.2/@propertys.2"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="zip" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.2/@propertys.3"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="lat" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.2/@propertys.4"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="lng" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.2/@propertys.5"/>
+          <body xsi:type="jsfvisualizationmodel:TriggerActionButton" label="Update CustomerDTO" action="//@managedBeanPackages.0/@managedBeans.2/@operations.2"/>
+          <body xsi:type="jsfvisualizationmodel:TriggerActionButton" label="Delete this CustomerDTO" action="//@managedBeanPackages.0/@managedBeans.2/@operations.3"/>
+        </body>
+      </xHTMLFiles>
+      <xHTMLFiles xsi:type="jsfvisualizationmodel:TemplateBasedXHTMLSite" name="CustomerDTOViewPage.xhtml" fetchOnInit="//@managedBeanPackages.0/@managedBeans.2/@operations.0" siteTemplate="//@webRoot/@subPackages.0/@xHTMLFiles.0" title="Details of CustomerDTO">
+        <parameter name="customerNumber" property="//@managedBeanPackages.0/@managedBeans.0/@propertys.1"/>
+        <body xsi:type="jsfvisualizationmodel:GridLayout" columns="2">
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="CustomerNumber:"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{customerDTOBean.customerNumber}"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="CustomerType:"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{customerDTOBean.customerType}"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="CustomerName:"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{customerDTOBean.customerName}"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="Zip:"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{customerDTOBean.zip}"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="Lat:"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{customerDTOBean.lat}"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="Lng:"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{customerDTOBean.lng}"/>
+        </body>
+      </xHTMLFiles>
+      <xHTMLFiles xsi:type="jsfvisualizationmodel:TemplateBasedXHTMLSite" name="CustomerDTOListAllPage.xhtml" prettyNavigationPattern="/customerDTO/all/" siteTemplate="//@webRoot/@subPackages.0/@xHTMLFiles.0" title="All CustomerDTOs">
+        <body xsi:type="jsfvisualizationmodel:TableUsage" table="//@webRoot/@subPackages.0/@subPackages.0/@xHTMLFiles.6" label="CustomerDTO" property="//@managedBeanPackages.0/@managedBeans.4/@propertys.2"/>
+        <body xsi:type="jsfvisualizationmodel:DialogUsage" dialogTitle="Create new CustomerDTO" dialogButtonLabel="Create new CustomerDTO" popUpDialog="//@webRoot/@subPackages.0/@subPackages.1/@xHTMLFiles.2" dialogId="CustomerDTO"/>
+      </xHTMLFiles>
+    </subPackages>
+    <subPackages name="MaterialDTOManagement">
+      <xHTMLFiles xsi:type="jsfvisualizationmodel:TemplateBasedXHTMLSite" name="MaterialDTOEditPage.xhtml" prettyNavigationPattern="/edit" fetchOnInit="//@managedBeanPackages.0/@managedBeans.3/@operations.0" siteTemplate="//@webRoot/@subPackages.0/@xHTMLFiles.0" title="Edit MaterialDTO">
+        <parameter name="identification" property="//@managedBeanPackages.0/@managedBeans.3/@propertys.0"/>
+        <parameter name="pointIdentifier" property="//@managedBeanPackages.0/@managedBeans.0/@propertys.0"/>
+        <parameter name="customerNumber" property="//@managedBeanPackages.0/@managedBeans.0/@propertys.1"/>
+        <body xsi:type="jsfvisualizationmodel:Form">
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="identification" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.3/@propertys.0"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="materialType" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.3/@propertys.1"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="weight" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.3/@propertys.2"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="deadType" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.3/@propertys.3"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="cowEarNumber" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.3/@propertys.4"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="pointIdentifier" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.0/@propertys.0"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="customerNumber" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.0/@propertys.1"/>
+          <body xsi:type="jsfvisualizationmodel:TriggerActionButton" label="Update MaterialDTO" action="//@managedBeanPackages.0/@managedBeans.3/@operations.2"/>
+          <body xsi:type="jsfvisualizationmodel:TriggerActionButton" label="Delete this MaterialDTO" action="//@managedBeanPackages.0/@managedBeans.3/@operations.3"/>
+        </body>
+      </xHTMLFiles>
+      <xHTMLFiles xsi:type="jsfvisualizationmodel:TemplateBasedXHTMLSite" name="MaterialDTOViewPage.xhtml" fetchOnInit="//@managedBeanPackages.0/@managedBeans.3/@operations.0" siteTemplate="//@webRoot/@subPackages.0/@xHTMLFiles.0" title="Details of MaterialDTO">
+        <parameter name="identification" property="//@managedBeanPackages.0/@managedBeans.3/@propertys.0"/>
+        <parameter name="pointIdentifier" property="//@managedBeanPackages.0/@managedBeans.0/@propertys.0"/>
+        <parameter name="customerNumber" property="//@managedBeanPackages.0/@managedBeans.0/@propertys.1"/>
+        <body xsi:type="jsfvisualizationmodel:GridLayout" columns="2">
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="Identification:"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{materialDTOBean.identification}"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="MaterialType:"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{materialDTOBean.materialType}"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="Weight:"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{materialDTOBean.weight}"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="DeadType:"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{materialDTOBean.deadType}"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="CowEarNumber:"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{materialDTOBean.cowEarNumber}"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="MaterialGatheringPoint:"/>
+          <body xsi:type="jsfvisualizationmodel:CCUsage" compositeComponent="//@webRoot/@subPackages.0/@subPackages.2/@xHTMLFiles.1">
+            <parameterValues parameter="//@webRoot/@subPackages.0/@subPackages.2/@xHTMLFiles.1/@parameters.0" value="#{materialDTOBean.materialGatheringPoint}"/>
+          </body>
+        </body>
+      </xHTMLFiles>
+    </subPackages>
+    <xHTMLFiles xsi:type="jsfvisualizationmodel:TemplateBasedXHTMLSite" name="index.xhtml" siteTemplate="//@webRoot/@subPackages.0/@xHTMLFiles.0" title="Main Page">
+      <body xsi:type="jsfvisualizationmodel:GridLayout" columns="1">
+        <body xsi:type="jsfvisualizationmodel:Link" jSFPage="//@webRoot/@subPackages.1/@xHTMLFiles.2" label="Goto MaterialGatheringPointDTOListAllPage"/>
+        <body xsi:type="jsfvisualizationmodel:Link" jSFPage="//@webRoot/@subPackages.2/@xHTMLFiles.2" label="Goto RouteDTOListAllPage"/>
+        <body xsi:type="jsfvisualizationmodel:Link" jSFPage="//@webRoot/@subPackages.3/@xHTMLFiles.2" label="Goto CustomerDTOListAllPage"/>
+      </body>
+    </xHTMLFiles>
+  </webRoot>
+</jsfvisualizationmodel:JSFVisualizationModelRoot>

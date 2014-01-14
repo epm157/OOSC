@@ -1,0 +1,41 @@
+<pretty-config xmlns="http://ocpsoft.com/prettyfaces/3.3.0" 
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+               xsi:schemaLocation="http://ocpsoft.com/prettyfaces/3.3.0
+                                   		http://ocpsoft.com/xml/ns/prettyfaces/ocpsoft-pretty-faces-3.3.0.xsd">
+
+	
+      <url-mapping id="home"> 
+          <pattern value="/" /> 
+          <view-id value="/faces/index.xhtml" />
+      </url-mapping> 
+	
+
+	
+      <url-mapping id="ThreadEditPage"> 
+          <pattern value="/thread/#{threadId : threadBean.threadId}/edit" /> 
+          <view-id value="/faces/ThreadManagement/ThreadEditPage.xhtml" />
+      </url-mapping> 
+
+      <url-mapping id="ThreadViewPage"> 
+          <pattern value="/thread/#{threadId : threadBean.threadId}" /> 
+          <view-id value="/faces/ThreadManagement/ThreadViewPage.xhtml" />
+      </url-mapping> 
+
+      <url-mapping id="ThreadListAllPage"> 
+          <pattern value="/thread/all/" /> 
+          <view-id value="/faces/ThreadManagement/ThreadListAllPage.xhtml" />
+      </url-mapping> 
+
+      <url-mapping id="PostEditPage"> 
+          <pattern value="/thread/#{threadId : threadBean.threadId}/post/#{postId : postBean.postId}/edit" /> 
+          <view-id value="/faces/PostManagement/PostEditPage.xhtml" />
+      </url-mapping> 
+
+      <url-mapping id="PostViewPage"> 
+          <pattern value="/thread/#{threadId : threadBean.threadId}/post/#{postId : postBean.postId}" /> 
+          <view-id value="/faces/PostManagement/PostViewPage.xhtml" />
+      </url-mapping> 
+
+
+</pretty-config>
+	

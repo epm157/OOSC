@@ -1,0 +1,50 @@
+@CHARSET "ISO-8859-1";
+
+/*
+Copyright (C) All rights reserved. 
+*/
+
+/* Everything is to big, so make it smaller :-)
+.ui-widget { font-size: 0.9em !important; 
+	
+}
+*/
+
+/* Align bootstrap and primefaces theme */
+.ui-inputtext, .ui-autocomplete-input, .ui-password {
+	height: 30px;
+}
+
+.ui-widget .ui-widget-content a {
+	color: #0088CC;
+}
+
+.form-horizontal input.ui-helper-hidden {
+	display: none;
+}
+
+/* No Border on data lists please... */
+.ui-datalist-data {
+	border: none;
+	background: transparent;
+	background-image: none;
+}
+
+.ui-datalist div.ui-widget-content {
+	border: none;
+}
+
+/* Buttons with just icons should be a little smaller than usual */
+button.smallButton .ui-button-text {
+	padding: 0px;
+	line-height: 18px;
+}
+
+button.smallButton {
+	width: 20px;
+}
+
+/* Generic Styles */
+.alignTop {
+	vertical-align: top;
+}

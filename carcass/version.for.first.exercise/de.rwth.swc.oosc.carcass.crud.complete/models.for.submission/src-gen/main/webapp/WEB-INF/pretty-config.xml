@@ -1,0 +1,71 @@
+<pretty-config xmlns="http://ocpsoft.com/prettyfaces/3.3.0" 
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+               xsi:schemaLocation="http://ocpsoft.com/prettyfaces/3.3.0
+                                   		http://ocpsoft.com/xml/ns/prettyfaces/ocpsoft-pretty-faces-3.3.0.xsd">
+
+	
+      <url-mapping id="home"> 
+          <pattern value="/" /> 
+          <view-id value="/faces/index.xhtml" />
+      </url-mapping> 
+	
+
+	
+      <url-mapping id="MaterialGatheringPointDTOEditPage"> 
+          <pattern value="/materialGatheringPointDTO/#{customerNumber : materialGatheringPointDTOBean.customerNumber}/materialGatheringPointDTO/#{pointIdentifier : materialGatheringPointDTOBean.pointIdentifier}/edit" /> 
+          <view-id value="/faces/MaterialGatheringPointDTOManagement/MaterialGatheringPointDTOEditPage.xhtml" />
+      </url-mapping> 
+
+      <url-mapping id="MaterialGatheringPointDTOViewPage"> 
+          <pattern value="/materialGatheringPointDTO/#{customerNumber : materialGatheringPointDTOBean.customerNumber}/materialGatheringPointDTO/#{pointIdentifier : materialGatheringPointDTOBean.pointIdentifier}" /> 
+          <view-id value="/faces/MaterialGatheringPointDTOManagement/MaterialGatheringPointDTOViewPage.xhtml" />
+      </url-mapping> 
+
+      <url-mapping id="MaterialGatheringPointDTOListAllPage"> 
+          <pattern value="/materialGatheringPointDTO/all/" /> 
+          <view-id value="/faces/MaterialGatheringPointDTOManagement/MaterialGatheringPointDTOListAllPage.xhtml" />
+      </url-mapping> 
+
+      <url-mapping id="RouteDTOEditPage"> 
+          <pattern value="/routeDTO/#{routeName : routeDTOBean.routeName}/edit" /> 
+          <view-id value="/faces/RouteDTOManagement/RouteDTOEditPage.xhtml" />
+      </url-mapping> 
+
+      <url-mapping id="RouteDTOViewPage"> 
+          <pattern value="/routeDTO/#{routeName : routeDTOBean.routeName}" /> 
+          <view-id value="/faces/RouteDTOManagement/RouteDTOViewPage.xhtml" />
+      </url-mapping> 
+
+      <url-mapping id="RouteDTOListAllPage"> 
+          <pattern value="/routeDTO/all/" /> 
+          <view-id value="/faces/RouteDTOManagement/RouteDTOListAllPage.xhtml" />
+      </url-mapping> 
+
+      <url-mapping id="CustomerDTOEditPage"> 
+          <pattern value="/materialGatheringPointDTO/#{customerNumber : materialGatheringPointDTOBean.customerNumber}/edit" /> 
+          <view-id value="/faces/CustomerDTOManagement/CustomerDTOEditPage.xhtml" />
+      </url-mapping> 
+
+      <url-mapping id="CustomerDTOViewPage"> 
+          <pattern value="/materialGatheringPointDTO/#{customerNumber : materialGatheringPointDTOBean.customerNumber}" /> 
+          <view-id value="/faces/CustomerDTOManagement/CustomerDTOViewPage.xhtml" />
+      </url-mapping> 
+
+      <url-mapping id="CustomerDTOListAllPage"> 
+          <pattern value="/customerDTO/all/" /> 
+          <view-id value="/faces/CustomerDTOManagement/CustomerDTOListAllPage.xhtml" />
+      </url-mapping> 
+
+      <url-mapping id="MaterialDTOEditPage"> 
+          <pattern value="/materialGatheringPointDTO/#{customerNumber : materialGatheringPointDTOBean.customerNumber}/materialGatheringPointDTO/#{pointIdentifier : materialGatheringPointDTOBean.pointIdentifier}/materialDTO/#{identification : materialDTOBean.identification}/edit" /> 
+          <view-id value="/faces/MaterialDTOManagement/MaterialDTOEditPage.xhtml" />
+      </url-mapping> 
+
+      <url-mapping id="MaterialDTOViewPage"> 
+          <pattern value="/materialGatheringPointDTO/#{customerNumber : materialGatheringPointDTOBean.customerNumber}/materialGatheringPointDTO/#{pointIdentifier : materialGatheringPointDTOBean.pointIdentifier}/materialDTO/#{identification : materialDTOBean.identification}" /> 
+          <view-id value="/faces/MaterialDTOManagement/MaterialDTOViewPage.xhtml" />
+      </url-mapping> 
+
+
+</pretty-config>
+	

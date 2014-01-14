@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<generatormodel:GeneratorModelRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:generatormodel="http:///generatormodel.ecore">
+  <entity name="CustomerDTO">
+    <attributes name="customerNumber" dataType_Attribute="//@dataType.0" partOfPK="true"/>
+    <attributes name="customerType" dataType_Attribute="//@dataType.4"/>
+    <attributes name="customerName" dataType_Attribute="//@dataType.0"/>
+    <attributes name="zip" dataType_Attribute="//@dataType.0"/>
+    <attributes name="lat" dataType_Attribute="//@dataType.2"/>
+    <attributes name="lng" dataType_Attribute="//@dataType.2"/>
+  </entity>
+  <entity name="MaterialDTO" incomingRelationship="//@entity.3/@relationships.0">
+    <attributes name="identification" dataType_Attribute="//@dataType.0" partOfPK="true"/>
+    <attributes name="materialType" dataType_Attribute="//@dataType.5"/>
+    <attributes name="weight" dataType_Attribute="//@dataType.2"/>
+    <attributes name="deadType" dataType_Attribute="//@dataType.3"/>
+    <attributes name="cowEarNumber" dataType_Attribute="//@dataType.0"/>
+  </entity>
+  <entity name="RouteDTO">
+    <attributes name="routeName" dataType_Attribute="//@dataType.0" partOfPK="true"/>
+    <relationships xsi:type="generatormodel:Association" targetClass="//@entity.3" multiplicity="many2many" targetClassRole="materialGatheringPoints"/>
+  </entity>
+  <entity name="MaterialGatheringPointDTO" incomingRelationship="//@entity.2/@relationships.0">
+    <attributes name="pointIdentifier" partOfPK="true">
+      <dataType_Attribute href="../models/carcass.complete.generatormodel#//@dataType.0"/>
+    </attributes>
+    <attributes name="customerNumber" dataType_Attribute="//@dataType.0" partOfPK="true"/>
+    <relationships xsi:type="generatormodel:Association" targetClass="//@entity.1" composition="true" bidirectional="true" multiplicity="one2many" targetClassRole="gatheredMaterial" originClassRole="materialGatheringPoint"/>
+  </entity>
+  <dataType type="String"/>
+  <dataType type="int"/>
+  <dataType type="double"/>
+  <dataType type="DeadType"/>
+  <dataType type="CustomerType"/>
+  <dataType type="MaterialType"/>
+</generatormodel:GeneratorModelRoot>

@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:composite="http://java.sun.com/jsf/composite"
+	xmlns:prime="http://primefaces.org/ui"
+	xmlns:basicComponents="http://java.sun.com/jsf/composite/basicComponents">
+
+<body>
+	<composite:interface>
+		<composite:facet name="subItemLink" />
+
+		<composite:attribute name="dialogTitle" required="true" />
+		<composite:attribute name="field" required="true" />
+		<composite:attribute name="propertyName" required="true" />
+		<composite:attribute name="notAssigned" required="true" />
+		<composite:attribute name="dialogId" required="true" />
+
+		<composite:attribute name="list" required="true" />
+		<composite:attribute name="onEmptyList" required="true" />
+
+		<composite:attribute name="setProperty" required="true" />
+		<composite:attribute name="itemValue" required="true" />
+
+		<composite:attribute name="unassignMethod" required="true"
+			method-signature="java.lang.String action()" />
+		<composite:attribute name="assignMethod" required="true"
+			method-signature="java.lang.String action()" />
+	</composite:interface>
+
+	<composite:implementation>
+		<basicComponents:singleAssignUnassignComboWithoutDialog
+			field="#{cc.attrs.field}" propertyName="#{cc.attrs.propertyName}"
+			notAssigned="#{cc.attrs.notAssigned}" dialogId="#{cc.attrs.dialogId}"
+			unassignMethod="#{cc.attrs.unassignMethod}">
+			<f:facet name="subItemLink">
+				<composite:renderFacet name="subItemLink" />
+			</f:facet>
+			<basicComponents:assignItemDialog
+				dialogTitle="Set #{cc.attrs.propertyName}"
+				dialogId="#{cc.attrs.dialogId}" list="#{cc.attrs.list}"
+				listClassName="#{cc.attrs.propertyName}"
+				onEmptyText="#{cc.attrs.onEmptyList}"
+				storeSelectionMethod="#{cc.attrs.setProperty}"
+				itemLabelMethod="#{cc.attrs.itemValue}"
+				itemValueMethod="#{cc.attrs.itemValue}"
+				addMethod="#{cc.attrs.assignMethod}" />
+		</basicComponents:singleAssignUnassignComboWithoutDialog>
+	</composite:implementation>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="ASCII"?>
+<VisualizationGeneratorModel:VisualizationGeneratorModelRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:VisualizationGeneratorModel="http:///VisualizationGeneratorModel.ecore">
+  <createBeanFor>
+    <entity href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.6"/>
+    <uniqueFetchMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.8"/>
+    <createMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.7"/>
+    <updateMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.6"/>
+    <deleteMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.5"/>
+    <fetchAllMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.0"/>
+    <attributeConfiguration xsi:type="VisualizationGeneratorModel:PrimitiveConfiguration">
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.6/@attribute.1"/>
+    </attributeConfiguration>
+    <attributeConfiguration xsi:type="VisualizationGeneratorModel:PrimitiveConfiguration">
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.6/@attribute.2"/>
+    </attributeConfiguration>
+    <attributeConfiguration xsi:type="VisualizationGeneratorModel:PrimitiveConfiguration">
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.6/@attribute.3"/>
+    </attributeConfiguration>
+    <attributeConfiguration xsi:type="VisualizationGeneratorModel:PrimitiveConfiguration">
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.6/@attribute.5"/>
+    </attributeConfiguration>
+    <attributeConfiguration xsi:type="VisualizationGeneratorModel:PrimitiveConfiguration">
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.6/@attribute.6"/>
+    </attributeConfiguration>
+    <attributeConfiguration xsi:type="VisualizationGeneratorModel:LinkToAnotherEntity" columnConfiguration="ShowOnlyPartOfPKAttributes">
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.6/@attribute.4"/>
+      <toEntity href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.1"/>
+      <assignTouple>
+        <unassignMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.36"/>
+      </assignTouple>
+    </attributeConfiguration>
+  </createBeanFor>
+  <createBeanFor>
+    <entity href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.5"/>
+    <uniqueFetchMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.12"/>
+    <createMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.11"/>
+    <updateMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.10"/>
+    <deleteMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.9"/>
+    <fetchAllMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.1"/>
+    <attributeConfiguration xsi:type="VisualizationGeneratorModel:PrimitiveConfiguration">
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.5/@attribute.1"/>
+    </attributeConfiguration>
+    <attributeConfiguration xsi:type="VisualizationGeneratorModel:PrimitiveConfiguration">
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.5/@attribute.2"/>
+    </attributeConfiguration>
+    <attributeConfiguration xsi:type="VisualizationGeneratorModel:PrimitiveConfiguration">
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.5/@attribute.3"/>
+    </attributeConfiguration>
+    <attributeConfiguration xsi:type="VisualizationGeneratorModel:PrimitiveConfiguration">
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.5/@attribute.5"/>
+    </attributeConfiguration>
+    <attributeConfiguration xsi:type="VisualizationGeneratorModel:PrimitiveConfiguration">
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.5/@attribute.6"/>
+    </attributeConfiguration>
+    <attributeConfiguration xsi:type="VisualizationGeneratorModel:LinkToAnotherEntity" columnConfiguration="ShowOnlyPartOfPKAttributes">
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.5/@attribute.4"/>
+      <toEntity href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.1"/>
+      <assignTouple>
+        <unassignMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.36"/>
+      </assignTouple>
+    </attributeConfiguration>
+  </createBeanFor>
+  <createBeanFor>
+    <entity href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.4"/>
+    <uniqueFetchMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.16"/>
+    <createMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.15"/>
+    <updateMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.14"/>
+    <deleteMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.13"/>
+    <fetchAllMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.2"/>
+    <attributeConfiguration xsi:type="VisualizationGeneratorModel:PrimitiveConfiguration">
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.4/@attribute.1"/>
+    </attributeConfiguration>
+    <attributeConfiguration xsi:type="VisualizationGeneratorModel:PrimitiveConfiguration">
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.4/@attribute.2"/>
+    </attributeConfiguration>
+    <attributeConfiguration xsi:type="VisualizationGeneratorModel:PrimitiveConfiguration">
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.4/@attribute.3"/>
+    </attributeConfiguration>
+    <attributeConfiguration xsi:type="VisualizationGeneratorModel:PrimitiveConfiguration">
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.4/@attribute.4"/>
+    </attributeConfiguration>
+    <attributeConfiguration xsi:type="VisualizationGeneratorModel:PrimitiveConfiguration">
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.4/@attribute.5"/>
+    </attributeConfiguration>
+    <attributeConfiguration xsi:type="VisualizationGeneratorModel:CompositionConfiguration" columnConfiguration="ShowOnlyPartOfPKAttributes">
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.4/@attribute.6"/>
+      <toEntity href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.1"/>
+    </attributeConfiguration>
+  </createBeanFor>
+  <createBeanFor>
+    <entity href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.3"/>
+    <uniqueFetchMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.20"/>
+    <createMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.19"/>
+    <updateMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.18"/>
+    <deleteMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.17"/>
+    <fetchAllMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.3"/>
+    <attributeConfiguration xsi:type="VisualizationGeneratorModel:PrimitiveConfiguration">
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.1"/>
+    </attributeConfiguration>
+    <attributeConfiguration xsi:type="VisualizationGeneratorModel:PrimitiveConfiguration">
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.2"/>
+    </attributeConfiguration>
+    <attributeConfiguration xsi:type="VisualizationGeneratorModel:PrimitiveConfiguration">
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.3"/>
+    </attributeConfiguration>
+    <attributeConfiguration xsi:type="VisualizationGeneratorModel:PrimitiveConfiguration">
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.4"/>
+    </attributeConfiguration>
+    <attributeConfiguration xsi:type="VisualizationGeneratorModel:PrimitiveConfiguration">
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.5"/>
+    </attributeConfiguration>
+    <attributeConfiguration xsi:type="VisualizationGeneratorModel:CompositionConfiguration" columnConfiguration="ShowOnlyPartOfPKAttributes">
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.6"/>
+      <toEntity href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.1"/>
+    </attributeConfiguration>
+  </createBeanFor>
+  <createBeanFor>
+    <entity href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.0"/>
+    <uniqueFetchMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.32"/>
+    <createMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.31"/>
+    <updateMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.30"/>
+    <deleteMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.29"/>
+    <fetchAllMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.4"/>
+    <attributeConfiguration xsi:type="VisualizationGeneratorModel:PrimitiveConfiguration">
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.1"/>
+    </attributeConfiguration>
+    <attributeConfiguration xsi:type="VisualizationGeneratorModel:PrimitiveConfiguration">
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.2"/>
+    </attributeConfiguration>
+    <attributeConfiguration xsi:type="VisualizationGeneratorModel:PrimitiveConfiguration">
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.3"/>
+    </attributeConfiguration>
+    <attributeConfiguration xsi:type="VisualizationGeneratorModel:PrimitiveConfiguration">
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.4"/>
+    </attributeConfiguration>
+    <attributeConfiguration xsi:type="VisualizationGeneratorModel:PrimitiveConfiguration">
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.5"/>
+    </attributeConfiguration>
+    <attributeConfiguration xsi:type="VisualizationGeneratorModel:CompositionConfiguration" columnConfiguration="ShowOnlyPartOfPKAttributes">
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.6"/>
+      <toEntity href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.1"/>
+    </attributeConfiguration>
+  </createBeanFor>
+  <createBeanFor>
+    <entity href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.2"/>
+    <uniqueFetchMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.24"/>
+    <createMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.23"/>
+    <updateMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.22"/>
+    <deleteMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.21"/>
+    <attributeConfiguration xsi:type="VisualizationGeneratorModel:PrimitiveConfiguration">
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.2/@attribute.1"/>
+    </attributeConfiguration>
+    <attributeConfiguration xsi:type="VisualizationGeneratorModel:PrimitiveConfiguration">
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.2/@attribute.2"/>
+    </attributeConfiguration>
+    <attributeConfiguration xsi:type="VisualizationGeneratorModel:PrimitiveConfiguration">
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.2/@attribute.3"/>
+    </attributeConfiguration>
+    <attributeConfiguration xsi:type="VisualizationGeneratorModel:PrimitiveConfiguration">
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.2/@attribute.5"/>
+    </attributeConfiguration>
+    <attributeConfiguration xsi:type="VisualizationGeneratorModel:PrimitiveConfiguration">
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.2/@attribute.6"/>
+    </attributeConfiguration>
+    <attributeConfiguration xsi:type="VisualizationGeneratorModel:LinkToAnotherEntity" columnConfiguration="ShowOnlyPartOfPKAttributes">
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.2/@attribute.4"/>
+      <toEntity href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.1"/>
+      <assignTouple>
+        <unassignMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.36"/>
+      </assignTouple>
+    </attributeConfiguration>
+  </createBeanFor>
+  <createBeanFor>
+    <entity href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.1"/>
+    <uniqueFetchMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.28"/>
+    <createMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.27"/>
+    <updateMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.26"/>
+    <deleteMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.25"/>
+    <attributeConfiguration xsi:type="VisualizationGeneratorModel:PrimitiveConfiguration">
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.1"/>
+    </attributeConfiguration>
+    <attributeConfiguration xsi:type="VisualizationGeneratorModel:PrimitiveConfiguration">
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.4"/>
+    </attributeConfiguration>
+    <attributeConfiguration xsi:type="VisualizationGeneratorModel:LinkToAnotherEntity" columnConfiguration="ShowOnlyPartOfPKAttributes">
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.3"/>
+      <toEntity href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.0"/>
+      <assignTouple>
+        <unassignMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.35"/>
+      </assignTouple>
+    </attributeConfiguration>
+    <attributeConfiguration xsi:type="VisualizationGeneratorModel:CompositionConfiguration" columnConfiguration="ShowOnlyPartOfPKAttributes">
+      <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.2"/>
+      <toEntity href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.2"/>
+    </attributeConfiguration>
+  </createBeanFor>
+</VisualizationGeneratorModel:VisualizationGeneratorModelRoot>

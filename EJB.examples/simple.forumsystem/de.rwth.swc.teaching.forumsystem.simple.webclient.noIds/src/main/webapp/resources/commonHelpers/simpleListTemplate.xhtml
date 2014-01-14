@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!-- 
+Copyright (C) 2011 Matthias Vianden et al.,
+                   Research Group Software Construction,
+                   RWTH Aachen University, Germany.
+All rights reserved. 
+-->
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:prime="http://primefaces.org/ui">
+<body>
+	<!-- Provide a header for the table -->
+	<h3>
+		<h:outputText value="#{label}" />
+	</h3>
+
+	<!-- If the list contains no item, this text is rendered -->
+	<h:outputText value="#{onEmptyText}" rendered="#{empty list}" />
+
+	<!-- If the list contains an item, the actual data table is rendered -->
+	<h:form>
+		<h:dataTable value="#{list}" var="item" rendered="#{not empty list}"
+			styleClass="table table-striped">
+			<ui:insert name="additionalColumns" />
+		</h:dataTable>
+	</h:form>
+</body>
+</html>

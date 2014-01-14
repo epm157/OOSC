@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+  	  xmlns:composite="http://java.sun.com/jsf/composite"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:prime="http://primefaces.org/ui"
+      
+      xmlns:tables="http://java.sun.com/jsf/composite/tables"
+      xmlns:dialogs="http://java.sun.com/jsf/composite/dialogs"
+      xmlns:materialGatheringPointDTOHelper="http://java.sun.com/jsf/composite/materialGatheringPointDTOHelper"
+      xmlns:routeDTOHelper="http://java.sun.com/jsf/composite/routeDTOHelper"
+      xmlns:customerDTOHelper="http://java.sun.com/jsf/composite/customerDTOHelper"
+      xmlns:materialDTOHelper="http://java.sun.com/jsf/composite/materialDTOHelper"
+      xmlns:basicComponents="http://java.sun.com/jsf/composite/basicComponents"
+      >
+
+<body>
+	<ui:composition
+		template="../../commonHelpers/simpleDialog.xhtml">
+
+		<ui:param name="dialogTitle" value="#{dialogTitle}" />
+		<ui:param name="dialogButtonLabel" value="#{dialogButtonLabel}" />
+		<ui:param name="dialogId" value="#{dialogId}" />
+
+		<ui:define name="additionalDialogDetails">
+			
+	<div class="control-group">
+		<h:outputLabel for="textInput1"	value="pointIdentifier" styleClass="control-label" />
+		
+		<div class="controls">
+			<prime:inputText id="textInput1" value="#{materialGatheringPointDTOBean.pointIdentifier}" />
+		</div>
+	</div>
+
+	<div class="control-group">
+		<h:outputLabel for="textInput2"	value="customerNumber" styleClass="control-label" />
+		
+		<div class="controls">
+			<prime:inputText id="textInput2" value="#{materialGatheringPointDTOBean.customerNumber}" />
+		</div>
+	</div>
+<prime:commandButton value="Create new MaterialGatheringPointDTO" action="#{materialGatheringPointDTOBean.createMaterialGatheringPointDTO}" ajax="false" />
+
+			<ui:insert name="additionalDialogDetails" />
+		</ui:define>
+	</ui:composition>
+</body>
+</html>

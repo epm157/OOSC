@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<generatormodel:GeneratorModelRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:generatormodel="http:///generatormodel.ecore">
+  <entity name="Customer" incomingRelationship="//@entity.4/@relationships.0 //@entity.3/@relationships.0">
+    <attributes name="customerNumber" dataType_Attribute="//@dataType.0" partOfPK="true"/>
+    <attributes name="customerName" dataType_Attribute="//@dataType.0"/>
+    <attributes name="zip" dataType_Attribute="//@dataType.0"/>
+    <attributes name="lat" dataType_Attribute="//@dataType.2"/>
+    <attributes name="lng" dataType_Attribute="//@dataType.2"/>
+    <relationships xsi:type="generatormodel:Association" targetClass="//@entity.1" name="" composition="true" bidirectional="true" multiplicity="one2many" targetClassRole="materialGatheringPoints" originClassRole="customer" targetOrdered="true"/>
+  </entity>
+  <entity name="MaterialGatheringPoint" incomingRelationship="//@entity.0/@relationships.0">
+    <attributes name="pointIdentifier" dataType_Attribute="//@dataType.0" partOfPK="true"/>
+    <relationships xsi:type="generatormodel:Association" targetClass="//@entity.2" composition="true" bidirectional="true" multiplicity="one2many" targetClassRole="gatheredMaterial" originClassRole="materialGatheringPoint"/>
+  </entity>
+  <entity name="Material" incomingRelationship="//@entity.5/@relationships.0 //@entity.6/@relationships.0 //@entity.1/@relationships.0">
+    <attributes name="identification" dataType_Attribute="//@dataType.0" partOfPK="true"/>
+    <attributes name="weight" dataType_Attribute="//@dataType.2"/>
+    <attributes name="deadType" dataType_Attribute="//@dataType.3"/>
+  </entity>
+  <entity name="Farmer">
+    <relationships xsi:type="generatormodel:Generalization" targetClass="//@entity.0"/>
+  </entity>
+  <entity name="ResearchLaboratory">
+    <relationships xsi:type="generatormodel:Generalization" targetClass="//@entity.0"/>
+  </entity>
+  <entity name="Pig">
+    <relationships xsi:type="generatormodel:Generalization" targetClass="//@entity.2"/>
+  </entity>
+  <entity name="Goat">
+    <relationships xsi:type="generatormodel:Generalization" targetClass="//@entity.2"/>
+  </entity>
+  <dataType type="String"/>
+  <dataType type="int"/>
+  <dataType type="double"/>
+  <dataType type="DeadType"/>
+</generatormodel:GeneratorModelRoot>

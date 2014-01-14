@@ -1,0 +1,101 @@
+<pretty-config xmlns="http://ocpsoft.com/prettyfaces/3.3.0" 
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+               xsi:schemaLocation="http://ocpsoft.com/prettyfaces/3.3.0
+                                   		http://ocpsoft.com/xml/ns/prettyfaces/ocpsoft-pretty-faces-3.3.0.xsd">
+
+	
+      <url-mapping id="home"> 
+          <pattern value="/" /> 
+          <view-id value="/faces/index.xhtml" />
+      </url-mapping> 
+	
+
+	
+      <url-mapping id="GoatEditPage"> 
+          <pattern value="/customer/#{customerNumber : customerBean.customerNumber}/materialGatheringPoint/#{pointIdentifier : materialGatheringPointBean.pointIdentifier}/material/#{identification : materialBean.identification}/edit" /> 
+          <view-id value="/faces/GoatManagement/GoatEditPage.xhtml" />
+      </url-mapping> 
+
+      <url-mapping id="GoatViewPage"> 
+          <pattern value="/customer/#{customerNumber : customerBean.customerNumber}/materialGatheringPoint/#{pointIdentifier : materialGatheringPointBean.pointIdentifier}/material/#{identification : materialBean.identification}" /> 
+          <view-id value="/faces/GoatManagement/GoatViewPage.xhtml" />
+      </url-mapping> 
+
+      <url-mapping id="PigEditPage"> 
+          <pattern value="/customer/#{customerNumber : customerBean.customerNumber}/materialGatheringPoint/#{pointIdentifier : materialGatheringPointBean.pointIdentifier}/material/#{identification : materialBean.identification}/edit" /> 
+          <view-id value="/faces/PigManagement/PigEditPage.xhtml" />
+      </url-mapping> 
+
+      <url-mapping id="PigViewPage"> 
+          <pattern value="/customer/#{customerNumber : customerBean.customerNumber}/materialGatheringPoint/#{pointIdentifier : materialGatheringPointBean.pointIdentifier}/material/#{identification : materialBean.identification}" /> 
+          <view-id value="/faces/PigManagement/PigViewPage.xhtml" />
+      </url-mapping> 
+
+      <url-mapping id="ResearchLaboratoryEditPage"> 
+          <pattern value="/customer/#{customerNumber : customerBean.customerNumber}/edit" /> 
+          <view-id value="/faces/ResearchLaboratoryManagement/ResearchLaboratoryEditPage.xhtml" />
+      </url-mapping> 
+
+      <url-mapping id="ResearchLaboratoryViewPage"> 
+          <pattern value="/customer/#{customerNumber : customerBean.customerNumber}" /> 
+          <view-id value="/faces/ResearchLaboratoryManagement/ResearchLaboratoryViewPage.xhtml" />
+      </url-mapping> 
+
+      <url-mapping id="ResearchLaboratoryListAllPage"> 
+          <pattern value="/researchLaboratory/all/" /> 
+          <view-id value="/faces/ResearchLaboratoryManagement/ResearchLaboratoryListAllPage.xhtml" />
+      </url-mapping> 
+
+      <url-mapping id="FarmerEditPage"> 
+          <pattern value="/customer/#{customerNumber : customerBean.customerNumber}/edit" /> 
+          <view-id value="/faces/FarmerManagement/FarmerEditPage.xhtml" />
+      </url-mapping> 
+
+      <url-mapping id="FarmerViewPage"> 
+          <pattern value="/customer/#{customerNumber : customerBean.customerNumber}" /> 
+          <view-id value="/faces/FarmerManagement/FarmerViewPage.xhtml" />
+      </url-mapping> 
+
+      <url-mapping id="FarmerListAllPage"> 
+          <pattern value="/farmer/all/" /> 
+          <view-id value="/faces/FarmerManagement/FarmerListAllPage.xhtml" />
+      </url-mapping> 
+
+      <url-mapping id="CustomerEditPage"> 
+          <pattern value="/customer/#{customerNumber : customerBean.customerNumber}/edit" /> 
+          <view-id value="/faces/CustomerManagement/CustomerEditPage.xhtml" />
+      </url-mapping> 
+
+      <url-mapping id="CustomerViewPage"> 
+          <pattern value="/customer/#{customerNumber : customerBean.customerNumber}" /> 
+          <view-id value="/faces/CustomerManagement/CustomerViewPage.xhtml" />
+      </url-mapping> 
+
+      <url-mapping id="CustomerListAllPage"> 
+          <pattern value="/customer/all/" /> 
+          <view-id value="/faces/CustomerManagement/CustomerListAllPage.xhtml" />
+      </url-mapping> 
+
+      <url-mapping id="MaterialEditPage"> 
+          <pattern value="/customer/#{customerNumber : customerBean.customerNumber}/materialGatheringPoint/#{pointIdentifier : materialGatheringPointBean.pointIdentifier}/material/#{identification : materialBean.identification}/edit" /> 
+          <view-id value="/faces/MaterialManagement/MaterialEditPage.xhtml" />
+      </url-mapping> 
+
+      <url-mapping id="MaterialViewPage"> 
+          <pattern value="/customer/#{customerNumber : customerBean.customerNumber}/materialGatheringPoint/#{pointIdentifier : materialGatheringPointBean.pointIdentifier}/material/#{identification : materialBean.identification}" /> 
+          <view-id value="/faces/MaterialManagement/MaterialViewPage.xhtml" />
+      </url-mapping> 
+
+      <url-mapping id="MaterialGatheringPointEditPage"> 
+          <pattern value="/customer/#{customerNumber : customerBean.customerNumber}/materialGatheringPoint/#{pointIdentifier : materialGatheringPointBean.pointIdentifier}/edit" /> 
+          <view-id value="/faces/MaterialGatheringPointManagement/MaterialGatheringPointEditPage.xhtml" />
+      </url-mapping> 
+
+      <url-mapping id="MaterialGatheringPointViewPage"> 
+          <pattern value="/customer/#{customerNumber : customerBean.customerNumber}/materialGatheringPoint/#{pointIdentifier : materialGatheringPointBean.pointIdentifier}" /> 
+          <view-id value="/faces/MaterialGatheringPointManagement/MaterialGatheringPointViewPage.xhtml" />
+      </url-mapping> 
+
+
+</pretty-config>
+	

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="ASCII"?>
+<entitymodel:EntityModelRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:entitymodel="http:///entitymodel.ecore" mainPackageName="de.rwth.swc.oosc.carcass.core">
+  <packages subPackageName="domain">
+    <contents xsi:type="entitymodel:Entity" name="CustomerDTO">
+      <namedQuery_Entity name="getAllCustomerDTO" query="SELECT customerDTO FROM CustomerDTO customerDTO"/>
+      <namedQuery_Entity name="getCustomerDTOByCustomerNumber" query="SELECT customerDTO FROM CustomerDTO customerDTO WHERE customerDTO.customerNumber = :customerNumber">
+        <param_Query name="customerNumber" attribute="//@packages.0/@contents.0/@attribute.1"/>
+      </namedQuery_Entity>
+      <attribute name="id" type="int">
+        <annotations xsi:type="entitymodel:PartOfID"/>
+      </attribute>
+      <attribute name="customerNumber" type="String" partOfPK="true"/>
+      <attribute name="customerType" type="CustomerType"/>
+      <attribute name="customerName" type="String"/>
+      <attribute name="zip" type="String"/>
+      <attribute name="lat" type="double"/>
+      <attribute name="lng" type="double"/>
+    </contents>
+    <contents xsi:type="entitymodel:Entity" name="MaterialDTO">
+      <namedQuery_Entity name="getMaterialDTOByIdentificationAndPointIdentifierAndCustomerNumber" query="SELECT materialDTO FROM MaterialGatheringPointDTO materialGatheringPointDTO JOIN materialGatheringPointDTO.gatheredMaterial materialDTO WHERE materialDTO.identification = :identification and materialGatheringPointDTO.pointIdentifier = :pointIdentifier and materialGatheringPointDTO.customerNumber = :customerNumber">
+        <param_Query name="identification" attribute="//@packages.0/@contents.1/@attribute.1"/>
+        <param_Query name="pointIdentifier" attribute="//@packages.0/@contents.1/@attribute.7"/>
+        <param_Query name="customerNumber" attribute="//@packages.0/@contents.1/@attribute.8"/>
+      </namedQuery_Entity>
+      <attribute name="id" type="int">
+        <annotations xsi:type="entitymodel:PartOfID"/>
+      </attribute>
+      <attribute name="identification" type="String" partOfPK="true"/>
+      <attribute name="materialType" type="MaterialType"/>
+      <attribute name="weight" type="double"/>
+      <attribute name="deadType" type="DeadType"/>
+      <attribute name="cowEarNumber" type="String"/>
+      <attribute name="materialGatheringPoint" type="MaterialGatheringPointDTO" inverseReferenceName="gatheredMaterial">
+        <annotations xsi:type="entitymodel:Many2One">
+          <cascade>
+            <cascadeTypes xsi:type="entitymodel:Merge"/>
+          </cascade>
+        </annotations>
+      </attribute>
+      <attribute xsi:type="entitymodel:ForeignKey" name="pointIdentifier" type="String" partOfPK="true" origin="//@packages.0/@contents.3" compositionAttribute="//@packages.0/@contents.3/@attribute.3"/>
+      <attribute xsi:type="entitymodel:ForeignKey" name="customerNumber" type="String" partOfPK="true" origin="//@packages.0/@contents.3" compositionAttribute="//@packages.0/@contents.3/@attribute.3"/>
+    </contents>
+    <contents xsi:type="entitymodel:Entity" name="RouteDTO">
+      <namedQuery_Entity name="getAllRouteDTO" query="SELECT routeDTO FROM RouteDTO routeDTO"/>
+      <namedQuery_Entity name="getRouteDTOByRouteName" query="SELECT routeDTO FROM RouteDTO routeDTO WHERE routeDTO.routeName = :routeName">
+        <param_Query name="routeName" attribute="//@packages.0/@contents.2/@attribute.1"/>
+      </namedQuery_Entity>
+      <attribute name="id" type="int">
+        <annotations xsi:type="entitymodel:PartOfID"/>
+      </attribute>
+      <attribute name="routeName" type="String" partOfPK="true"/>
+      <attribute name="materialGatheringPoints" type="MaterialGatheringPointDTO" inverseReferenceName="">
+        <annotations xsi:type="entitymodel:Many2Many">
+          <cascade>
+            <cascadeTypes xsi:type="entitymodel:Merge"/>
+          </cascade>
+        </annotations>
+      </attribute>
+    </contents>
+    <contents xsi:type="entitymodel:Entity" name="MaterialGatheringPointDTO">
+      <namedQuery_Entity name="getAllMaterialGatheringPointDTO" query="SELECT materialGatheringPointDTO FROM MaterialGatheringPointDTO materialGatheringPointDTO"/>
+      <namedQuery_Entity name="getMaterialGatheringPointDTOByPointIdentifierAndCustomerNumber" query="SELECT materialGatheringPointDTO FROM MaterialGatheringPointDTO materialGatheringPointDTO WHERE materialGatheringPointDTO.pointIdentifier = :pointIdentifier and materialGatheringPointDTO.customerNumber = :customerNumber">
+        <param_Query name="pointIdentifier" attribute="//@packages.0/@contents.3/@attribute.1"/>
+        <param_Query name="customerNumber" attribute="//@packages.0/@contents.3/@attribute.2"/>
+      </namedQuery_Entity>
+      <attribute name="id" type="int">
+        <annotations xsi:type="entitymodel:PartOfID"/>
+      </attribute>
+      <attribute name="pointIdentifier" type="String" partOfPK="true"/>
+      <attribute name="customerNumber" type="String" partOfPK="true"/>
+      <attribute name="gatheredMaterial" type="MaterialDTO" composition="true" inverseReferenceName="materialGatheringPoint">
+        <annotations xsi:type="entitymodel:One2Many" mappedBy="//@packages.0/@contents.1/@attribute.6" mappedByAttributeName="[only required during model to model transformation]">
+          <cascade>
+            <cascadeTypes xsi:type="entitymodel:Merge"/>
+          </cascade>
+        </annotations>
+      </attribute>
+    </contents>
+    <contents xsi:type="entitymodel:EntityFactory" name="EntityFactory">
+      <createMethods name="createCustomerDTO" entity="//@packages.0/@contents.0">
+        <parameters setsAttribute="//@packages.0/@contents.0/@attribute.1" name="customerNumber"/>
+      </createMethods>
+      <createMethods name="createMaterialDTO" entity="//@packages.0/@contents.1">
+        <parameters setsAttribute="//@packages.0/@contents.1/@attribute.1" name="identification"/>
+      </createMethods>
+      <createMethods name="createRouteDTO" entity="//@packages.0/@contents.2">
+        <parameters setsAttribute="//@packages.0/@contents.2/@attribute.1" name="routeName"/>
+      </createMethods>
+      <createMethods name="createMaterialGatheringPointDTO" entity="//@packages.0/@contents.3">
+        <parameters setsAttribute="//@packages.0/@contents.3/@attribute.1" name="pointIdentifier"/>
+        <parameters setsAttribute="//@packages.0/@contents.3/@attribute.2" name="customerNumber"/>
+      </createMethods>
+    </contents>
+  </packages>
+</entitymodel:EntityModelRoot>

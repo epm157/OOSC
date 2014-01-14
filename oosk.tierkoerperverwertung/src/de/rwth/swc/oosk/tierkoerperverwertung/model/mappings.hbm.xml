@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="de.rwth.swc.oosk.tierkoerperverwertung.model">
+	<class name="Verwertunsstelle">
+		<id name="id" column="verwertungsstelle_id">
+			<generator class="increment" />
+		</id>
+		
+		<discriminator column="verwertungsstellen_type" type="string" />
+		
+		<subclass name="TiermehlErzeugung" discriminator-value="Tiermehl" />
+		<subclass name="Verbrennung" discriminator-value="Verbrennung" />
+	</class>
+	<class name="Verwertungsplan">
+		<id name="id" column="verwertungsplan_id">
+			<generator class="increment" />
+		</id>
+		
+		<many-to-one name="verwertungsstelle" class="Verwertunsstelle" column="verwertungsstelle_id"/>
+	</class>
+	<class name="Material">
+		<id name="id" column="material_id">
+			<generator class="increment" />
+		</id>
+
+		<discriminator column="material_type" type="string"/>
+
+		<property name="gewicht" />
+		<property name="todesart" />
+		<property name="krankheit" />
+				
+		<many-to-one name="verwertungsplan" class="Verwertungsplan" column="verwertungsplan_id" />
+
+		<subclass name="Kuh" discriminator-value="Kuh" >
+			<property name="ohrnummer" />
+		</subclass>
+		<subclass name="Schwein" discriminator-value="Schwein" />
+		<subclass name="Biene" discriminator-value="Biene" />
+	</class>
+	<class name="Wegpunkt">
+		<id name="id" column="wegpunkt_id">
+			<generator class="increment"/>
+		</id>
+		
+		<property name="einsammelZeitpunkt" />
+		
+		<set name="eingesammeltesMaterial" lazy="false" cascade="all" >
+			<key column="wegpunkt_id" />
+			<one-to-many class="Material" />
+		</set>
+	</class>
+	<class name="Kunde">
+		<id name="id" column="kunden_id">
+			<generator class="increment"/>
+		</id>
+		
+		<discriminator column="kunden_type" type="string"/>
+		
+		<property name="name" />
+		<property name="x" />
+		<property name="y" />
+ 
+		<set name="abholungen" lazy="false" cascade="all">
+			<key column="kunden_id" />
+			<one-to-many class="Wegpunkt" />
+		</set>
+ 		
+ 		<subclass name="Bauernhof" discriminator-value="Bauernhof" />
+		<subclass name="Versuchslabor" discriminator-value="Labor" />
+	</class>
+	<class name="Route">
+		<id name="id" column="route_id">
+			<generator class="increment"/>
+		</id>
+		
+		<set name="wegpunkte" lazy="false" cascade="all">
+			<key column="route_id" />
+			<one-to-many class="Wegpunkt" />
+		</set>
+	</class>
+</hibernate-mapping>

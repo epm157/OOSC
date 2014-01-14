@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:composite="http://java.sun.com/jsf/composite"
+	xmlns:prime="http://primefaces.org/ui"
+	xmlns:basicComponents="http://java.sun.com/jsf/composite/basicComponents">
+
+<body>
+	<composite:interface>
+		<composite:attribute name="dialogTitle" required="true" />
+		<composite:attribute name="dialogId" required="true" />
+		<composite:attribute name="submitButtonText" default="Assign" />
+		<composite:attribute name="addMethod" required="true"
+			method-signature="java.lang.String action()" />
+	</composite:interface>
+
+	<composite:implementation>
+		<ui:decorate template="../../resources/commonHelpers/simpleDialog.xhtml">
+
+			<ui:param name="dialogTitle" value="#{cc.attrs.dialogTitle}" />
+			<ui:param name="dialogId" value="#{cc.attrs.dialogId}" />
+
+			<ui:define name="additionalDialogDetails">
+				<h:form class="form-horizontal">
+					<composite:insertChildren />
+					<ui:insert name="additionalDialogDetails" />
+
+					<div class="control-group">
+						<div class="controls">
+							<prime:commandButton value="#{cc.attrs.submitButtonText}"
+								action="#{cc.attrs.addMethod}" ajax="false" />
+						</div>
+					</div>
+				</h:form>
+			</ui:define>
+		</ui:decorate>
+	</composite:implementation>
+</body>
+</html>

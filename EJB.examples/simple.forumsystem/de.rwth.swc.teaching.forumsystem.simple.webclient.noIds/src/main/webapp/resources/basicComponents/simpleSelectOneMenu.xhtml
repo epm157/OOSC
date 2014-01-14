@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:composite="http://java.sun.com/jsf/composite"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:prime="http://primefaces.org/ui">
+
+<body>
+
+	<composite:interface>
+		<composite:attribute name="menuId" required="true" />
+		<composite:attribute name="listClassName" required="true" />
+		<composite:attribute name="onEmptyText" default="Nicht vorhanden" />
+		<composite:attribute name="list" required="true" />
+		<composite:attribute name="storeSelectionMethod" required="true"
+			type="java.lang.String" />
+		<composite:attribute name="itemLabelMethod" required="true"
+			type="java.lang.String" />
+		<composite:attribute name="itemValueMethod" required="true"
+			type="java.lang.String" />
+
+		<composite:attribute name="update" default="" />
+		<composite:attribute name="renderIfEmpty" default="false" />
+	</composite:interface>
+	<composite:implementation>
+		<!-- If the list contains no item, this text is rendered -->
+		<div class="control-group">
+			<h:outputLabel styleClass="control-label" for="#{cc.attrs.menuId}"
+				value="#{cc.attrs.listClassName}" />
+
+			<div class="controls">
+				<h:outputText value="#{cc.attrs.onEmptyText}"
+					rendered="#{empty cc.attrs.list and not cc.attrs.renderIfEmpty}" />
+
+				<prime:selectOneMenu effectDuration="0"
+					value="#{cc.attrs.storeSelectionMethod}"
+					rendered="#{not empty cc.attrs.list or cc.attrs.renderIfEmpty}"
+					id="#{cc.attrs.menuId}"
+					>
+					<f:selectItem itemValue="" itemLabel="Select an item" />
+					<f:selectItems value="#{cc.attrs.list}" var="item"
+						itemLabel="#{cc.attrs.itemLabelMethod}"
+						itemValue="#{cc.attrs.itemValueMethod}" />
+					<prime:ajax listener="#{lectureBean.fetchLecture}" />
+					<composite:insertChildren />
+				</prime:selectOneMenu>
+			</div>
+		</div>
+	</composite:implementation>
+</body>
+</html>

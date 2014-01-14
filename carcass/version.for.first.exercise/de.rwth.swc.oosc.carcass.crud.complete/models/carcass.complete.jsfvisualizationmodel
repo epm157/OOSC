@@ -1,0 +1,1171 @@
+<?xml version="1.0" encoding="ASCII"?>
+<jsfvisualizationmodel:JSFVisualizationModelRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ejbmodel="http:///ejbmodel.ecore" xmlns:jsfvisualizationmodel="http:///jsfvisualizationmodel.ecore">
+  <managedBeanPackages package="de.rwth.swc.oosc.carcass.crud.complete.backingBeans">
+    <managedBeans name="GoatBean">
+      <operations xsi:type="jsfvisualizationmodel:Fetch" name="fetchGoat" property="//@managedBeanPackages.0/@managedBeans.0/@propertys.0">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.8"/>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.5/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.8/@parameter.0"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.6/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.8/@parameter.1"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.8/@parameter.2"/>
+          </property2ParameterMapping>
+        </facadeMethod>
+      </operations>
+      <operations xsi:type="jsfvisualizationmodel:Action" name="createGoat" successInfoMessage="Goat created successfully.">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.7"/>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.5/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.7/@parameter.0"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.6/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.7/@parameter.1"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.7/@parameter.2"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.5/@propertys.1">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.7/@parameter.3"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.5/@propertys.2">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.7/@parameter.4"/>
+          </property2ParameterMapping>
+        </facadeMethod>
+      </operations>
+      <operations xsi:type="jsfvisualizationmodel:Action" name="updateGoat" successInfoMessage="Goat was updated.">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.6"/>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.5/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.6/@parameter.0"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.5/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.6/@parameter.1"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.6/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.6/@parameter.2"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.6/@parameter.3"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.5/@propertys.1">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.6/@parameter.4"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.5/@propertys.2">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.6/@parameter.5"/>
+          </property2ParameterMapping>
+        </facadeMethod>
+      </operations>
+      <operations xsi:type="jsfvisualizationmodel:Action" name="deleteGoat" successInfoMessage="Goat deleted successfully.">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.5"/>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.5/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.5/@parameter.0"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.6/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.5/@parameter.1"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.5/@parameter.2"/>
+          </property2ParameterMapping>
+        </facadeMethod>
+      </operations>
+      <operations xsi:type="jsfvisualizationmodel:Action" name="unassignMaterialGatheringPointFromMaterialMaterialGatheringPoint" successInfoMessage="Child entity was successfully deleted.">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.36"/>
+        </facadeMethod>
+      </operations>
+      <propertys name="goat" fetch="//@managedBeanPackages.0/@managedBeans.0/@operations.0">
+        <typeApplication xsi:type="ejbmodel:TypeForEntity">
+          <entity href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.6"/>
+        </typeApplication>
+      </propertys>
+    </managedBeans>
+    <managedBeans name="PigBean">
+      <operations xsi:type="jsfvisualizationmodel:Fetch" name="fetchPig" property="//@managedBeanPackages.0/@managedBeans.1/@propertys.0">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.12"/>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.5/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.12/@parameter.0"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.6/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.12/@parameter.1"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.12/@parameter.2"/>
+          </property2ParameterMapping>
+        </facadeMethod>
+      </operations>
+      <operations xsi:type="jsfvisualizationmodel:Action" name="createPig" successInfoMessage="Pig created successfully.">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.11"/>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.5/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.11/@parameter.0"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.6/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.11/@parameter.1"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.11/@parameter.2"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.5/@propertys.1">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.11/@parameter.3"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.5/@propertys.2">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.11/@parameter.4"/>
+          </property2ParameterMapping>
+        </facadeMethod>
+      </operations>
+      <operations xsi:type="jsfvisualizationmodel:Action" name="updatePig" successInfoMessage="Pig was updated.">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.10"/>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.5/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.10/@parameter.0"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.5/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.10/@parameter.1"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.6/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.10/@parameter.2"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.10/@parameter.3"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.5/@propertys.1">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.10/@parameter.4"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.5/@propertys.2">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.10/@parameter.5"/>
+          </property2ParameterMapping>
+        </facadeMethod>
+      </operations>
+      <operations xsi:type="jsfvisualizationmodel:Action" name="deletePig" successInfoMessage="Pig deleted successfully.">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.9"/>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.5/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.9/@parameter.0"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.6/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.9/@parameter.1"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.9/@parameter.2"/>
+          </property2ParameterMapping>
+        </facadeMethod>
+      </operations>
+      <operations xsi:type="jsfvisualizationmodel:Action" name="unassignMaterialGatheringPointFromMaterialMaterialGatheringPoint" successInfoMessage="Child entity was successfully deleted.">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.36"/>
+        </facadeMethod>
+      </operations>
+      <propertys name="pig" fetch="//@managedBeanPackages.0/@managedBeans.1/@operations.0">
+        <typeApplication xsi:type="ejbmodel:TypeForEntity">
+          <entity href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.5"/>
+        </typeApplication>
+      </propertys>
+    </managedBeans>
+    <managedBeans name="ResearchLaboratoryBean">
+      <operations xsi:type="jsfvisualizationmodel:Fetch" name="fetchResearchLaboratory" property="//@managedBeanPackages.0/@managedBeans.2/@propertys.0">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.16"/>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.16/@parameter.0"/>
+          </property2ParameterMapping>
+        </facadeMethod>
+      </operations>
+      <operations xsi:type="jsfvisualizationmodel:Action" name="createResearchLaboratory" successInfoMessage="ResearchLaboratory created successfully.">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.15"/>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.15/@parameter.0"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.1">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.15/@parameter.1"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.2">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.15/@parameter.2"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.3">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.15/@parameter.3"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.4">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.15/@parameter.4"/>
+          </property2ParameterMapping>
+        </facadeMethod>
+      </operations>
+      <operations xsi:type="jsfvisualizationmodel:Action" name="updateResearchLaboratory" successInfoMessage="ResearchLaboratory was updated.">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.14"/>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.14/@parameter.0"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.14/@parameter.1"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.1">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.14/@parameter.2"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.2">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.14/@parameter.3"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.3">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.14/@parameter.4"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.4">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.14/@parameter.5"/>
+          </property2ParameterMapping>
+        </facadeMethod>
+      </operations>
+      <operations xsi:type="jsfvisualizationmodel:Action" name="deleteResearchLaboratory" successInfoMessage="ResearchLaboratory deleted successfully.">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.13"/>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.13/@parameter.0"/>
+          </property2ParameterMapping>
+        </facadeMethod>
+      </operations>
+      <propertys name="researchLaboratory" fetch="//@managedBeanPackages.0/@managedBeans.2/@operations.0">
+        <typeApplication xsi:type="ejbmodel:TypeForEntity">
+          <entity href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.4"/>
+        </typeApplication>
+      </propertys>
+    </managedBeans>
+    <managedBeans name="FarmerBean">
+      <operations xsi:type="jsfvisualizationmodel:Fetch" name="fetchFarmer" property="//@managedBeanPackages.0/@managedBeans.3/@propertys.0">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.20"/>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.20/@parameter.0"/>
+          </property2ParameterMapping>
+        </facadeMethod>
+      </operations>
+      <operations xsi:type="jsfvisualizationmodel:Action" name="createFarmer" successInfoMessage="Farmer created successfully.">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.19"/>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.19/@parameter.0"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.1">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.19/@parameter.1"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.2">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.19/@parameter.2"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.3">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.19/@parameter.3"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.4">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.19/@parameter.4"/>
+          </property2ParameterMapping>
+        </facadeMethod>
+      </operations>
+      <operations xsi:type="jsfvisualizationmodel:Action" name="updateFarmer" successInfoMessage="Farmer was updated.">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.18"/>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.18/@parameter.0"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.18/@parameter.1"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.1">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.18/@parameter.2"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.2">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.18/@parameter.3"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.3">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.18/@parameter.4"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.4">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.18/@parameter.5"/>
+          </property2ParameterMapping>
+        </facadeMethod>
+      </operations>
+      <operations xsi:type="jsfvisualizationmodel:Action" name="deleteFarmer" successInfoMessage="Farmer deleted successfully.">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.17"/>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.17/@parameter.0"/>
+          </property2ParameterMapping>
+        </facadeMethod>
+      </operations>
+      <propertys name="farmer" fetch="//@managedBeanPackages.0/@managedBeans.3/@operations.0">
+        <typeApplication xsi:type="ejbmodel:TypeForEntity">
+          <entity href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.3"/>
+        </typeApplication>
+      </propertys>
+    </managedBeans>
+    <managedBeans name="CustomerBean">
+      <operations xsi:type="jsfvisualizationmodel:Fetch" name="fetchCustomer" property="//@managedBeanPackages.0/@managedBeans.4/@propertys.6">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.32"/>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.32/@parameter.0"/>
+          </property2ParameterMapping>
+        </facadeMethod>
+      </operations>
+      <operations xsi:type="jsfvisualizationmodel:Action" name="createCustomer" successInfoMessage="Customer created successfully.">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.31"/>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.31/@parameter.0"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.1">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.31/@parameter.1"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.2">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.31/@parameter.2"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.3">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.31/@parameter.3"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.4">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.31/@parameter.4"/>
+          </property2ParameterMapping>
+        </facadeMethod>
+      </operations>
+      <operations xsi:type="jsfvisualizationmodel:Action" name="updateCustomer" successInfoMessage="Customer was updated.">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.30"/>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.30/@parameter.0"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.30/@parameter.1"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.1">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.30/@parameter.2"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.2">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.30/@parameter.3"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.3">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.30/@parameter.4"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.4">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.30/@parameter.5"/>
+          </property2ParameterMapping>
+        </facadeMethod>
+      </operations>
+      <operations xsi:type="jsfvisualizationmodel:Action" name="deleteCustomer" successInfoMessage="Customer deleted successfully.">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.29"/>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.29/@parameter.0"/>
+          </property2ParameterMapping>
+        </facadeMethod>
+      </operations>
+      <propertys name="customerNumber">
+        <typeApplication xsi:type="ejbmodel:SameTypeAsAttribute">
+          <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.1"/>
+        </typeApplication>
+      </propertys>
+      <propertys name="customerName">
+        <typeApplication xsi:type="ejbmodel:SameTypeAsAttribute">
+          <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.2"/>
+        </typeApplication>
+      </propertys>
+      <propertys name="zip">
+        <typeApplication xsi:type="ejbmodel:SameTypeAsAttribute">
+          <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.3"/>
+        </typeApplication>
+      </propertys>
+      <propertys name="lat">
+        <typeApplication xsi:type="ejbmodel:SameTypeAsAttribute">
+          <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.4"/>
+        </typeApplication>
+      </propertys>
+      <propertys name="lng">
+        <typeApplication xsi:type="ejbmodel:SameTypeAsAttribute">
+          <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.5"/>
+        </typeApplication>
+      </propertys>
+      <propertys name="materialGatheringPoints">
+        <typeApplication xsi:type="ejbmodel:SameTypeAsAttribute" asList="true">
+          <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.6"/>
+        </typeApplication>
+      </propertys>
+      <propertys name="customer" fetch="//@managedBeanPackages.0/@managedBeans.4/@operations.0">
+        <typeApplication xsi:type="ejbmodel:TypeForEntity">
+          <entity href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.0"/>
+        </typeApplication>
+      </propertys>
+    </managedBeans>
+    <managedBeans name="MaterialBean">
+      <operations xsi:type="jsfvisualizationmodel:Fetch" name="fetchMaterial" property="//@managedBeanPackages.0/@managedBeans.5/@propertys.4">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.24"/>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.5/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.24/@parameter.0"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.6/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.24/@parameter.1"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.24/@parameter.2"/>
+          </property2ParameterMapping>
+        </facadeMethod>
+      </operations>
+      <operations xsi:type="jsfvisualizationmodel:Action" name="createMaterial" successInfoMessage="Material created successfully.">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.23"/>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.5/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.23/@parameter.0"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.6/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.23/@parameter.1"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.23/@parameter.2"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.5/@propertys.1">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.23/@parameter.3"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.5/@propertys.2">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.23/@parameter.4"/>
+          </property2ParameterMapping>
+        </facadeMethod>
+      </operations>
+      <operations xsi:type="jsfvisualizationmodel:Action" name="updateMaterial" successInfoMessage="Material was updated.">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.22"/>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.5/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.22/@parameter.0"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.5/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.22/@parameter.1"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.6/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.22/@parameter.2"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.22/@parameter.3"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.5/@propertys.1">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.22/@parameter.4"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.5/@propertys.2">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.22/@parameter.5"/>
+          </property2ParameterMapping>
+        </facadeMethod>
+      </operations>
+      <operations xsi:type="jsfvisualizationmodel:Action" name="deleteMaterial" successInfoMessage="Material deleted successfully.">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.21"/>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.5/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.21/@parameter.0"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.6/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.21/@parameter.1"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.21/@parameter.2"/>
+          </property2ParameterMapping>
+        </facadeMethod>
+      </operations>
+      <operations xsi:type="jsfvisualizationmodel:Action" name="unassignMaterialGatheringPointFromMaterialMaterialGatheringPoint" successInfoMessage="Child entity was successfully deleted.">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.36"/>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.5/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.36/@parameter.0"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.6/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.36/@parameter.1"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.36/@parameter.2"/>
+          </property2ParameterMapping>
+        </facadeMethod>
+      </operations>
+      <propertys name="identification">
+        <typeApplication xsi:type="ejbmodel:SameTypeAsAttribute">
+          <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.2/@attribute.1"/>
+        </typeApplication>
+      </propertys>
+      <propertys name="weight">
+        <typeApplication xsi:type="ejbmodel:SameTypeAsAttribute">
+          <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.2/@attribute.2"/>
+        </typeApplication>
+      </propertys>
+      <propertys name="deadType">
+        <typeApplication xsi:type="ejbmodel:SameTypeAsAttribute">
+          <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.2/@attribute.3"/>
+        </typeApplication>
+      </propertys>
+      <propertys name="materialGatheringPoint">
+        <typeApplication xsi:type="ejbmodel:SameTypeAsAttribute">
+          <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.2/@attribute.4"/>
+        </typeApplication>
+      </propertys>
+      <propertys name="material" fetch="//@managedBeanPackages.0/@managedBeans.5/@operations.0">
+        <typeApplication xsi:type="ejbmodel:TypeForEntity">
+          <entity href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.2"/>
+        </typeApplication>
+      </propertys>
+    </managedBeans>
+    <managedBeans name="MaterialGatheringPointBean">
+      <operations xsi:type="jsfvisualizationmodel:Fetch" name="fetchMaterialGatheringPoint" property="//@managedBeanPackages.0/@managedBeans.6/@propertys.3">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.28"/>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.6/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.28/@parameter.0"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.28/@parameter.1"/>
+          </property2ParameterMapping>
+        </facadeMethod>
+      </operations>
+      <operations xsi:type="jsfvisualizationmodel:Action" name="createMaterialGatheringPoint" successInfoMessage="MaterialGatheringPoint created successfully.">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.27"/>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.6/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.27/@parameter.0"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.27/@parameter.1"/>
+          </property2ParameterMapping>
+        </facadeMethod>
+      </operations>
+      <operations xsi:type="jsfvisualizationmodel:Action" name="updateMaterialGatheringPoint" successInfoMessage="MaterialGatheringPoint was updated.">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.26"/>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.6/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.26/@parameter.0"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.6/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.26/@parameter.1"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.26/@parameter.2"/>
+          </property2ParameterMapping>
+        </facadeMethod>
+      </operations>
+      <operations xsi:type="jsfvisualizationmodel:Action" name="deleteMaterialGatheringPoint" successInfoMessage="MaterialGatheringPoint deleted successfully.">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.25"/>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.6/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.25/@parameter.0"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.25/@parameter.1"/>
+          </property2ParameterMapping>
+        </facadeMethod>
+      </operations>
+      <operations xsi:type="jsfvisualizationmodel:Action" name="unassignCustomerFromMaterialGatheringPointCustomer" successInfoMessage="Child entity was successfully deleted.">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.35"/>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.6/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.35/@parameter.0"/>
+          </property2ParameterMapping>
+          <property2ParameterMapping property="//@managedBeanPackages.0/@managedBeans.4/@propertys.0">
+            <parameter href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.35/@parameter.1"/>
+          </property2ParameterMapping>
+        </facadeMethod>
+      </operations>
+      <propertys name="pointIdentifier">
+        <typeApplication xsi:type="ejbmodel:SameTypeAsAttribute">
+          <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.1"/>
+        </typeApplication>
+      </propertys>
+      <propertys name="gatheredMaterial">
+        <typeApplication xsi:type="ejbmodel:SameTypeAsAttribute" asList="true">
+          <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.2"/>
+        </typeApplication>
+      </propertys>
+      <propertys name="customer">
+        <typeApplication xsi:type="ejbmodel:SameTypeAsAttribute">
+          <attribute href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.3"/>
+        </typeApplication>
+      </propertys>
+      <propertys name="materialGatheringPoint" fetch="//@managedBeanPackages.0/@managedBeans.6/@operations.0">
+        <typeApplication xsi:type="ejbmodel:TypeForEntity">
+          <entity href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.1"/>
+        </typeApplication>
+      </propertys>
+    </managedBeans>
+    <managedBeans name="Root">
+      <operations xsi:type="jsfvisualizationmodel:Fetch" name="fetchAllGoat" property="//@managedBeanPackages.0/@managedBeans.7/@propertys.0">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.0"/>
+        </facadeMethod>
+      </operations>
+      <operations xsi:type="jsfvisualizationmodel:Fetch" name="fetchAllPig" property="//@managedBeanPackages.0/@managedBeans.7/@propertys.1">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.1"/>
+        </facadeMethod>
+      </operations>
+      <operations xsi:type="jsfvisualizationmodel:Fetch" name="fetchAllResearchLaboratory" property="//@managedBeanPackages.0/@managedBeans.7/@propertys.2">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.2"/>
+        </facadeMethod>
+      </operations>
+      <operations xsi:type="jsfvisualizationmodel:Fetch" name="fetchAllFarmer" property="//@managedBeanPackages.0/@managedBeans.7/@propertys.3">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.3"/>
+        </facadeMethod>
+      </operations>
+      <operations xsi:type="jsfvisualizationmodel:Fetch" name="fetchAllCustomer" property="//@managedBeanPackages.0/@managedBeans.7/@propertys.4">
+        <facadeMethod>
+          <facadeMethod href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.ejbmodel#//@packages.2/@beans.0/@methods.4"/>
+        </facadeMethod>
+      </operations>
+      <propertys name="allGoat" fetch="//@managedBeanPackages.0/@managedBeans.7/@operations.0">
+        <typeApplication xsi:type="ejbmodel:TypeForEntity" asList="true">
+          <entity href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.6"/>
+        </typeApplication>
+      </propertys>
+      <propertys name="allPig" fetch="//@managedBeanPackages.0/@managedBeans.7/@operations.1">
+        <typeApplication xsi:type="ejbmodel:TypeForEntity" asList="true">
+          <entity href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.5"/>
+        </typeApplication>
+      </propertys>
+      <propertys name="allResearchLaboratory" fetch="//@managedBeanPackages.0/@managedBeans.7/@operations.2">
+        <typeApplication xsi:type="ejbmodel:TypeForEntity" asList="true">
+          <entity href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.4"/>
+        </typeApplication>
+      </propertys>
+      <propertys name="allFarmer" fetch="//@managedBeanPackages.0/@managedBeans.7/@operations.3">
+        <typeApplication xsi:type="ejbmodel:TypeForEntity" asList="true">
+          <entity href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.3"/>
+        </typeApplication>
+      </propertys>
+      <propertys name="allCustomer" fetch="//@managedBeanPackages.0/@managedBeans.7/@operations.4">
+        <typeApplication xsi:type="ejbmodel:TypeForEntity" asList="true">
+          <entity href="file:/C:/Eclipse/Workspaces/CDI%20Test/de.rwth.swc.oosc.carcass.crud.complete/models/carcass.complete.entitymodel#//@packages.0/@contents.0"/>
+        </typeApplication>
+      </propertys>
+    </managedBeans>
+  </managedBeanPackages>
+  <webRoot name="">
+    <subPackages name="resources">
+      <subPackages name="tables">
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:BaseTable" name="GoatList" onEmptyList="No Goat items">
+          <columns header="identification">
+            <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{item.identification}"/>
+          </columns>
+          <columns header="weight">
+            <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{item.weight}"/>
+          </columns>
+          <columns header="deadType">
+            <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{item.deadType}"/>
+          </columns>
+          <columns header="pointIdentifier">
+            <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{item.pointIdentifier}"/>
+          </columns>
+          <columns header="customerNumber">
+            <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{item.customerNumber}"/>
+          </columns>
+        </xHTMLFiles>
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:BaseTable" name="PigList" onEmptyList="No Pig items">
+          <columns header="identification">
+            <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{item.identification}"/>
+          </columns>
+          <columns header="weight">
+            <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{item.weight}"/>
+          </columns>
+          <columns header="deadType">
+            <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{item.deadType}"/>
+          </columns>
+          <columns header="pointIdentifier">
+            <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{item.pointIdentifier}"/>
+          </columns>
+          <columns header="customerNumber">
+            <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{item.customerNumber}"/>
+          </columns>
+        </xHTMLFiles>
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:BaseTable" name="ResearchLaboratoryList" onEmptyList="No ResearchLaboratory items">
+          <columns header="customerNumber">
+            <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{item.customerNumber}"/>
+          </columns>
+          <columns header="customerName">
+            <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{item.customerName}"/>
+          </columns>
+          <columns header="zip">
+            <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{item.zip}"/>
+          </columns>
+          <columns header="lat">
+            <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{item.lat}"/>
+          </columns>
+          <columns header="lng">
+            <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{item.lng}"/>
+          </columns>
+        </xHTMLFiles>
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:BaseTable" name="FarmerList" onEmptyList="No Farmer items">
+          <columns header="customerNumber">
+            <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{item.customerNumber}"/>
+          </columns>
+          <columns header="customerName">
+            <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{item.customerName}"/>
+          </columns>
+          <columns header="zip">
+            <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{item.zip}"/>
+          </columns>
+          <columns header="lat">
+            <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{item.lat}"/>
+          </columns>
+          <columns header="lng">
+            <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{item.lng}"/>
+          </columns>
+        </xHTMLFiles>
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:BaseTable" name="CustomerList" onEmptyList="No Customer items">
+          <columns header="customerNumber">
+            <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{item.customerNumber}"/>
+          </columns>
+          <columns header="customerName">
+            <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{item.customerName}"/>
+          </columns>
+          <columns header="zip">
+            <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{item.zip}"/>
+          </columns>
+          <columns header="lat">
+            <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{item.lat}"/>
+          </columns>
+          <columns header="lng">
+            <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{item.lng}"/>
+          </columns>
+        </xHTMLFiles>
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:BaseTable" name="MaterialList" onEmptyList="No Material items">
+          <columns header="identification">
+            <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{item.identification}"/>
+          </columns>
+          <columns header="weight">
+            <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{item.weight}"/>
+          </columns>
+          <columns header="deadType">
+            <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{item.deadType}"/>
+          </columns>
+          <columns header="pointIdentifier">
+            <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{item.pointIdentifier}"/>
+          </columns>
+          <columns header="customerNumber">
+            <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{item.customerNumber}"/>
+          </columns>
+        </xHTMLFiles>
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:BaseTable" name="MaterialGatheringPointList" onEmptyList="No MaterialGatheringPoint items">
+          <columns header="pointIdentifier">
+            <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{item.pointIdentifier}"/>
+          </columns>
+          <columns header="customerNumber">
+            <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{item.customerNumber}"/>
+          </columns>
+        </xHTMLFiles>
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:TableExtension" name="GoatListWithViewLink" baseTable="//@webRoot/@subPackages.0/@subPackages.0/@xHTMLFiles.0">
+          <columns header="View">
+            <body xsi:type="jsfvisualizationmodel:CCUsage" compositeComponent="//@webRoot/@subPackages.0/@subPackages.2/@xHTMLFiles.1">
+              <parameterValues parameter="//@webRoot/@subPackages.0/@subPackages.2/@xHTMLFiles.1/@parameters.0" value="#{item}"/>
+            </body>
+          </columns>
+        </xHTMLFiles>
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:TableExtension" name="PigListWithViewLink" baseTable="//@webRoot/@subPackages.0/@subPackages.0/@xHTMLFiles.1">
+          <columns header="View">
+            <body xsi:type="jsfvisualizationmodel:CCUsage" compositeComponent="//@webRoot/@subPackages.0/@subPackages.3/@xHTMLFiles.1">
+              <parameterValues parameter="//@webRoot/@subPackages.0/@subPackages.3/@xHTMLFiles.1/@parameters.0" value="#{item}"/>
+            </body>
+          </columns>
+        </xHTMLFiles>
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:TableExtension" name="ResearchLaboratoryListWithViewLink" baseTable="//@webRoot/@subPackages.0/@subPackages.0/@xHTMLFiles.2">
+          <columns header="View">
+            <body xsi:type="jsfvisualizationmodel:CCUsage" compositeComponent="//@webRoot/@subPackages.0/@subPackages.4/@xHTMLFiles.1">
+              <parameterValues parameter="//@webRoot/@subPackages.0/@subPackages.4/@xHTMLFiles.1/@parameters.0" value="#{item}"/>
+            </body>
+          </columns>
+        </xHTMLFiles>
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:TableExtension" name="FarmerListWithViewLink" baseTable="//@webRoot/@subPackages.0/@subPackages.0/@xHTMLFiles.3">
+          <columns header="View">
+            <body xsi:type="jsfvisualizationmodel:CCUsage" compositeComponent="//@webRoot/@subPackages.0/@subPackages.5/@xHTMLFiles.1">
+              <parameterValues parameter="//@webRoot/@subPackages.0/@subPackages.5/@xHTMLFiles.1/@parameters.0" value="#{item}"/>
+            </body>
+          </columns>
+        </xHTMLFiles>
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:TableExtension" name="CustomerListWithViewLink" baseTable="//@webRoot/@subPackages.0/@subPackages.0/@xHTMLFiles.4">
+          <columns header="View">
+            <body xsi:type="jsfvisualizationmodel:CCUsage" compositeComponent="//@webRoot/@subPackages.0/@subPackages.6/@xHTMLFiles.1">
+              <parameterValues parameter="//@webRoot/@subPackages.0/@subPackages.6/@xHTMLFiles.1/@parameters.0" value="#{item}"/>
+            </body>
+          </columns>
+        </xHTMLFiles>
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:TableExtension" name="MaterialListWithViewLink" baseTable="//@webRoot/@subPackages.0/@subPackages.0/@xHTMLFiles.5">
+          <columns header="View">
+            <body xsi:type="jsfvisualizationmodel:CCUsage" compositeComponent="//@webRoot/@subPackages.0/@subPackages.7/@xHTMLFiles.1">
+              <parameterValues parameter="//@webRoot/@subPackages.0/@subPackages.7/@xHTMLFiles.1/@parameters.0" value="#{item}"/>
+            </body>
+          </columns>
+        </xHTMLFiles>
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:TableExtension" name="MaterialGatheringPointListWithViewLink" baseTable="//@webRoot/@subPackages.0/@subPackages.0/@xHTMLFiles.6">
+          <columns header="View">
+            <body xsi:type="jsfvisualizationmodel:CCUsage" compositeComponent="//@webRoot/@subPackages.0/@subPackages.8/@xHTMLFiles.1">
+              <parameterValues parameter="//@webRoot/@subPackages.0/@subPackages.8/@xHTMLFiles.1/@parameters.0" value="#{item}"/>
+            </body>
+          </columns>
+        </xHTMLFiles>
+      </subPackages>
+      <subPackages name="dialogs">
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:BasePopUp" name="GoatCreateDialog">
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="identification" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.5/@propertys.0"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="weight" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.5/@propertys.1"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="deadType" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.5/@propertys.2"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="pointIdentifier" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.6/@propertys.0"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="customerNumber" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.4/@propertys.0"/>
+          <body xsi:type="jsfvisualizationmodel:TriggerActionButton" label="Create new Goat" action="//@managedBeanPackages.0/@managedBeans.0/@operations.1"/>
+        </xHTMLFiles>
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:BasePopUp" name="PigCreateDialog">
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="identification" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.5/@propertys.0"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="weight" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.5/@propertys.1"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="deadType" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.5/@propertys.2"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="pointIdentifier" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.6/@propertys.0"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="customerNumber" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.4/@propertys.0"/>
+          <body xsi:type="jsfvisualizationmodel:TriggerActionButton" label="Create new Pig" action="//@managedBeanPackages.0/@managedBeans.1/@operations.1"/>
+        </xHTMLFiles>
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:BasePopUp" name="ResearchLaboratoryCreateDialog">
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="customerNumber" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.4/@propertys.0"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="customerName" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.4/@propertys.1"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="zip" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.4/@propertys.2"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="lat" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.4/@propertys.3"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="lng" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.4/@propertys.4"/>
+          <body xsi:type="jsfvisualizationmodel:TriggerActionButton" label="Create new ResearchLaboratory" action="//@managedBeanPackages.0/@managedBeans.2/@operations.1"/>
+        </xHTMLFiles>
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:BasePopUp" name="FarmerCreateDialog">
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="customerNumber" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.4/@propertys.0"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="customerName" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.4/@propertys.1"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="zip" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.4/@propertys.2"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="lat" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.4/@propertys.3"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="lng" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.4/@propertys.4"/>
+          <body xsi:type="jsfvisualizationmodel:TriggerActionButton" label="Create new Farmer" action="//@managedBeanPackages.0/@managedBeans.3/@operations.1"/>
+        </xHTMLFiles>
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:BasePopUp" name="CustomerCreateDialog">
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="customerNumber" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.4/@propertys.0"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="customerName" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.4/@propertys.1"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="zip" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.4/@propertys.2"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="lat" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.4/@propertys.3"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="lng" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.4/@propertys.4"/>
+          <body xsi:type="jsfvisualizationmodel:TriggerActionButton" label="Create new Customer" action="//@managedBeanPackages.0/@managedBeans.4/@operations.1"/>
+        </xHTMLFiles>
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:BasePopUp" name="MaterialCreateDialog">
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="identification" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.5/@propertys.0"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="weight" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.5/@propertys.1"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="deadType" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.5/@propertys.2"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="pointIdentifier" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.6/@propertys.0"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="customerNumber" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.4/@propertys.0"/>
+          <body xsi:type="jsfvisualizationmodel:TriggerActionButton" label="Create new Material" action="//@managedBeanPackages.0/@managedBeans.5/@operations.1"/>
+        </xHTMLFiles>
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:BasePopUp" name="MaterialGatheringPointCreateDialog">
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="pointIdentifier" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.6/@propertys.0"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="customerNumber" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.4/@propertys.0"/>
+          <body xsi:type="jsfvisualizationmodel:TriggerActionButton" label="Create new MaterialGatheringPoint" action="//@managedBeanPackages.0/@managedBeans.6/@operations.1"/>
+        </xHTMLFiles>
+      </subPackages>
+      <subPackages name="goatHelper">
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:CompositeComponent" name="goatName.xhtml">
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="Identification: #{cc.attrs.goat.identification}, PointIdentifier: #{cc.attrs.goat.pointIdentifier}, CustomerNumber: #{cc.attrs.goat.customerNumber}"/>
+          <parameters name="goat"/>
+        </xHTMLFiles>
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:CompositeComponent" name="goatViewLink.xhtml">
+          <body xsi:type="jsfvisualizationmodel:Link" jSFPage="//@webRoot/@subPackages.1/@xHTMLFiles.1" label="Identification: #{cc.attrs.goat.identification}, PointIdentifier: #{cc.attrs.goat.pointIdentifier}, CustomerNumber: #{cc.attrs.goat.customerNumber}"/>
+          <parameters name="goat"/>
+        </xHTMLFiles>
+      </subPackages>
+      <subPackages name="pigHelper">
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:CompositeComponent" name="pigName.xhtml">
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="Identification: #{cc.attrs.pig.identification}, PointIdentifier: #{cc.attrs.pig.pointIdentifier}, CustomerNumber: #{cc.attrs.pig.customerNumber}"/>
+          <parameters name="pig"/>
+        </xHTMLFiles>
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:CompositeComponent" name="pigViewLink.xhtml">
+          <body xsi:type="jsfvisualizationmodel:Link" jSFPage="//@webRoot/@subPackages.2/@xHTMLFiles.1" label="Identification: #{cc.attrs.pig.identification}, PointIdentifier: #{cc.attrs.pig.pointIdentifier}, CustomerNumber: #{cc.attrs.pig.customerNumber}"/>
+          <parameters name="pig"/>
+        </xHTMLFiles>
+      </subPackages>
+      <subPackages name="researchLaboratoryHelper">
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:CompositeComponent" name="researchLaboratoryName.xhtml">
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="CustomerNumber: #{cc.attrs.researchLaboratory.customerNumber}"/>
+          <parameters name="researchLaboratory"/>
+        </xHTMLFiles>
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:CompositeComponent" name="researchLaboratoryViewLink.xhtml">
+          <body xsi:type="jsfvisualizationmodel:Link" jSFPage="//@webRoot/@subPackages.3/@xHTMLFiles.1" label="CustomerNumber: #{cc.attrs.researchLaboratory.customerNumber}"/>
+          <parameters name="researchLaboratory"/>
+        </xHTMLFiles>
+      </subPackages>
+      <subPackages name="farmerHelper">
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:CompositeComponent" name="farmerName.xhtml">
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="CustomerNumber: #{cc.attrs.farmer.customerNumber}"/>
+          <parameters name="farmer"/>
+        </xHTMLFiles>
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:CompositeComponent" name="farmerViewLink.xhtml">
+          <body xsi:type="jsfvisualizationmodel:Link" jSFPage="//@webRoot/@subPackages.4/@xHTMLFiles.1" label="CustomerNumber: #{cc.attrs.farmer.customerNumber}"/>
+          <parameters name="farmer"/>
+        </xHTMLFiles>
+      </subPackages>
+      <subPackages name="customerHelper">
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:CompositeComponent" name="customerName.xhtml">
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="CustomerNumber: #{cc.attrs.customer.customerNumber}"/>
+          <parameters name="customer"/>
+        </xHTMLFiles>
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:CompositeComponent" name="customerViewLink.xhtml">
+          <body xsi:type="jsfvisualizationmodel:Link" jSFPage="//@webRoot/@subPackages.5/@xHTMLFiles.1" label="CustomerNumber: #{cc.attrs.customer.customerNumber}"/>
+          <parameters name="customer"/>
+        </xHTMLFiles>
+      </subPackages>
+      <subPackages name="materialHelper">
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:CompositeComponent" name="materialName.xhtml">
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="Identification: #{cc.attrs.material.identification}, PointIdentifier: #{cc.attrs.material.pointIdentifier}, CustomerNumber: #{cc.attrs.material.customerNumber}"/>
+          <parameters name="material"/>
+        </xHTMLFiles>
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:CompositeComponent" name="materialViewLink.xhtml">
+          <body xsi:type="jsfvisualizationmodel:Link" jSFPage="//@webRoot/@subPackages.6/@xHTMLFiles.1" label="Identification: #{cc.attrs.material.identification}, PointIdentifier: #{cc.attrs.material.pointIdentifier}, CustomerNumber: #{cc.attrs.material.customerNumber}"/>
+          <parameters name="material"/>
+        </xHTMLFiles>
+      </subPackages>
+      <subPackages name="materialGatheringPointHelper">
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:CompositeComponent" name="materialGatheringPointName.xhtml">
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="PointIdentifier: #{cc.attrs.materialGatheringPoint.pointIdentifier}, CustomerNumber: #{cc.attrs.materialGatheringPoint.customerNumber}"/>
+          <parameters name="materialGatheringPoint"/>
+        </xHTMLFiles>
+        <xHTMLFiles xsi:type="jsfvisualizationmodel:CompositeComponent" name="materialGatheringPointViewLink.xhtml">
+          <body xsi:type="jsfvisualizationmodel:Link" jSFPage="//@webRoot/@subPackages.7/@xHTMLFiles.1" label="PointIdentifier: #{cc.attrs.materialGatheringPoint.pointIdentifier}, CustomerNumber: #{cc.attrs.materialGatheringPoint.customerNumber}"/>
+          <parameters name="materialGatheringPoint"/>
+        </xHTMLFiles>
+      </subPackages>
+      <xHTMLFiles xsi:type="jsfvisualizationmodel:SiteTemplate" name="main.template.xhtml" stylesheetName="" siteName="Your Application Name goes Here"/>
+    </subPackages>
+    <subPackages name="GoatManagement">
+      <xHTMLFiles xsi:type="jsfvisualizationmodel:TemplateBasedXHTMLSite" name="GoatEditPage.xhtml" prettyNavigationPattern="/edit" fetchOnInit="//@managedBeanPackages.0/@managedBeans.0/@operations.0" siteTemplate="//@webRoot/@subPackages.0/@xHTMLFiles.0" title="Edit Goat">
+        <parameter name="identification" property="//@managedBeanPackages.0/@managedBeans.5/@propertys.0"/>
+        <parameter name="pointIdentifier" property="//@managedBeanPackages.0/@managedBeans.6/@propertys.0"/>
+        <parameter name="customerNumber" property="//@managedBeanPackages.0/@managedBeans.4/@propertys.0"/>
+        <body xsi:type="jsfvisualizationmodel:Form">
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="identification" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.5/@propertys.0"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="weight" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.5/@propertys.1"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="deadType" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.5/@propertys.2"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="pointIdentifier" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.6/@propertys.0"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="customerNumber" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.4/@propertys.0"/>
+          <body xsi:type="jsfvisualizationmodel:TriggerActionButton" label="Update Goat" action="//@managedBeanPackages.0/@managedBeans.0/@operations.2"/>
+          <body xsi:type="jsfvisualizationmodel:TriggerActionButton" label="Delete this Goat" action="//@managedBeanPackages.0/@managedBeans.0/@operations.3"/>
+        </body>
+      </xHTMLFiles>
+      <xHTMLFiles xsi:type="jsfvisualizationmodel:TemplateBasedXHTMLSite" name="GoatViewPage.xhtml" fetchOnInit="//@managedBeanPackages.0/@managedBeans.0/@operations.0" siteTemplate="//@webRoot/@subPackages.0/@xHTMLFiles.0" title="Details of Goat">
+        <parameter name="identification" property="//@managedBeanPackages.0/@managedBeans.5/@propertys.0"/>
+        <parameter name="pointIdentifier" property="//@managedBeanPackages.0/@managedBeans.6/@propertys.0"/>
+        <parameter name="customerNumber" property="//@managedBeanPackages.0/@managedBeans.4/@propertys.0"/>
+        <body xsi:type="jsfvisualizationmodel:GridLayout" columns="2">
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="Identification:"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{goatBean.identification}"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="Weight:"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{goatBean.weight}"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="DeadType:"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{goatBean.deadType}"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="MaterialGatheringPoint:"/>
+          <body xsi:type="jsfvisualizationmodel:CCUsage" compositeComponent="//@webRoot/@subPackages.0/@subPackages.8/@xHTMLFiles.1">
+            <parameterValues parameter="//@webRoot/@subPackages.0/@subPackages.8/@xHTMLFiles.1/@parameters.0" value="#{goatBean.materialGatheringPoint}"/>
+          </body>
+        </body>
+      </xHTMLFiles>
+    </subPackages>
+    <subPackages name="PigManagement">
+      <xHTMLFiles xsi:type="jsfvisualizationmodel:TemplateBasedXHTMLSite" name="PigEditPage.xhtml" prettyNavigationPattern="/edit" fetchOnInit="//@managedBeanPackages.0/@managedBeans.1/@operations.0" siteTemplate="//@webRoot/@subPackages.0/@xHTMLFiles.0" title="Edit Pig">
+        <parameter name="identification" property="//@managedBeanPackages.0/@managedBeans.5/@propertys.0"/>
+        <parameter name="pointIdentifier" property="//@managedBeanPackages.0/@managedBeans.6/@propertys.0"/>
+        <parameter name="customerNumber" property="//@managedBeanPackages.0/@managedBeans.4/@propertys.0"/>
+        <body xsi:type="jsfvisualizationmodel:Form">
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="identification" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.5/@propertys.0"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="weight" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.5/@propertys.1"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="deadType" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.5/@propertys.2"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="pointIdentifier" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.6/@propertys.0"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="customerNumber" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.4/@propertys.0"/>
+          <body xsi:type="jsfvisualizationmodel:TriggerActionButton" label="Update Pig" action="//@managedBeanPackages.0/@managedBeans.1/@operations.2"/>
+          <body xsi:type="jsfvisualizationmodel:TriggerActionButton" label="Delete this Pig" action="//@managedBeanPackages.0/@managedBeans.1/@operations.3"/>
+        </body>
+      </xHTMLFiles>
+      <xHTMLFiles xsi:type="jsfvisualizationmodel:TemplateBasedXHTMLSite" name="PigViewPage.xhtml" fetchOnInit="//@managedBeanPackages.0/@managedBeans.1/@operations.0" siteTemplate="//@webRoot/@subPackages.0/@xHTMLFiles.0" title="Details of Pig">
+        <parameter name="identification" property="//@managedBeanPackages.0/@managedBeans.5/@propertys.0"/>
+        <parameter name="pointIdentifier" property="//@managedBeanPackages.0/@managedBeans.6/@propertys.0"/>
+        <parameter name="customerNumber" property="//@managedBeanPackages.0/@managedBeans.4/@propertys.0"/>
+        <body xsi:type="jsfvisualizationmodel:GridLayout" columns="2">
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="Identification:"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{pigBean.identification}"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="Weight:"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{pigBean.weight}"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="DeadType:"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{pigBean.deadType}"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="MaterialGatheringPoint:"/>
+          <body xsi:type="jsfvisualizationmodel:CCUsage" compositeComponent="//@webRoot/@subPackages.0/@subPackages.8/@xHTMLFiles.1">
+            <parameterValues parameter="//@webRoot/@subPackages.0/@subPackages.8/@xHTMLFiles.1/@parameters.0" value="#{pigBean.materialGatheringPoint}"/>
+          </body>
+        </body>
+      </xHTMLFiles>
+    </subPackages>
+    <subPackages name="ResearchLaboratoryManagement">
+      <xHTMLFiles xsi:type="jsfvisualizationmodel:TemplateBasedXHTMLSite" name="ResearchLaboratoryEditPage.xhtml" prettyNavigationPattern="/edit" fetchOnInit="//@managedBeanPackages.0/@managedBeans.2/@operations.0" siteTemplate="//@webRoot/@subPackages.0/@xHTMLFiles.0" title="Edit ResearchLaboratory">
+        <parameter name="customerNumber" property="//@managedBeanPackages.0/@managedBeans.4/@propertys.0"/>
+        <body xsi:type="jsfvisualizationmodel:Form">
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="customerNumber" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.4/@propertys.0"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="customerName" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.4/@propertys.1"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="zip" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.4/@propertys.2"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="lat" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.4/@propertys.3"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="lng" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.4/@propertys.4"/>
+          <body xsi:type="jsfvisualizationmodel:TriggerActionButton" label="Update ResearchLaboratory" action="//@managedBeanPackages.0/@managedBeans.2/@operations.2"/>
+          <body xsi:type="jsfvisualizationmodel:TriggerActionButton" label="Delete this ResearchLaboratory" action="//@managedBeanPackages.0/@managedBeans.2/@operations.3"/>
+        </body>
+        <body xsi:type="jsfvisualizationmodel:TableUsage" table="//@webRoot/@subPackages.0/@subPackages.0/@xHTMLFiles.6" label="MaterialGatheringPoints" property="//@managedBeanPackages.0/@managedBeans.4/@propertys.5"/>
+      </xHTMLFiles>
+      <xHTMLFiles xsi:type="jsfvisualizationmodel:TemplateBasedXHTMLSite" name="ResearchLaboratoryViewPage.xhtml" fetchOnInit="//@managedBeanPackages.0/@managedBeans.2/@operations.0" siteTemplate="//@webRoot/@subPackages.0/@xHTMLFiles.0" title="Details of ResearchLaboratory">
+        <parameter name="customerNumber" property="//@managedBeanPackages.0/@managedBeans.4/@propertys.0"/>
+        <body xsi:type="jsfvisualizationmodel:GridLayout" columns="2">
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="CustomerNumber:"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{researchLaboratoryBean.customerNumber}"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="CustomerName:"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{researchLaboratoryBean.customerName}"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="Zip:"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{researchLaboratoryBean.zip}"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="Lat:"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{researchLaboratoryBean.lat}"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="Lng:"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{researchLaboratoryBean.lng}"/>
+        </body>
+        <body xsi:type="jsfvisualizationmodel:TableUsage" table="//@webRoot/@subPackages.0/@subPackages.0/@xHTMLFiles.6" label="MaterialGatheringPoints" property="//@managedBeanPackages.0/@managedBeans.4/@propertys.5"/>
+      </xHTMLFiles>
+      <xHTMLFiles xsi:type="jsfvisualizationmodel:TemplateBasedXHTMLSite" name="ResearchLaboratoryListAllPage.xhtml" prettyNavigationPattern="/researchLaboratory/all/" siteTemplate="//@webRoot/@subPackages.0/@xHTMLFiles.0" title="All ResearchLaboratorys">
+        <body xsi:type="jsfvisualizationmodel:TableUsage" table="//@webRoot/@subPackages.0/@subPackages.0/@xHTMLFiles.9" label="ResearchLaboratory" property="//@managedBeanPackages.0/@managedBeans.7/@propertys.2"/>
+        <body xsi:type="jsfvisualizationmodel:DialogUsage" dialogTitle="Create new ResearchLaboratory" dialogButtonLabel="Create new ResearchLaboratory" popUpDialog="//@webRoot/@subPackages.0/@subPackages.1/@xHTMLFiles.2" dialogId="ResearchLaboratory"/>
+      </xHTMLFiles>
+    </subPackages>
+    <subPackages name="FarmerManagement">
+      <xHTMLFiles xsi:type="jsfvisualizationmodel:TemplateBasedXHTMLSite" name="FarmerEditPage.xhtml" prettyNavigationPattern="/edit" fetchOnInit="//@managedBeanPackages.0/@managedBeans.3/@operations.0" siteTemplate="//@webRoot/@subPackages.0/@xHTMLFiles.0" title="Edit Farmer">
+        <parameter name="customerNumber" property="//@managedBeanPackages.0/@managedBeans.4/@propertys.0"/>
+        <body xsi:type="jsfvisualizationmodel:Form">
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="customerNumber" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.4/@propertys.0"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="customerName" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.4/@propertys.1"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="zip" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.4/@propertys.2"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="lat" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.4/@propertys.3"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="lng" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.4/@propertys.4"/>
+          <body xsi:type="jsfvisualizationmodel:TriggerActionButton" label="Update Farmer" action="//@managedBeanPackages.0/@managedBeans.3/@operations.2"/>
+          <body xsi:type="jsfvisualizationmodel:TriggerActionButton" label="Delete this Farmer" action="//@managedBeanPackages.0/@managedBeans.3/@operations.3"/>
+        </body>
+        <body xsi:type="jsfvisualizationmodel:TableUsage" table="//@webRoot/@subPackages.0/@subPackages.0/@xHTMLFiles.6" label="MaterialGatheringPoints" property="//@managedBeanPackages.0/@managedBeans.4/@propertys.5"/>
+      </xHTMLFiles>
+      <xHTMLFiles xsi:type="jsfvisualizationmodel:TemplateBasedXHTMLSite" name="FarmerViewPage.xhtml" fetchOnInit="//@managedBeanPackages.0/@managedBeans.3/@operations.0" siteTemplate="//@webRoot/@subPackages.0/@xHTMLFiles.0" title="Details of Farmer">
+        <parameter name="customerNumber" property="//@managedBeanPackages.0/@managedBeans.4/@propertys.0"/>
+        <body xsi:type="jsfvisualizationmodel:GridLayout" columns="2">
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="CustomerNumber:"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{farmerBean.customerNumber}"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="CustomerName:"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{farmerBean.customerName}"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="Zip:"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{farmerBean.zip}"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="Lat:"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{farmerBean.lat}"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="Lng:"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{farmerBean.lng}"/>
+        </body>
+        <body xsi:type="jsfvisualizationmodel:TableUsage" table="//@webRoot/@subPackages.0/@subPackages.0/@xHTMLFiles.6" label="MaterialGatheringPoints" property="//@managedBeanPackages.0/@managedBeans.4/@propertys.5"/>
+      </xHTMLFiles>
+      <xHTMLFiles xsi:type="jsfvisualizationmodel:TemplateBasedXHTMLSite" name="FarmerListAllPage.xhtml" prettyNavigationPattern="/farmer/all/" siteTemplate="//@webRoot/@subPackages.0/@xHTMLFiles.0" title="All Farmers">
+        <body xsi:type="jsfvisualizationmodel:TableUsage" table="//@webRoot/@subPackages.0/@subPackages.0/@xHTMLFiles.10" label="Farmer" property="//@managedBeanPackages.0/@managedBeans.7/@propertys.3"/>
+        <body xsi:type="jsfvisualizationmodel:DialogUsage" dialogTitle="Create new Farmer" dialogButtonLabel="Create new Farmer" popUpDialog="//@webRoot/@subPackages.0/@subPackages.1/@xHTMLFiles.3" dialogId="Farmer"/>
+      </xHTMLFiles>
+    </subPackages>
+    <subPackages name="CustomerManagement">
+      <xHTMLFiles xsi:type="jsfvisualizationmodel:TemplateBasedXHTMLSite" name="CustomerEditPage.xhtml" prettyNavigationPattern="/edit" fetchOnInit="//@managedBeanPackages.0/@managedBeans.4/@operations.0" siteTemplate="//@webRoot/@subPackages.0/@xHTMLFiles.0" title="Edit Customer">
+        <parameter name="customerNumber" property="//@managedBeanPackages.0/@managedBeans.4/@propertys.0"/>
+        <body xsi:type="jsfvisualizationmodel:Form">
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="customerNumber" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.4/@propertys.0"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="customerName" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.4/@propertys.1"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="zip" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.4/@propertys.2"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="lat" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.4/@propertys.3"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="lng" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.4/@propertys.4"/>
+          <body xsi:type="jsfvisualizationmodel:TriggerActionButton" label="Update Customer" action="//@managedBeanPackages.0/@managedBeans.4/@operations.2"/>
+          <body xsi:type="jsfvisualizationmodel:TriggerActionButton" label="Delete this Customer" action="//@managedBeanPackages.0/@managedBeans.4/@operations.3"/>
+        </body>
+        <body xsi:type="jsfvisualizationmodel:TableUsage" table="//@webRoot/@subPackages.0/@subPackages.0/@xHTMLFiles.6" label="MaterialGatheringPoints" property="//@managedBeanPackages.0/@managedBeans.4/@propertys.5"/>
+      </xHTMLFiles>
+      <xHTMLFiles xsi:type="jsfvisualizationmodel:TemplateBasedXHTMLSite" name="CustomerViewPage.xhtml" fetchOnInit="//@managedBeanPackages.0/@managedBeans.4/@operations.0" siteTemplate="//@webRoot/@subPackages.0/@xHTMLFiles.0" title="Details of Customer">
+        <parameter name="customerNumber" property="//@managedBeanPackages.0/@managedBeans.4/@propertys.0"/>
+        <body xsi:type="jsfvisualizationmodel:GridLayout" columns="2">
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="CustomerNumber:"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{customerBean.customerNumber}"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="CustomerName:"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{customerBean.customerName}"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="Zip:"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{customerBean.zip}"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="Lat:"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{customerBean.lat}"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="Lng:"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{customerBean.lng}"/>
+        </body>
+        <body xsi:type="jsfvisualizationmodel:TableUsage" table="//@webRoot/@subPackages.0/@subPackages.0/@xHTMLFiles.6" label="MaterialGatheringPoints" property="//@managedBeanPackages.0/@managedBeans.4/@propertys.5"/>
+      </xHTMLFiles>
+      <xHTMLFiles xsi:type="jsfvisualizationmodel:TemplateBasedXHTMLSite" name="CustomerListAllPage.xhtml" prettyNavigationPattern="/customer/all/" siteTemplate="//@webRoot/@subPackages.0/@xHTMLFiles.0" title="All Customers">
+        <body xsi:type="jsfvisualizationmodel:TableUsage" table="//@webRoot/@subPackages.0/@subPackages.0/@xHTMLFiles.11" label="Customer" property="//@managedBeanPackages.0/@managedBeans.7/@propertys.4"/>
+        <body xsi:type="jsfvisualizationmodel:DialogUsage" dialogTitle="Create new Customer" dialogButtonLabel="Create new Customer" popUpDialog="//@webRoot/@subPackages.0/@subPackages.1/@xHTMLFiles.4" dialogId="Customer"/>
+      </xHTMLFiles>
+    </subPackages>
+    <subPackages name="MaterialManagement">
+      <xHTMLFiles xsi:type="jsfvisualizationmodel:TemplateBasedXHTMLSite" name="MaterialEditPage.xhtml" prettyNavigationPattern="/edit" fetchOnInit="//@managedBeanPackages.0/@managedBeans.5/@operations.0" siteTemplate="//@webRoot/@subPackages.0/@xHTMLFiles.0" title="Edit Material">
+        <parameter name="identification" property="//@managedBeanPackages.0/@managedBeans.5/@propertys.0"/>
+        <parameter name="pointIdentifier" property="//@managedBeanPackages.0/@managedBeans.6/@propertys.0"/>
+        <parameter name="customerNumber" property="//@managedBeanPackages.0/@managedBeans.4/@propertys.0"/>
+        <body xsi:type="jsfvisualizationmodel:Form">
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="identification" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.5/@propertys.0"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="weight" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.5/@propertys.1"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="deadType" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.5/@propertys.2"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="pointIdentifier" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.6/@propertys.0"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="customerNumber" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.4/@propertys.0"/>
+          <body xsi:type="jsfvisualizationmodel:TriggerActionButton" label="Update Material" action="//@managedBeanPackages.0/@managedBeans.5/@operations.2"/>
+          <body xsi:type="jsfvisualizationmodel:TriggerActionButton" label="Delete this Material" action="//@managedBeanPackages.0/@managedBeans.5/@operations.3"/>
+        </body>
+      </xHTMLFiles>
+      <xHTMLFiles xsi:type="jsfvisualizationmodel:TemplateBasedXHTMLSite" name="MaterialViewPage.xhtml" fetchOnInit="//@managedBeanPackages.0/@managedBeans.5/@operations.0" siteTemplate="//@webRoot/@subPackages.0/@xHTMLFiles.0" title="Details of Material">
+        <parameter name="identification" property="//@managedBeanPackages.0/@managedBeans.5/@propertys.0"/>
+        <parameter name="pointIdentifier" property="//@managedBeanPackages.0/@managedBeans.6/@propertys.0"/>
+        <parameter name="customerNumber" property="//@managedBeanPackages.0/@managedBeans.4/@propertys.0"/>
+        <body xsi:type="jsfvisualizationmodel:GridLayout" columns="2">
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="Identification:"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{materialBean.identification}"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="Weight:"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{materialBean.weight}"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="DeadType:"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{materialBean.deadType}"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="MaterialGatheringPoint:"/>
+          <body xsi:type="jsfvisualizationmodel:CCUsage" compositeComponent="//@webRoot/@subPackages.0/@subPackages.8/@xHTMLFiles.1">
+            <parameterValues parameter="//@webRoot/@subPackages.0/@subPackages.8/@xHTMLFiles.1/@parameters.0" value="#{materialBean.materialGatheringPoint}"/>
+          </body>
+        </body>
+      </xHTMLFiles>
+    </subPackages>
+    <subPackages name="MaterialGatheringPointManagement">
+      <xHTMLFiles xsi:type="jsfvisualizationmodel:TemplateBasedXHTMLSite" name="MaterialGatheringPointEditPage.xhtml" prettyNavigationPattern="/edit" fetchOnInit="//@managedBeanPackages.0/@managedBeans.6/@operations.0" siteTemplate="//@webRoot/@subPackages.0/@xHTMLFiles.0" title="Edit MaterialGatheringPoint">
+        <parameter name="pointIdentifier" property="//@managedBeanPackages.0/@managedBeans.6/@propertys.0"/>
+        <parameter name="customerNumber" property="//@managedBeanPackages.0/@managedBeans.4/@propertys.0"/>
+        <body xsi:type="jsfvisualizationmodel:Form">
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="pointIdentifier" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.6/@propertys.0"/>
+          <body xsi:type="jsfvisualizationmodel:PropertyInputText" label="customerNumber" inputFieldParameter="//@managedBeanPackages.0/@managedBeans.4/@propertys.0"/>
+          <body xsi:type="jsfvisualizationmodel:TriggerActionButton" label="Update MaterialGatheringPoint" action="//@managedBeanPackages.0/@managedBeans.6/@operations.2"/>
+          <body xsi:type="jsfvisualizationmodel:TriggerActionButton" label="Delete this MaterialGatheringPoint" action="//@managedBeanPackages.0/@managedBeans.6/@operations.3"/>
+        </body>
+        <body xsi:type="jsfvisualizationmodel:TableUsage" table="//@webRoot/@subPackages.0/@subPackages.0/@xHTMLFiles.5" label="GatheredMaterial" property="//@managedBeanPackages.0/@managedBeans.6/@propertys.1"/>
+      </xHTMLFiles>
+      <xHTMLFiles xsi:type="jsfvisualizationmodel:TemplateBasedXHTMLSite" name="MaterialGatheringPointViewPage.xhtml" fetchOnInit="//@managedBeanPackages.0/@managedBeans.6/@operations.0" siteTemplate="//@webRoot/@subPackages.0/@xHTMLFiles.0" title="Details of MaterialGatheringPoint">
+        <parameter name="pointIdentifier" property="//@managedBeanPackages.0/@managedBeans.6/@propertys.0"/>
+        <parameter name="customerNumber" property="//@managedBeanPackages.0/@managedBeans.4/@propertys.0"/>
+        <body xsi:type="jsfvisualizationmodel:GridLayout" columns="2">
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="PointIdentifier:"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="#{materialGatheringPointBean.pointIdentifier}"/>
+          <body xsi:type="jsfvisualizationmodel:GenericOutput" valueExpression="Customer:"/>
+          <body xsi:type="jsfvisualizationmodel:CCUsage" compositeComponent="//@webRoot/@subPackages.0/@subPackages.6/@xHTMLFiles.1">
+            <parameterValues parameter="//@webRoot/@subPackages.0/@subPackages.6/@xHTMLFiles.1/@parameters.0" value="#{materialGatheringPointBean.customer}"/>
+          </body>
+        </body>
+        <body xsi:type="jsfvisualizationmodel:TableUsage" table="//@webRoot/@subPackages.0/@subPackages.0/@xHTMLFiles.5" label="GatheredMaterial" property="//@managedBeanPackages.0/@managedBeans.6/@propertys.1"/>
+      </xHTMLFiles>
+    </subPackages>
+    <xHTMLFiles xsi:type="jsfvisualizationmodel:TemplateBasedXHTMLSite" name="index.xhtml" siteTemplate="//@webRoot/@subPackages.0/@xHTMLFiles.0" title="Main Page">
+      <body xsi:type="jsfvisualizationmodel:GridLayout" columns="1">
+        <body xsi:type="jsfvisualizationmodel:Link" jSFPage="//@webRoot/@subPackages.3/@xHTMLFiles.2" label="Goto ResearchLaboratoryListAllPage"/>
+        <body xsi:type="jsfvisualizationmodel:Link" jSFPage="//@webRoot/@subPackages.4/@xHTMLFiles.2" label="Goto FarmerListAllPage"/>
+        <body xsi:type="jsfvisualizationmodel:Link" jSFPage="//@webRoot/@subPackages.5/@xHTMLFiles.2" label="Goto CustomerListAllPage"/>
+      </body>
+    </xHTMLFiles>
+  </webRoot>
+</jsfvisualizationmodel:JSFVisualizationModelRoot>

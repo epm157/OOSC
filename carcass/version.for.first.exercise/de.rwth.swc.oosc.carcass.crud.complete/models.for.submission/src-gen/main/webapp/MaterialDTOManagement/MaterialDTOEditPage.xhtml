@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+  	  xmlns:composite="http://java.sun.com/jsf/composite"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:prime="http://primefaces.org/ui"
+      
+      xmlns:tables="http://java.sun.com/jsf/composite/tables"
+      xmlns:dialogs="http://java.sun.com/jsf/composite/dialogs"
+      xmlns:materialGatheringPointDTOHelper="http://java.sun.com/jsf/composite/materialGatheringPointDTOHelper"
+      xmlns:routeDTOHelper="http://java.sun.com/jsf/composite/routeDTOHelper"
+      xmlns:customerDTOHelper="http://java.sun.com/jsf/composite/customerDTOHelper"
+      xmlns:materialDTOHelper="http://java.sun.com/jsf/composite/materialDTOHelper"
+      xmlns:basicComponents="http://java.sun.com/jsf/composite/basicComponents"
+      >
+
+
+<body>
+	
+	<f:metadata>
+    	<f:event type="preRenderView"
+      		listener="#{materialDTOBean.fetchMaterialDTO}"
+    		/>
+    </f:metadata>
+  	
+	<ui:composition
+		template="../resources/main.template.xhtml">
+		<ui:define name="title">Edit MaterialDTO</ui:define>
+		<ui:define name="breadcrumb">
+			<ul class="breadcrumb">
+				<li>
+					<h:link outcome="pretty:home" value="Home" />
+					<span class="divider">/</span>
+				</li>
+				<li>
+					The specific Breadcrumb Navigation goes here...
+				</li>
+			</ul>
+		</ui:define>
+		<ui:define name="content">
+			
+	<h:form class="form-horizontal">
+		
+	<div class="control-group">
+		<h:outputLabel for="textInput26"	value="identification" styleClass="control-label" />
+		
+		<div class="controls">
+			<prime:inputText id="textInput26" value="#{materialDTOBean.identification}" />
+		</div>
+	</div>
+
+	<div class="control-group">
+		<h:outputLabel for="textInput27"	value="materialType" styleClass="control-label" />
+		
+		<div class="controls">
+			<prime:inputText id="textInput27" value="#{materialDTOBean.materialType}" />
+		</div>
+	</div>
+
+	<div class="control-group">
+		<h:outputLabel for="textInput28"	value="weight" styleClass="control-label" />
+		
+		<div class="controls">
+			<prime:inputText id="textInput28" value="#{materialDTOBean.weight}" />
+		</div>
+	</div>
+
+	<div class="control-group">
+		<h:outputLabel for="textInput29"	value="deadType" styleClass="control-label" />
+		
+		<div class="controls">
+			<prime:inputText id="textInput29" value="#{materialDTOBean.deadType}" />
+		</div>
+	</div>
+
+	<div class="control-group">
+		<h:outputLabel for="textInput30"	value="cowEarNumber" styleClass="control-label" />
+		
+		<div class="controls">
+			<prime:inputText id="textInput30" value="#{materialDTOBean.cowEarNumber}" />
+		</div>
+	</div>
+
+	<div class="control-group">
+		<h:outputLabel for="textInput31"	value="pointIdentifier" styleClass="control-label" />
+		
+		<div class="controls">
+			<prime:inputText id="textInput31" value="#{materialGatheringPointDTOBean.pointIdentifier}" />
+		</div>
+	</div>
+
+	<div class="control-group">
+		<h:outputLabel for="textInput32"	value="customerNumber" styleClass="control-label" />
+		
+		<div class="controls">
+			<prime:inputText id="textInput32" value="#{materialGatheringPointDTOBean.customerNumber}" />
+		</div>
+	</div>
+<prime:commandButton value="Update MaterialDTO" action="#{materialDTOBean.updateMaterialDTO}" ajax="false" /><prime:commandButton value="Delete this MaterialDTO" action="#{materialDTOBean.deleteMaterialDTO}" ajax="false" />		
+	</h:form>
+
+		</ui:define>
+	</ui:composition>
+</body>
+
+</html>

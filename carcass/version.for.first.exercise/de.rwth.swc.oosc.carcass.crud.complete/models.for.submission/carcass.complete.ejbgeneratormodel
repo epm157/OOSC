@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ejbgeneratormodel:EJBGeneratorModelRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ejbgeneratormodel="http:///ejbgeneratormodel.ecore">
+  <beans genCRUDMethodLevel="generateStoreAndUpdateAndDelete">
+    <existsMethod fetchMethod="//@beans.0/@fetchMethods.0"/>
+    <fetchMethods name="getCustomerDTOByCustomerNumber" existsMethod="//@beans.0/@existsMethod">
+      <namedQuery href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@namedQuery_Entity.1"/>
+    </fetchMethods>
+    <navFromModelRoot>
+      <namedQuery href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@namedQuery_Entity.0"/>
+    </navFromModelRoot>
+    <attributParams>
+      <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.2"/>
+    </attributParams>
+    <attributParams>
+      <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.3"/>
+    </attributParams>
+    <attributParams>
+      <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.4"/>
+    </attributParams>
+    <attributParams>
+      <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.5"/>
+    </attributParams>
+    <attributParams>
+      <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0/@attribute.6"/>
+    </attributParams>
+    <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.0"/>
+  </beans>
+  <beans genCRUDMethodLevel="generateStoreAndUpdateAndDelete">
+    <existsMethod fetchMethod="//@beans.1/@fetchMethods.0"/>
+    <fetchMethods name="getMaterialDTOByIdentificationAndPointIdentifierAndCustomerNumber" existsMethod="//@beans.1/@existsMethod">
+      <namedQuery href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@namedQuery_Entity.0"/>
+    </fetchMethods>
+    <references inverseAssociation="//@beans.3/@references.0" targetEntityBean="//@beans.3">
+      <fromAttribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.6"/>
+      <toEntity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3"/>
+    </references>
+    <attributParams>
+      <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.2"/>
+    </attributParams>
+    <attributParams>
+      <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.3"/>
+    </attributParams>
+    <attributParams>
+      <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.4"/>
+    </attributParams>
+    <attributParams>
+      <attribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1/@attribute.5"/>
+    </attributParams>
+    <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1"/>
+  </beans>
+  <beans genCRUDMethodLevel="generateStoreAndUpdateAndDelete">
+    <existsMethod fetchMethod="//@beans.2/@fetchMethods.0"/>
+    <fetchMethods name="getRouteDTOByRouteName" existsMethod="//@beans.2/@existsMethod">
+      <namedQuery href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2/@namedQuery_Entity.1"/>
+    </fetchMethods>
+    <references toMany="true" targetEntityBean="//@beans.3">
+      <fromAttribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2/@attribute.2"/>
+      <toEntity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3"/>
+    </references>
+    <navFromModelRoot>
+      <namedQuery href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2/@namedQuery_Entity.0"/>
+    </navFromModelRoot>
+    <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.2"/>
+  </beans>
+  <beans genCRUDMethodLevel="generateStoreAndUpdateAndDelete">
+    <existsMethod fetchMethod="//@beans.3/@fetchMethods.0"/>
+    <fetchMethods name="getMaterialGatheringPointDTOByPointIdentifierAndCustomerNumber" existsMethod="//@beans.3/@existsMethod">
+      <namedQuery href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3/@namedQuery_Entity.1"/>
+    </fetchMethods>
+    <references composition="true" toMany="true" inverseAssociation="//@beans.1/@references.0" targetEntityBean="//@beans.1">
+      <fromAttribute href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3/@attribute.3"/>
+      <toEntity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.1"/>
+    </references>
+    <navFromModelRoot>
+      <namedQuery href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3/@namedQuery_Entity.0"/>
+    </navFromModelRoot>
+    <entity href="file:/C:/Users/Matthias%20Vianden/git/SWC-Teaching/carcass/version.for.first.exercise/de.rwth.swc.oosc.carcass.crud.complete/models.for.submission/carcass.complete.entitymodel#//@packages.0/@contents.3"/>
+  </beans>
+</ejbgeneratormodel:EJBGeneratorModelRoot>

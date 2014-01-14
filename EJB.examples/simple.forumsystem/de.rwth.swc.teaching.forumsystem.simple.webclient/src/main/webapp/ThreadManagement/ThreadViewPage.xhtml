@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+  	  xmlns:composite="http://java.sun.com/jsf/composite"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:prime="http://primefaces.org/ui"
+      
+      xmlns:tables="http://java.sun.com/jsf/composite/tables"
+      xmlns:dialogs="http://java.sun.com/jsf/composite/dialogs"
+      xmlns:threadHelper="http://java.sun.com/jsf/composite/threadHelper"
+      xmlns:postHelper="http://java.sun.com/jsf/composite/postHelper"
+      xmlns:basicComponents="http://java.sun.com/jsf/composite/basicComponents"
+      >
+
+
+<body>
+	
+	<f:metadata>
+    	<f:event type="preRenderView"
+      		listener="#{threadBean.fetchThread}"
+    		/>
+    </f:metadata>
+  	
+	<ui:composition
+		template="../resources/main.template.xhtml">
+		<ui:define name="title">Details of Thread</ui:define>
+		<ui:define name="breadcrumb">
+			<ul class="breadcrumb">
+				<li>
+					<h:link outcome="pretty:home" value="Home" />
+					<span class="divider">/</span>
+				</li>
+				<li>
+					<h:link outcome="pretty:ThreadListAllPage">
+						All Threads
+					</h:link>
+					<span class="divider">/</span>
+				</li>
+				<li class="active">
+					<threadHelper:threadViewLink thread="#{threadBean.thread}" />
+				</li>
+			</ul>
+		</ui:define>
+		<ui:define name="content">
+			<h:panelGrid columns="2">
+				<h:outputText value="ThreadId:" />
+				<h:outputText value="#{threadBean.threadId}" />
+				
+				<h:outputText value="ThreadTitle:" />
+				<h:outputText value="#{threadBean.threadTitle}" />
+				
+				<h:outputText value="Locked:" />
+				<h:outputText value="#{threadBean.locked}" />
+				
+				<h:link outcome="pretty:ThreadEditPage">
+					<f:param name="threadId" value="#{threadBean.threadId}" />
+					Edit this Thread
+				</h:link>						
+			</h:panelGrid>
+		
+			<tables:PostListWithViewLink label="Posts" list="#{threadBean.posts}" />
+
+			<dialogs:PostCreateDialog dialogTitle="Create new Post"
+				dialogButtonLabel="Create new Post" dialogId="Post" />
+		</ui:define>
+	</ui:composition>
+</body>
+
+</html>

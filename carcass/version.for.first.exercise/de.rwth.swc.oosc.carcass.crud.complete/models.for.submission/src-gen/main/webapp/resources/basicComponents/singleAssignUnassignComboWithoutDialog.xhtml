@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:composite="http://java.sun.com/jsf/composite"
+	xmlns:prime="http://primefaces.org/ui"
+	xmlns:basicComponents="http://java.sun.com/jsf/composite/basicComponents">
+
+<body>
+	<composite:interface>
+		<composite:facet name="subItemLink" />
+		
+		<composite:attribute name="field" required="true" />
+		<composite:attribute name="propertyName" required="true" />
+		<composite:attribute name="notAssigned" required="true" />
+		<composite:attribute name="dialogId" required="true" />
+
+		<composite:attribute name="unassignMethod" required="true"
+			method-signature="java.lang.String action()" />
+	</composite:interface>
+
+	<composite:implementation>
+		<h:form rendered="#{empty cc.attrs.field}" class="form-horizontal">
+			<div class="control-group" style="margin-bottom: 0px;">
+				<h:outputLabel styleClass="control-label"
+					value="#{cc.attrs.propertyName}" />
+
+				<div class="controls" style="margin-top: 5px;">
+					<h:outputText value="#{cc.attrs.notAssigned}" />
+				</div>
+			</div>
+			<div class="control-group">
+				<div class="controls">
+					<basicComponents:assignItemDialogButton
+						dialogButtonLabel="Set #{cc.attrs.propertyName}"
+						dialogId="#{cc.attrs.dialogId}" />
+				</div>
+			</div>
+		</h:form>
+
+		<h:form rendered="#{not empty cc.attrs.field}" class="form-horizontal">
+			<div class="control-group" style="margin-bottom: 0px;">
+				<h:outputLabel styleClass="control-label"
+					value="#{cc.attrs.propertyName}"/>
+
+				<div class="controls" style="margin-top: 5px;">
+					<composite:renderFacet name="subItemLink" />
+				</div>
+			</div>
+			<div class="control-group">
+				<div class="controls">
+					<basicComponents:unassignButton 
+						unassignMethod="#{cc.attrs.unassignMethod}"
+						propertyName="#{cc.attrs.propertyName}"
+					/>
+				</div>
+			</div>
+		</h:form>
+
+		<composite:insertChildren />
+	</composite:implementation>
+</body>
+</html>
