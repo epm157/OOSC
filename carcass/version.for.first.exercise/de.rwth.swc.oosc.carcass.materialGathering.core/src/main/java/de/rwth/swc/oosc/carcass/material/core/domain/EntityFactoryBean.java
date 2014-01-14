@@ -42,4 +42,12 @@ public class EntityFactoryBean implements EntityFactoryLocal {
 		return result;
 	}
 
+	public Route createRoute(String identification) {
+		Route result = new Route();
+
+		result.setIdentification(identification);
+
+		return result;
+	}
+
 }

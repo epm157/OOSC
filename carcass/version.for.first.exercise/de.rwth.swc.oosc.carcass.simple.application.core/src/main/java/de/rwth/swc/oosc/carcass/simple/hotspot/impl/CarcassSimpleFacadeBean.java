@@ -23,8 +23,10 @@ import de.rwth.swc.oosc.carcass.common.exceptions.NotFoundException;
 import de.rwth.swc.oosc.carcass.common.exceptions.NotNullableException;
 import de.rwth.swc.oosc.carcass.common.exceptions.TypeChangeException;
 import de.rwth.swc.oosc.carcass.common.exceptions.UnassignException;
+import de.rwth.swc.oosc.carcass.material.core.domain.MaterialGatheringPoint;
 import de.rwth.swc.oosc.carcass.material.core.facade.CarcassMaterialGatheringFacadeLocal;
 import de.rwth.swc.oosc.carcass.simple.application.dto.transform.CustomerDTOTransformBean;
+import de.rwth.swc.oosc.carcass.simple.application.dto.transform.RouteDTOTransformBean;
 
 @Stateless
 public class CarcassSimpleFacadeBean implements CarcassFacadeLocal {
@@ -33,6 +35,9 @@ public class CarcassSimpleFacadeBean implements CarcassFacadeLocal {
 	CarcassMaterialGatheringFacadeLocal materialGatheringFacade;
 	private @EJB
 	CustomerDTOTransformBean customerDTOTransform;
+	
+	private @EJB
+	RouteDTOTransformBean routeDTOTransform;
 
 	public Set<CustomerDTO> getAllCustomerDTO() throws NotFoundException {
 		Set<CustomerDTO> result = new HashSet<CustomerDTO>();
@@ -166,7 +171,6 @@ public class CarcassSimpleFacadeBean implements CarcassFacadeLocal {
 			throws NotFoundException {
 		// TODO Auto-generated method stub
 		Set<MaterialGatheringPointDTO> result = new HashSet<MaterialGatheringPointDTO>();
-
 		result.add(createDummyMGP());
 
 		return result;
@@ -209,23 +213,24 @@ public class CarcassSimpleFacadeBean implements CarcassFacadeLocal {
 
 	public void deleteRoute(String routeName) throws NotFoundException,
 			UnassignException, NotNullableException {
-		// TODO Auto-generated method stub
+		materialGatheringFacade.deleteRoute(routeName);
 	}
 
 	public void updateRoute(String newRouteName, String oldRouteName)
 			throws NotFoundException, AlreadyInDBException,
 			NotNullableException {
-		// TODO Auto-generated method stub
+		materialGatheringFacade.updateRoute(newRouteName,oldRouteName);
 	}
 
 	public void createRoute(String routeName) throws AlreadyInDBException,
 			NotNullableException {
-		// TODO Auto-generated method stub
+		materialGatheringFacade.createRoute(routeName);
 	}
 
 	public RouteDTO getRouteDTOByRouteName(String routeName)
 			throws NotFoundException {
 		// TODO Auto-generated method stub
+		materialGatheringFacade.getRouteByIdentification(routeName);
 		return createDummyRouteDTO();
 	}
 

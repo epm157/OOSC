@@ -41,6 +41,9 @@ public class MaterialGatheringPoint
 
 	@ManyToOne(cascade = {CascadeType.MERGE})
 	private Customer customer;
+	
+	@ManyToOne(cascade = {CascadeType.MERGE})
+	private Route route;
 
 	public MaterialGatheringPoint() {
 		super();
@@ -152,6 +155,14 @@ public class MaterialGatheringPoint
 						.getCustomerNumber().hashCode());
 
 		return hash;
+	}
+
+	public Route getRoute() {
+		return route;
+	}
+
+	public void setRoute(Route route) {
+       this.route=route;		
 	}
 
 }

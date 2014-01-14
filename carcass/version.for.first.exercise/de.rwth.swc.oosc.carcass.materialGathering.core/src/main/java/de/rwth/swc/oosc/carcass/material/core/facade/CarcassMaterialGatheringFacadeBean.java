@@ -5,6 +5,8 @@ import java.util.Set;
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
 
+import Route.controller.RouteControllerLocal;
+
 import de.rwt.swc.oosc.customer.controller.CustomerControllerLocal;
 import de.rwt.swc.oosc.customer.controller.FarmerControllerLocal;
 import de.rwt.swc.oosc.customer.controller.ResearchLaboratoryControllerLocal;
@@ -28,9 +30,11 @@ import de.rwth.swc.oosc.carcass.material.core.domain.Goat;
 import de.rwth.swc.oosc.carcass.material.core.domain.Material;
 import de.rwth.swc.oosc.carcass.material.core.domain.MaterialGatheringPoint;
 import de.rwth.swc.oosc.carcass.material.core.domain.Pig;
+import de.rwth.swc.oosc.carcass.material.core.domain.Route;
 
 @Stateless
-public class CarcassMaterialGatheringFacadeBean implements CarcassMaterialGatheringFacadeLocal {
+public class CarcassMaterialGatheringFacadeBean implements
+		CarcassMaterialGatheringFacadeLocal {
 	private @EJB
 	MaterialControllerLocal materialController;
 	private @EJB
@@ -46,15 +50,18 @@ public class CarcassMaterialGatheringFacadeBean implements CarcassMaterialGather
 	private @EJB
 	GoatControllerLocal goatController;
 	private @EJB
+	RouteControllerLocal routeController;
+	private @EJB
 	ModelRootControllerLocal modelRootController;
-	
-	private @EJB CustomerControllerAddOn customerAddOn;
-	private @EJB MaterialGatheringPointControllerAddOn mgpAddOn;
+
+	private @EJB
+	CustomerControllerAddOn customerAddOn;
+	private @EJB
+	MaterialGatheringPointControllerAddOn mgpAddOn;
 
 	/**
-	 * The method delegates the call to the  
-	 * method getAllGoat in the 
-	 * controller ModelRootController
+	 * The method delegates the call to the method getAllGoat in the controller
+	 * ModelRootController
 	 */
 	public Set<Goat> getAllGoat() throws NotFoundException
 
@@ -65,9 +72,8 @@ public class CarcassMaterialGatheringFacadeBean implements CarcassMaterialGather
 	}
 
 	/**
-	 * The method delegates the call to the  
-	 * method getAllPig in the 
-	 * controller ModelRootController
+	 * The method delegates the call to the method getAllPig in the controller
+	 * ModelRootController
 	 */
 	public Set<Pig> getAllPig() throws NotFoundException
 
@@ -78,9 +84,8 @@ public class CarcassMaterialGatheringFacadeBean implements CarcassMaterialGather
 	}
 
 	/**
-	 * The method delegates the call to the  
-	 * method getAllResearchLaboratory in the 
-	 * controller ModelRootController
+	 * The method delegates the call to the method getAllResearchLaboratory in
+	 * the controller ModelRootController
 	 */
 	public Set<ResearchLaboratory> getAllResearchLaboratory()
 			throws NotFoundException
@@ -92,8 +97,7 @@ public class CarcassMaterialGatheringFacadeBean implements CarcassMaterialGather
 	}
 
 	/**
-	 * The method delegates the call to the  
-	 * method getAllFarmer in the 
+	 * The method delegates the call to the method getAllFarmer in the
 	 * controller ModelRootController
 	 */
 	public Set<Farmer> getAllFarmer() throws NotFoundException
@@ -105,8 +109,7 @@ public class CarcassMaterialGatheringFacadeBean implements CarcassMaterialGather
 	}
 
 	/**
-	 * The method delegates the call to the  
-	 * method getAllCustomer in the 
+	 * The method delegates the call to the method getAllCustomer in the
 	 * controller ModelRootController
 	 */
 	public Set<Customer> getAllCustomer()
@@ -118,9 +121,8 @@ public class CarcassMaterialGatheringFacadeBean implements CarcassMaterialGather
 	}
 
 	/**
-	 * The method delegates the call to the  
-	 * method deleteGoat in the 
-	 * controller GoatController
+	 * The method delegates the call to the method deleteGoat in the controller
+	 * GoatController
 	 */
 	public void deleteGoat(String identification, String pointIdentifier,
 			String customerNumber) throws NotFoundException, UnassignException,
@@ -134,9 +136,8 @@ public class CarcassMaterialGatheringFacadeBean implements CarcassMaterialGather
 	}
 
 	/**
-	 * The method delegates the call to the  
-	 * method updateGoat in the 
-	 * controller GoatController
+	 * The method delegates the call to the method updateGoat in the controller
+	 * GoatController
 	 */
 	public void updateGoat(String newIdentification, String oldIdentification,
 			String pointIdentifier, String customerNumber, double weight,
@@ -151,9 +152,8 @@ public class CarcassMaterialGatheringFacadeBean implements CarcassMaterialGather
 	}
 
 	/**
-	 * The method delegates the call to the  
-	 * method createGoat in the 
-	 * controller GoatController
+	 * The method delegates the call to the method createGoat in the controller
+	 * GoatController
 	 */
 	public void createGoat(String identification, String pointIdentifier,
 			String customerNumber, double weight, DeadType deadType)
@@ -168,8 +168,8 @@ public class CarcassMaterialGatheringFacadeBean implements CarcassMaterialGather
 	}
 
 	/**
-	 * The method delegates the call to the  
-	 * method getGoatByIdentificationAndPointIdentifierAndCustomerNumber in the 
+	 * The method delegates the call to the method
+	 * getGoatByIdentificationAndPointIdentifierAndCustomerNumber in the
 	 * controller GoatController
 	 */
 	public Goat getGoatByIdentificationAndPointIdentifierAndCustomerNumber(
@@ -185,9 +185,8 @@ public class CarcassMaterialGatheringFacadeBean implements CarcassMaterialGather
 	}
 
 	/**
-	 * The method delegates the call to the  
-	 * method deletePig in the 
-	 * controller PigController
+	 * The method delegates the call to the method deletePig in the controller
+	 * PigController
 	 */
 	public void deletePig(String identification, String pointIdentifier,
 			String customerNumber) throws NotFoundException, UnassignException,
@@ -201,9 +200,8 @@ public class CarcassMaterialGatheringFacadeBean implements CarcassMaterialGather
 	}
 
 	/**
-	 * The method delegates the call to the  
-	 * method updatePig in the 
-	 * controller PigController
+	 * The method delegates the call to the method updatePig in the controller
+	 * PigController
 	 */
 	public void updatePig(String newIdentification, String oldIdentification,
 			String pointIdentifier, String customerNumber, double weight,
@@ -218,9 +216,8 @@ public class CarcassMaterialGatheringFacadeBean implements CarcassMaterialGather
 	}
 
 	/**
-	 * The method delegates the call to the  
-	 * method createPig in the 
-	 * controller PigController
+	 * The method delegates the call to the method createPig in the controller
+	 * PigController
 	 */
 	public void createPig(String identification, String pointIdentifier,
 			String customerNumber, double weight, DeadType deadType)
@@ -235,8 +232,8 @@ public class CarcassMaterialGatheringFacadeBean implements CarcassMaterialGather
 	}
 
 	/**
-	 * The method delegates the call to the  
-	 * method getPigByIdentificationAndPointIdentifierAndCustomerNumber in the 
+	 * The method delegates the call to the method
+	 * getPigByIdentificationAndPointIdentifierAndCustomerNumber in the
 	 * controller PigController
 	 */
 	public Pig getPigByIdentificationAndPointIdentifierAndCustomerNumber(
@@ -252,9 +249,8 @@ public class CarcassMaterialGatheringFacadeBean implements CarcassMaterialGather
 	}
 
 	/**
-	 * The method delegates the call to the  
-	 * method deleteResearchLaboratory in the 
-	 * controller ResearchLaboratoryController
+	 * The method delegates the call to the method deleteResearchLaboratory in
+	 * the controller ResearchLaboratoryController
 	 */
 	public void deleteResearchLaboratory(String customerNumber)
 			throws NotFoundException, UnassignException, NotNullableException
@@ -266,9 +262,8 @@ public class CarcassMaterialGatheringFacadeBean implements CarcassMaterialGather
 	}
 
 	/**
-	 * The method delegates the call to the  
-	 * method updateResearchLaboratory in the 
-	 * controller ResearchLaboratoryController
+	 * The method delegates the call to the method updateResearchLaboratory in
+	 * the controller ResearchLaboratoryController
 	 */
 	public void updateResearchLaboratory(String newCustomerNumber,
 			String oldCustomerNumber, String customerName, String zip,
@@ -284,9 +279,8 @@ public class CarcassMaterialGatheringFacadeBean implements CarcassMaterialGather
 	}
 
 	/**
-	 * The method delegates the call to the  
-	 * method createResearchLaboratory in the 
-	 * controller ResearchLaboratoryController
+	 * The method delegates the call to the method createResearchLaboratory in
+	 * the controller ResearchLaboratoryController
 	 */
 	public void createResearchLaboratory(String customerNumber,
 			String customerName, String zip, double lat, double lng)
@@ -300,9 +294,9 @@ public class CarcassMaterialGatheringFacadeBean implements CarcassMaterialGather
 	}
 
 	/**
-	 * The method delegates the call to the  
-	 * method getResearchLaboratoryByCustomerNumber in the 
-	 * controller ResearchLaboratoryController
+	 * The method delegates the call to the method
+	 * getResearchLaboratoryByCustomerNumber in the controller
+	 * ResearchLaboratoryController
 	 */
 	public ResearchLaboratory getResearchLaboratoryByCustomerNumber(
 			String customerNumber) throws NotFoundException
@@ -315,8 +309,7 @@ public class CarcassMaterialGatheringFacadeBean implements CarcassMaterialGather
 	}
 
 	/**
-	 * The method delegates the call to the  
-	 * method deleteFarmer in the 
+	 * The method delegates the call to the method deleteFarmer in the
 	 * controller FarmerController
 	 */
 	public void deleteFarmer(String customerNumber) throws NotFoundException,
@@ -329,8 +322,7 @@ public class CarcassMaterialGatheringFacadeBean implements CarcassMaterialGather
 	}
 
 	/**
-	 * The method delegates the call to the  
-	 * method updateFarmer in the 
+	 * The method delegates the call to the method updateFarmer in the
 	 * controller FarmerController
 	 */
 	public void updateFarmer(String newCustomerNumber,
@@ -346,8 +338,7 @@ public class CarcassMaterialGatheringFacadeBean implements CarcassMaterialGather
 	}
 
 	/**
-	 * The method delegates the call to the  
-	 * method createFarmer in the 
+	 * The method delegates the call to the method createFarmer in the
 	 * controller FarmerController
 	 */
 	public void createFarmer(String customerNumber, String customerName,
@@ -362,9 +353,8 @@ public class CarcassMaterialGatheringFacadeBean implements CarcassMaterialGather
 	}
 
 	/**
-	 * The method delegates the call to the  
-	 * method getFarmerByCustomerNumber in the 
-	 * controller FarmerController
+	 * The method delegates the call to the method getFarmerByCustomerNumber in
+	 * the controller FarmerController
 	 */
 	public Farmer getFarmerByCustomerNumber(String customerNumber)
 			throws NotFoundException
@@ -376,8 +366,7 @@ public class CarcassMaterialGatheringFacadeBean implements CarcassMaterialGather
 	}
 
 	/**
-	 * The method delegates the call to the  
-	 * method deleteMaterial in the 
+	 * The method delegates the call to the method deleteMaterial in the
 	 * controller MaterialController
 	 */
 	public void deleteMaterial(String identification, String pointIdentifier,
@@ -392,8 +381,7 @@ public class CarcassMaterialGatheringFacadeBean implements CarcassMaterialGather
 	}
 
 	/**
-	 * The method delegates the call to the  
-	 * method updateMaterial in the 
+	 * The method delegates the call to the method updateMaterial in the
 	 * controller MaterialController
 	 */
 	public void updateMaterial(String newIdentification,
@@ -410,8 +398,7 @@ public class CarcassMaterialGatheringFacadeBean implements CarcassMaterialGather
 	}
 
 	/**
-	 * The method delegates the call to the  
-	 * method createMaterial in the 
+	 * The method delegates the call to the method createMaterial in the
 	 * controller MaterialController
 	 */
 	public void createMaterial(String identification, String pointIdentifier,
@@ -427,8 +414,8 @@ public class CarcassMaterialGatheringFacadeBean implements CarcassMaterialGather
 	}
 
 	/**
-	 * The method delegates the call to the  
-	 * method getMaterialByIdentificationAndPointIdentifierAndCustomerNumber in the 
+	 * The method delegates the call to the method
+	 * getMaterialByIdentificationAndPointIdentifierAndCustomerNumber in the
 	 * controller MaterialController
 	 */
 	public Material getMaterialByIdentificationAndPointIdentifierAndCustomerNumber(
@@ -444,9 +431,8 @@ public class CarcassMaterialGatheringFacadeBean implements CarcassMaterialGather
 	}
 
 	/**
-	 * The method delegates the call to the  
-	 * method deleteMaterialGatheringPoint in the 
-	 * controller MaterialGatheringPointController
+	 * The method delegates the call to the method deleteMaterialGatheringPoint
+	 * in the controller MaterialGatheringPointController
 	 */
 	public void deleteMaterialGatheringPoint(String pointIdentifier,
 			String customerNumber) throws NotFoundException, UnassignException,
@@ -460,9 +446,8 @@ public class CarcassMaterialGatheringFacadeBean implements CarcassMaterialGather
 	}
 
 	/**
-	 * The method delegates the call to the  
-	 * method updateMaterialGatheringPoint in the 
-	 * controller MaterialGatheringPointController
+	 * The method delegates the call to the method updateMaterialGatheringPoint
+	 * in the controller MaterialGatheringPointController
 	 */
 	public void updateMaterialGatheringPoint(String newPointIdentifier,
 			String oldPointIdentifier, String customerNumber)
@@ -477,9 +462,8 @@ public class CarcassMaterialGatheringFacadeBean implements CarcassMaterialGather
 	}
 
 	/**
-	 * The method delegates the call to the  
-	 * method createMaterialGatheringPoint in the 
-	 * controller MaterialGatheringPointController
+	 * The method delegates the call to the method createMaterialGatheringPoint
+	 * in the controller MaterialGatheringPointController
 	 */
 	public void createMaterialGatheringPoint(String pointIdentifier,
 			String customerNumber) throws AlreadyInDBException,
@@ -493,8 +477,8 @@ public class CarcassMaterialGatheringFacadeBean implements CarcassMaterialGather
 	}
 
 	/**
-	 * The method delegates the call to the  
-	 * method getMaterialGatheringPointByPointIdentifierAndCustomerNumber in the 
+	 * The method delegates the call to the method
+	 * getMaterialGatheringPointByPointIdentifierAndCustomerNumber in the
 	 * controller MaterialGatheringPointController
 	 */
 	public MaterialGatheringPoint getMaterialGatheringPointByPointIdentifierAndCustomerNumber(
@@ -510,8 +494,7 @@ public class CarcassMaterialGatheringFacadeBean implements CarcassMaterialGather
 	}
 
 	/**
-	 * The method delegates the call to the  
-	 * method deleteCustomer in the 
+	 * The method delegates the call to the method deleteCustomer in the
 	 * controller CustomerController
 	 */
 	public void deleteCustomer(String customerNumber) throws NotFoundException,
@@ -524,8 +507,7 @@ public class CarcassMaterialGatheringFacadeBean implements CarcassMaterialGather
 	}
 
 	/**
-	 * The method delegates the call to the  
-	 * method updateCustomer in the 
+	 * The method delegates the call to the method updateCustomer in the
 	 * controller CustomerController
 	 */
 	public void updateCustomer(String newCustomerNumber,
@@ -541,8 +523,7 @@ public class CarcassMaterialGatheringFacadeBean implements CarcassMaterialGather
 	}
 
 	/**
-	 * The method delegates the call to the  
-	 * method createCustomer in the 
+	 * The method delegates the call to the method createCustomer in the
 	 * controller CustomerController
 	 */
 	public void createCustomer(String customerNumber, String customerName,
@@ -557,9 +538,8 @@ public class CarcassMaterialGatheringFacadeBean implements CarcassMaterialGather
 	}
 
 	/**
-	 * The method delegates the call to the  
-	 * method getCustomerByCustomerNumber in the 
-	 * controller CustomerController
+	 * The method delegates the call to the method getCustomerByCustomerNumber
+	 * in the controller CustomerController
 	 */
 	public Customer getCustomerByCustomerNumber(String customerNumber)
 			throws NotFoundException
@@ -571,8 +551,8 @@ public class CarcassMaterialGatheringFacadeBean implements CarcassMaterialGather
 	}
 
 	/**
-	 * The method delegates the call to the  
-	 * method unassignMaterialGatheringPointFromCustomerMaterialGatheringPoints in the 
+	 * The method delegates the call to the method
+	 * unassignMaterialGatheringPointFromCustomerMaterialGatheringPoints in the
 	 * controller CustomerController
 	 */
 	public void unassignMaterialGatheringPointFromCustomerMaterialGatheringPoints(
@@ -588,8 +568,8 @@ public class CarcassMaterialGatheringFacadeBean implements CarcassMaterialGather
 	}
 
 	/**
-	 * The method delegates the call to the  
-	 * method unassignMaterialFromMaterialGatheringPointGatheredMaterial in the 
+	 * The method delegates the call to the method
+	 * unassignMaterialFromMaterialGatheringPointGatheredMaterial in the
 	 * controller MaterialGatheringPointController
 	 */
 	public void unassignMaterialFromMaterialGatheringPointGatheredMaterial(
@@ -605,9 +585,9 @@ public class CarcassMaterialGatheringFacadeBean implements CarcassMaterialGather
 	}
 
 	/**
-	 * The method delegates the call to the  
-	 * method unassignCustomerFromMaterialGatheringPointCustomer in the 
-	 * controller MaterialGatheringPointController
+	 * The method delegates the call to the method
+	 * unassignCustomerFromMaterialGatheringPointCustomer in the controller
+	 * MaterialGatheringPointController
 	 */
 	public void unassignCustomerFromMaterialGatheringPointCustomer(
 			String pointIdentifier, String customerNumber)
@@ -622,8 +602,8 @@ public class CarcassMaterialGatheringFacadeBean implements CarcassMaterialGather
 	}
 
 	/**
-	 * The method delegates the call to the  
-	 * method unassignMaterialGatheringPointFromMaterialMaterialGatheringPoint in the 
+	 * The method delegates the call to the method
+	 * unassignMaterialGatheringPointFromMaterialMaterialGatheringPoint in the
 	 * controller MaterialController
 	 */
 	public void unassignMaterialGatheringPointFromMaterialMaterialGatheringPoint(
@@ -640,11 +620,64 @@ public class CarcassMaterialGatheringFacadeBean implements CarcassMaterialGather
 
 	public Set<MaterialGatheringPoint> getAllMaterialGatheringPointsForCustomer(
 			String customerNumber) {
-		return mgpAddOn.getMaterialGatheringPointsForCustomerNumber(customerNumber);
+		return mgpAddOn
+				.getMaterialGatheringPointsForCustomerNumber(customerNumber);
 	}
 
 	public Set<MaterialGatheringPoint> getAllMaterialGatheringPoint() {
 		return mgpAddOn.getAllMaterialGatheringPoints();
+	}
+
+	public Set<Route> getAllRoute() throws NotFoundException {
+		return modelRootController.getAllRoute();
+	}
+
+	public void deleteRoute(String identification) throws NotFoundException,
+			UnassignException, NotNullableException {
+		routeController.deleteRoute(identification);
+
+	}
+
+	public void updateRoute(String newIdentification, String oldIdentification)
+			throws NotFoundException, AlreadyInDBException,
+			NotNullableException {
+		routeController.updateRoute(newIdentification, oldIdentification);
+
+	}
+
+	public void createRoute(String identification) throws AlreadyInDBException,
+			NotNullableException {
+		routeController.createRoute(identification);
+
+	}
+
+	public Route getRouteByIdentification(String identification)
+			throws NotFoundException {
+		return routeController.getRouteByIdentification(identification);
+	}
+
+	public void unassignMaterialGatheringPointFromRoute(String pointIdentifier,
+			String customerNumber, String identification) {
+		MaterialGatheringPoint point=null;
+		Route route=null;
+		try {
+			point = materialGatheringPointController
+					.getMaterialGatheringPointByPointIdentifierAndCustomerNumber(
+							pointIdentifier, customerNumber);
+		} catch (NotFoundException e) {
+			e.printStackTrace();
+		}
+		try {
+			route = routeController.getRouteByIdentification(identification);
+		} catch (NotFoundException e) {
+			e.printStackTrace();
+		}
+
+		if (point != null && route != null) {
+			if (point.getRoute().equals(route)) {
+				point.setRoute(null);
+			}
+		}
 	}
 
 }

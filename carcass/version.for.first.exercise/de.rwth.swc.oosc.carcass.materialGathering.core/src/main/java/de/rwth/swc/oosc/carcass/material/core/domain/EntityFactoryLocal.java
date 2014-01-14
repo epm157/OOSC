@@ -14,4 +14,6 @@ public interface EntityFactoryLocal {
 
 	Goat createGoat(String identification);
 
+	Route createRoute(String identification);
+
 }

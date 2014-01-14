@@ -13,6 +13,7 @@ import de.rwt.swc.oosc.customer.domain.Farmer;
 import de.rwt.swc.oosc.customer.domain.ResearchLaboratory;
 import de.rwth.swc.oosc.carcass.material.core.domain.Goat;
 import de.rwth.swc.oosc.carcass.material.core.domain.Pig;
+import de.rwth.swc.oosc.carcass.material.core.domain.Route;
 
 @Stateless
 public class ModelRootDAOBean implements ModelRootDAOLocal {
@@ -84,6 +85,15 @@ public class ModelRootDAOBean implements ModelRootDAOLocal {
 		Set<Goat> result = new HashSet<Goat>(query.getResultList());
 		return result;
 
+	}
+
+	public Set<Route> getAllRoute() {
+
+		Query query = em.createNamedQuery("getAllRoute");
+
+		@SuppressWarnings("unchecked")
+		Set<Route> result = new HashSet<Route>(query.getResultList());
+		return result;
 	}
 
 }

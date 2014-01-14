@@ -17,11 +17,16 @@ import de.rwth.swc.oosc.carcass.material.core.domain.Goat;
 import de.rwth.swc.oosc.carcass.material.core.domain.Material;
 import de.rwth.swc.oosc.carcass.material.core.domain.MaterialGatheringPoint;
 import de.rwth.swc.oosc.carcass.material.core.domain.Pig;
+import de.rwth.swc.oosc.carcass.material.core.domain.Route;
 
 @Local
 public interface CarcassMaterialGatheringFacadeLocal {
 
 	Set<Goat> getAllGoat() throws NotFoundException
+
+	;
+	
+	Set<Route> getAllRoute() throws NotFoundException
 
 	;
 
@@ -49,10 +54,20 @@ public interface CarcassMaterialGatheringFacadeLocal {
 			NotNullableException
 
 	;
+	
+	void deleteRoute(String identification) throws NotFoundException, UnassignException,
+			NotNullableException
+
+	;
 
 	void updateGoat(String newIdentification, String oldIdentification,
 			String pointIdentifier, String customerNumber, double weight,
 			DeadType deadType) throws NotFoundException, AlreadyInDBException,
+			NotNullableException
+
+	;
+	
+	void updateRoute(String newIdentification, String oldIdentification) throws NotFoundException, AlreadyInDBException,
 			NotNullableException
 
 	;
@@ -63,9 +78,20 @@ public interface CarcassMaterialGatheringFacadeLocal {
 			NotFoundException
 
 	;
+	
+	void createRoute(String identification)
+			throws AlreadyInDBException, NotNullableException
+
+	;
 
 	Goat getGoatByIdentificationAndPointIdentifierAndCustomerNumber(
 			String identification, String pointIdentifier, String customerNumber)
+			throws NotFoundException
+
+	;
+	
+	Route getRouteByIdentification(
+			String identification)
 			throws NotFoundException
 
 	;
@@ -241,5 +267,9 @@ public interface CarcassMaterialGatheringFacadeLocal {
 			throws NotFoundException, NotNullableException, UnassignException
 
 	;
+
+	void unassignMaterialGatheringPointFromRoute(String pointIdentifier,String customerNumber,
+			String identification);
+
 
 }

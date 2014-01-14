@@ -12,6 +12,7 @@ import de.rwth.swc.oosc.carcass.common.exceptions.NotFoundException;
 import de.rwth.swc.oosc.carcass.material.core.dao.ModelRootDAOLocal;
 import de.rwth.swc.oosc.carcass.material.core.domain.Goat;
 import de.rwth.swc.oosc.carcass.material.core.domain.Pig;
+import de.rwth.swc.oosc.carcass.material.core.domain.Route;
 
 @Stateless
 public class ModelRootControllerBean implements ModelRootControllerLocal {
@@ -83,6 +84,11 @@ public class ModelRootControllerBean implements ModelRootControllerLocal {
 		// Use the Management-Method to get the entities from the database
 		return modelRootDAO.getAllGoat();
 
+	}
+
+	public Set<Route> getAllRoute() throws NotFoundException {
+		// TODO Auto-generated method stub
+		return modelRootDAO.getAllRoute();
 	}
 
 }
